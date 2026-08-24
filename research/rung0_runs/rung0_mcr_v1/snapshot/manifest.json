@@ -1,0 +1,676 @@
+{
+  "chunks": 342,
+  "connected_graph_nodes": 334,
+  "created_at_utc": "2026-08-24T19:25:49.653420+00:00",
+  "critical_code_hashes": [
+    {
+      "basename": "pyproject.toml",
+      "exists": true,
+      "mtime_ns": 1787587113000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/pyproject.toml",
+      "relative_path": "pyproject.toml",
+      "sha256": "445558bcd4df46530e41693f1e6b299667867b04827a7271cb2b91332d1b35a2",
+      "size": 550,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "README.md",
+      "exists": true,
+      "mtime_ns": 1787587113000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/README.md",
+      "relative_path": "README.md",
+      "sha256": "9d7cf59b01058052b93936cc038a28169a0b061105a173287139310078c21c0a",
+      "size": 7614,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "dynamics.py",
+      "exists": true,
+      "mtime_ns": 1787585151000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/vll_organism/dynamics.py",
+      "relative_path": "vll_organism/dynamics.py",
+      "sha256": "bbf0920ec341a0d0aa9b107158d95c02a0dea95edd9fd34f0bbcd5cdddd68057",
+      "size": 19610,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "graph.py",
+      "exists": true,
+      "mtime_ns": 1787584413000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/vll_organism/graph.py",
+      "relative_path": "vll_organism/graph.py",
+      "sha256": "4d7395c8c39dadc3360ace33b54ad96ee52e68125f2544817760d64926bf1924",
+      "size": 4498,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "storage.py",
+      "exists": true,
+      "mtime_ns": 1787586716000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/vll_organism/storage.py",
+      "relative_path": "vll_organism/storage.py",
+      "sha256": "45cda7bad049e46a2e27f80a3e105407d7e30330d6d41f7276183ef38c8be3c7",
+      "size": 20160,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "organism.py",
+      "exists": true,
+      "mtime_ns": 1787586929000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/vll_organism/organism.py",
+      "relative_path": "vll_organism/organism.py",
+      "sha256": "f15dea42c96c625dcbee358c48b25e77b3a6c0d3bd19f084156e3e3d3b4c4146",
+      "size": 24309,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "retrieval.py",
+      "exists": true,
+      "mtime_ns": 1787586475000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/vll_organism/retrieval.py",
+      "relative_path": "vll_organism/retrieval.py",
+      "sha256": "b0e2a37f99ce7099590a506b32a0b94f6860a93760aff9edece60e2fdf05d5c4",
+      "size": 5167,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "ingest.py",
+      "exists": true,
+      "mtime_ns": 1787586438000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/vll_organism/ingest.py",
+      "relative_path": "vll_organism/ingest.py",
+      "sha256": "240d3c9a34938b872f9a494ef9420fbce0930618d4d314c0a5269ac43728c65c",
+      "size": 5199,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "cli.py",
+      "exists": true,
+      "mtime_ns": 1787586796000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/vll_organism/cli.py",
+      "relative_path": "vll_organism/cli.py",
+      "sha256": "aa52893481a7e2db1ffd88b691bb7dec66d0f24a859350db07ec6218148a1ddc",
+      "size": 9566,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "rung0_common.py",
+      "exists": true,
+      "mtime_ns": 1787598688000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/rung0_common.py",
+      "relative_path": "research/rung0_battery/rung0_common.py",
+      "sha256": "55756aa81d5227aab0e4950f7c9685bb7d018032d1a3bb09a8c5bef3de549a67",
+      "size": 14889,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "rung0_stats.py",
+      "exists": true,
+      "mtime_ns": 1787598395000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/rung0_stats.py",
+      "relative_path": "research/rung0_battery/rung0_stats.py",
+      "sha256": "6d9255f565022c8e703ce741b07a4a12db1cb5eddacf86dfacda71f3024b30ed",
+      "size": 3873,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "rung0_controls.py",
+      "exists": true,
+      "mtime_ns": 1787598891000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/rung0_controls.py",
+      "relative_path": "research/rung0_battery/rung0_controls.py",
+      "sha256": "eee4e0aac2ac20f2dc3ca5bb8554529fc0dfadc9ec8f02adc1bec185e1ff311c",
+      "size": 7485,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "pair_battery.py",
+      "exists": true,
+      "mtime_ns": 1787598891000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/pair_battery.py",
+      "relative_path": "research/rung0_battery/pair_battery.py",
+      "sha256": "b9f1705c81f54212caeb3d211a5162e2a6bd6bb58f3ab2651369f52c58c0d88b",
+      "size": 18332,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "source_matrix.py",
+      "exists": true,
+      "mtime_ns": 1787599092000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/source_matrix.py",
+      "relative_path": "research/rung0_battery/source_matrix.py",
+      "sha256": "536c57706ce365a9623f0d0b3e2ea1b59b6811355d5329353e9c69acb63a437c",
+      "size": 10078,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "order_sensitivity.py",
+      "exists": true,
+      "mtime_ns": 1787599129000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/order_sensitivity.py",
+      "relative_path": "research/rung0_battery/order_sensitivity.py",
+      "sha256": "31e2549730abc5535b342f7f39c2c12cd9b39085886b96837571fdf777633017",
+      "size": 15749,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "run_plan.py",
+      "exists": true,
+      "mtime_ns": 1787599137000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/run_plan.py",
+      "relative_path": "research/rung0_battery/run_plan.py",
+      "sha256": "b91802607f744c0e050922dc32ac342ff7dc9b8d0b1c6e89407c8d53f756adad",
+      "size": 11298,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "freeze_snapshot.py",
+      "exists": true,
+      "mtime_ns": 1787598898000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/freeze_snapshot.py",
+      "relative_path": "research/rung0_battery/freeze_snapshot.py",
+      "sha256": "796c46bb47f148020aa410961e1e6185ab69e6596e9824297ec3d2b38bdbaf85",
+      "size": 8011,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "rung0_plan.json",
+      "exists": true,
+      "mtime_ns": 1787598796000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/rung0_plan.json",
+      "relative_path": "research/rung0_battery/rung0_plan.json",
+      "sha256": "86654cf2d3214acf09a7bc36d1bfde40e943e93104c1e4f98e2c1c74f00dffab",
+      "size": 4490,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "README.md",
+      "exists": true,
+      "mtime_ns": 1787598898000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/README.md",
+      "relative_path": "research/rung0_battery/README.md",
+      "sha256": "1787273ce5b7eb191f48878b27655b50d7ef8f748f214554852ef40432bf764b",
+      "size": 11082,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "test_rung0_battery.py",
+      "exists": true,
+      "mtime_ns": 1787598898000000000,
+      "path": "/media/justin/IronWolf/git/vll_organism/research/rung0_battery/tests/test_rung0_battery.py",
+      "relative_path": "research/rung0_battery/tests/test_rung0_battery.py",
+      "sha256": "d58b91d585f23a0170205c9e15cebed18b66cbba1d4524796fbcc7415806495b",
+      "size": 7857,
+      "stable_during_hash": true
+    }
+  ],
+  "db_source_membership": [
+    {
+      "basename": "00_MCR_Origin.md",
+      "chunk_content_hashes_sha256": "2d1e84c79854e297ca08e803755ac364a210351f3899ded71c8d4622c9abbdc7",
+      "chunk_membership_sha256": "35e2f591406b6dc9aaa785ebcb29064ef06918a88cfcdb418ac36f2e0f52a895",
+      "chunks": 22,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/00_MCR_Origin.md"
+    },
+    {
+      "basename": "01_MCR_Transition-to-Formal.md",
+      "chunk_content_hashes_sha256": "02c6a61ef7065d89b3ac96098e96389c569e98946f366229dfbd85fe6aee1a65",
+      "chunk_membership_sha256": "16bf8719c61d58f64380857c26f5969961c259c50e6b0048d74710801a9f4363",
+      "chunks": 39,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/01_MCR_Transition-to-Formal.md"
+    },
+    {
+      "basename": "02_MCR_Formal-Plan.md",
+      "chunk_content_hashes_sha256": "1cc27e2f482e0e709557e28ff4274fd2e2a73b7557a593fb0455faa7a30b6493",
+      "chunk_membership_sha256": "d20a392c3583a0b340ab258c35baeef9822fc17ae4546e98593ea6cc0af47ff9",
+      "chunks": 37,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/02_MCR_Formal-Plan.md"
+    },
+    {
+      "basename": "03_MCR_Qualification.md",
+      "chunk_content_hashes_sha256": "2a9748b8e1b1d11c179118f54e76e9e074d8d76455a1c57ae78bf7c926eb5d50",
+      "chunk_membership_sha256": "50165a5a877e0b354cec20534fb269616ba28f1ba0011e6c0db5b3642b2578fc",
+      "chunks": 41,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/03_MCR_Qualification.md"
+    },
+    {
+      "basename": "04_MCR_Solution-Space-Resolution.md",
+      "chunk_content_hashes_sha256": "40f1c2e36e247f78efe2bae31933571baa37e50668ee0c81576b9181119a1650",
+      "chunk_membership_sha256": "9d2b5f7677d073be66a5e62d122cfa308c65c013a7d683ad50e0768870e33f69",
+      "chunks": 28,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/04_MCR_Solution-Space-Resolution.md"
+    },
+    {
+      "basename": "Analogistical-Constructivism-Deep-Research.md",
+      "chunk_content_hashes_sha256": "81d2a8824d2f95272a2aacc57c56fec0a980565bedbd13f1d0cc279a69550235",
+      "chunk_membership_sha256": "589465b0581752480a55f77db7aa93c7b34fa4bb084c955ffef8c401b1ad0822",
+      "chunks": 27,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md"
+    },
+    {
+      "basename": "Aura_Distinction_Inventory_v0.7.md",
+      "chunk_content_hashes_sha256": "646321b475caa2b23dd02e81008abb62818dd94ba5bc790120c57f88ddf5a88a",
+      "chunk_membership_sha256": "3d2f09497ddff9ebc5a4c3b33e3ab149656bd4964ac16fb51bbf975f565efe9f",
+      "chunks": 92,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Aura_Distinction_Inventory_v0.7.md"
+    },
+    {
+      "basename": "Before-There-Were-Two-Things.md",
+      "chunk_content_hashes_sha256": "fdf31596749594cbc022abfc1dfd44533d0c178fa1b1976d4c772f14325d4efe",
+      "chunk_membership_sha256": "f1b6c23932226daa875959ab59cd1d700b385adbea560389ebd8f74ca3fe0e04",
+      "chunks": 15,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Before-There-Were-Two-Things.md"
+    },
+    {
+      "basename": "CORTEX_ENGINE_RETAINED_BASELINE_20260726.md",
+      "chunk_content_hashes_sha256": "4c4b2420421e8360a4ab325067e1151cdc56585b1e2f4a9089eed5336073e161",
+      "chunk_membership_sha256": "dcdad4c85a8f58392c247bf0624a021b2396694691b6fcbbfaafbb350775d7c0",
+      "chunks": 12,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/CORTEX_ENGINE_RETAINED_BASELINE_20260726.md"
+    },
+    {
+      "basename": "Chains-Imposed.md",
+      "chunk_content_hashes_sha256": "3573a23fd3fa443fc213c53b0f6d6f8576e278bfef77ec4f95415a21480523f2",
+      "chunk_membership_sha256": "219da44420258aeb5a68fea0e0489f100dc3421a853d41d484f31b3076bf4ca6",
+      "chunks": 1,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Chains-Imposed.md"
+    },
+    {
+      "basename": "Foliation.md",
+      "chunk_content_hashes_sha256": "13d9719f4e41562cc211fb7f40df49bf3a14f425b7a5034d38ef888342ab7f30",
+      "chunk_membership_sha256": "a6d7ae9ed70f4e266967ad02bce43891b2a7990f7a15178e4889d03d51fc0a18",
+      "chunks": 1,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Foliation.md"
+    },
+    {
+      "basename": "Germinal.md",
+      "chunk_content_hashes_sha256": "5d82ec884f95d9777e685cc3b373c2d361bb5117b9bb8bbf07cabf73613b1a09",
+      "chunk_membership_sha256": "d55e265597ddf97a14007436e1d01de2724bd5f5b845624d291c59dc8c370ae9",
+      "chunks": 1,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Germinal.md"
+    },
+    {
+      "basename": "Inside-the-AI-Model-Researchers-Study-Like-a-Weather-System.md",
+      "chunk_content_hashes_sha256": "55b939b48fde56b3efd2338de89fcf5dd0b9afbba1b9345d716ce96950c1da56",
+      "chunk_membership_sha256": "ed6f4f258346ce46a256cf48ee83420abcc0818a2c5f79d1eb08b89a475963b0",
+      "chunks": 15,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Inside-the-AI-Model-Researchers-Study-Like-a-Weather-System.md"
+    },
+    {
+      "basename": "Libra.md",
+      "chunk_content_hashes_sha256": "b22459cd9ce79afc3ec3caad31a54b1b6509c194b42ef9617267e7a3b28d3d1a",
+      "chunk_membership_sha256": "732cda5939c7f6bb73e446a90a0a3413cac655a3fa435c0b4cbe30ad9b3ef2a2",
+      "chunks": 1,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Libra.md"
+    },
+    {
+      "basename": "Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md",
+      "chunk_content_hashes_sha256": "98fb284046b06adb3669050b81387b9b4c7febb0a8db6ba1a189ec655b77a591",
+      "chunk_membership_sha256": "fcc08ca1674374ac51dfa0c1d65dac6edd5d791e19009e5a5535cb8e7f41e330",
+      "chunks": 10,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md"
+    }
+  ],
+  "dynamics_config": {
+    "active_budget": 256,
+    "diffusion_fraction": 0.12,
+    "familiarity_gain": 0.08,
+    "heat_floor": 0.0001,
+    "heat_half_life_ticks": 120,
+    "mass_gain": 0.15,
+    "registration_heat_gain": 3.0,
+    "retrieval_heat_gain": 0.75,
+    "territory_max_members": 256,
+    "territory_similarity_threshold": 0.55
+  },
+  "graph_edges": 1505,
+  "graph_nodes": 342,
+  "integrity": {
+    "foreign_key_violations": [],
+    "quick_check": [
+      "ok"
+    ],
+    "table_counts": {
+      "chunk_sources": 342,
+      "chunks": 342,
+      "edges": 1505,
+      "energy_log": 3680,
+      "events": 21,
+      "stimuli": 0
+    }
+  },
+  "meta": {
+    "daemon_state": "running",
+    "embedding_dim": "2560",
+    "embedding_model": "ollama:qwen3-embedding:4b",
+    "tick_interval_s": "3.0",
+    "watch_folder_ok": "1",
+    "watch_folder_path": "/media/justin/IronWolf/git/vll_organism/corpus_drop"
+  },
+  "note": "Frozen Rung-0 baseline before adding another VDM mechanism",
+  "schema_version": 1,
+  "snapshot_db": "/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db",
+  "snapshot_sha256": "632147b5e2573ce6962f32b6f23053c743fa1bb95f87dedfc61bbbf3f199b4c3",
+  "snapshot_tick": 3600,
+  "source_db": "/media/justin/IronWolf/git/vll_organism/organism.db",
+  "source_file_note": "Source-file hashes are contemporaneous references. The frozen SQLite database and db_source_membership records are authoritative for the exact experimental corpus state.",
+  "source_files": [
+    {
+      "basename": "00_MCR_Origin.md",
+      "exists": true,
+      "mtime_ns": 1787527997138446746,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/00_MCR_Origin.md",
+      "sha256": "4d7e742c0ebe2edd391b71ff987cda802ea2a31ae6c407369c4a038b9d65c128",
+      "size": 29587,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "01_MCR_Transition-to-Formal.md",
+      "exists": true,
+      "mtime_ns": 1787528701567268418,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/01_MCR_Transition-to-Formal.md",
+      "sha256": "58b92163b549228345563d86d48c2107513422e2b4a90d25fff6caec72bef6cb",
+      "size": 55248,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "02_MCR_Formal-Plan.md",
+      "exists": true,
+      "mtime_ns": 1787528876393332412,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/02_MCR_Formal-Plan.md",
+      "sha256": "fbeb8219c8711802395ef3f23edca187465cd67fd0e7e24ee3f82c0987a0a03d",
+      "size": 53615,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "03_MCR_Qualification.md",
+      "exists": true,
+      "mtime_ns": 1787529095337948980,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/03_MCR_Qualification.md",
+      "sha256": "851f129131fce9de7d25c211e2961b69bc750fa6aebbaa4207abe531e5883d93",
+      "size": 53473,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "04_MCR_Solution-Space-Resolution.md",
+      "exists": true,
+      "mtime_ns": 1787548785593666728,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/04_MCR_Solution-Space-Resolution.md",
+      "sha256": "621c32c9b6f28c859a29c0ab70e2b2f9a26bceb1409569beb8cb5af0ed05e264",
+      "size": 38059,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "Analogistical-Constructivism-Deep-Research.md",
+      "exists": true,
+      "mtime_ns": 1784189774423528746,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md",
+      "sha256": "7d49868136d18c1adf5132d09d839975766947cda25fb55f0c4277fadb0031da",
+      "size": 31082,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "Aura_Distinction_Inventory_v0.7.md",
+      "exists": true,
+      "mtime_ns": 1773755198235668566,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Aura_Distinction_Inventory_v0.7.md",
+      "sha256": "e0bdcde151a1dd44ddbbe8e6a0b504f6493933c48a9b539579eeb3c39b384e4f",
+      "size": 98784,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "Before-There-Were-Two-Things.md",
+      "exists": true,
+      "mtime_ns": 1787580266893809090,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Before-There-Were-Two-Things.md",
+      "sha256": "38d20a1dc149607b83381a99eac7600556e7403c07fc6f719712e9bb483ad780",
+      "size": 20520,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "CORTEX_ENGINE_RETAINED_BASELINE_20260726.md",
+      "exists": true,
+      "mtime_ns": 1785115355082026179,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/CORTEX_ENGINE_RETAINED_BASELINE_20260726.md",
+      "sha256": "8b1e6b8511321db005f453749df284465a31f3b021ba4ef684cdf37cb082daa8",
+      "size": 45183,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "Chains-Imposed.md",
+      "exists": true,
+      "mtime_ns": 1787583099812767450,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Chains-Imposed.md",
+      "sha256": "a33830be883749d19acec3882a198d650e76a24156753ab92c2613c7fde015b7",
+      "size": 1151,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "Foliation.md",
+      "exists": true,
+      "mtime_ns": 1787583311288261231,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Foliation.md",
+      "sha256": "0e4b01f95938a10ff882d7b9e3d6e3afb43a010261dd8e7fe8d3d2299cfcd99d",
+      "size": 840,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "Germinal.md",
+      "exists": true,
+      "mtime_ns": 1787583380085081079,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Germinal.md",
+      "sha256": "1588bc70dd405d55d02ffcf0011a7940107bc7266643a2efcbae5182f64fbcce",
+      "size": 379,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "Inside-the-AI-Model-Researchers-Study-Like-a-Weather-System.md",
+      "exists": true,
+      "mtime_ns": 1787577156314060733,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Inside-the-AI-Model-Researchers-Study-Like-a-Weather-System.md",
+      "sha256": "e4c164a51fb593120d25c1808d46eaf1a87ef20433f73ad77c26d51d94905a87",
+      "size": 20432,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "Libra.md",
+      "exists": true,
+      "mtime_ns": 1787583427065642887,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Libra.md",
+      "sha256": "532e655148a7afa913089df990d6e14479e834da5cf9fd4ab6f1e9cbbf10a0a9",
+      "size": 270,
+      "stable_during_hash": true
+    },
+    {
+      "basename": "Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md",
+      "exists": true,
+      "mtime_ns": 1787527768676259895,
+      "path": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md",
+      "sha256": "69e4b5bc3b0c55972d39dfb123400a5c532904d4d14fd667e4dcc0e4c3cbc1f5",
+      "size": 14039,
+      "stable_during_hash": true
+    }
+  ],
+  "source_inventory": [
+    {
+      "basename": "00_MCR_Origin.md",
+      "chunks": 22,
+      "created_rank_max": 77,
+      "created_rank_mean": 66.5,
+      "created_rank_min": 56,
+      "degree_max": 12,
+      "degree_mean": 6.7727272727272725,
+      "degree_min": 0,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/00_MCR_Origin.md",
+      "weighted_degree_mean": 4.489361294427468
+    },
+    {
+      "basename": "01_MCR_Transition-to-Formal.md",
+      "chunks": 39,
+      "created_rank_max": 116,
+      "created_rank_mean": 97.0,
+      "created_rank_min": 78,
+      "degree_max": 12,
+      "degree_mean": 8.615384615384615,
+      "degree_min": 4,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/01_MCR_Transition-to-Formal.md",
+      "weighted_degree_mean": 5.802023987152145
+    },
+    {
+      "basename": "02_MCR_Formal-Plan.md",
+      "chunks": 37,
+      "created_rank_max": 153,
+      "created_rank_mean": 135.0,
+      "created_rank_min": 117,
+      "degree_max": 12,
+      "degree_mean": 9.972972972972974,
+      "degree_min": 6,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/02_MCR_Formal-Plan.md",
+      "weighted_degree_mean": 7.033556506563219
+    },
+    {
+      "basename": "03_MCR_Qualification.md",
+      "chunks": 41,
+      "created_rank_max": 194,
+      "created_rank_mean": 174.0,
+      "created_rank_min": 154,
+      "degree_max": 12,
+      "degree_mean": 9.024390243902438,
+      "degree_min": 0,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/03_MCR_Qualification.md",
+      "weighted_degree_mean": 6.135677763122367
+    },
+    {
+      "basename": "04_MCR_Solution-Space-Resolution.md",
+      "chunks": 28,
+      "created_rank_max": 222,
+      "created_rank_mean": 208.5,
+      "created_rank_min": 195,
+      "degree_max": 12,
+      "degree_mean": 8.857142857142858,
+      "degree_min": 6,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/04_MCR_Solution-Space-Resolution.md",
+      "weighted_degree_mean": 6.0831936420785455
+    },
+    {
+      "basename": "Analogistical-Constructivism-Deep-Research.md",
+      "chunks": 27,
+      "created_rank_max": 55,
+      "created_rank_mean": 42.0,
+      "created_rank_min": 29,
+      "degree_max": 12,
+      "degree_mean": 8.074074074074074,
+      "degree_min": 1,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md",
+      "weighted_degree_mean": 5.176821522485748
+    },
+    {
+      "basename": "Aura_Distinction_Inventory_v0.7.md",
+      "chunks": 92,
+      "created_rank_max": 314,
+      "created_rank_mean": 268.5,
+      "created_rank_min": 223,
+      "degree_max": 12,
+      "degree_mean": 7.054347826086956,
+      "degree_min": 0,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Aura_Distinction_Inventory_v0.7.md",
+      "weighted_degree_mean": 4.445958448846571
+    },
+    {
+      "basename": "Before-There-Were-Two-Things.md",
+      "chunks": 15,
+      "created_rank_max": 329,
+      "created_rank_mean": 322.0,
+      "created_rank_min": 315,
+      "degree_max": 12,
+      "degree_mean": 6.333333333333333,
+      "degree_min": 0,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Before-There-Were-Two-Things.md",
+      "weighted_degree_mean": 4.175410123872002
+    },
+    {
+      "basename": "CORTEX_ENGINE_RETAINED_BASELINE_20260726.md",
+      "chunks": 12,
+      "created_rank_max": 341,
+      "created_rank_mean": 335.5,
+      "created_rank_min": 330,
+      "degree_max": 8,
+      "degree_mean": 4.5,
+      "degree_min": 2,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/CORTEX_ENGINE_RETAINED_BASELINE_20260726.md",
+      "weighted_degree_mean": 2.8354433383920843
+    },
+    {
+      "basename": "Chains-Imposed.md",
+      "chunks": 1,
+      "created_rank_max": 13,
+      "created_rank_mean": 13.0,
+      "created_rank_min": 13,
+      "degree_max": 0,
+      "degree_mean": 0.0,
+      "degree_min": 0,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Chains-Imposed.md",
+      "weighted_degree_mean": 0.0
+    },
+    {
+      "basename": "Foliation.md",
+      "chunks": 1,
+      "created_rank_max": 12,
+      "created_rank_mean": 12.0,
+      "created_rank_min": 12,
+      "degree_max": 0,
+      "degree_mean": 0.0,
+      "degree_min": 0,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Foliation.md",
+      "weighted_degree_mean": 0.0
+    },
+    {
+      "basename": "Germinal.md",
+      "chunks": 1,
+      "created_rank_max": 11,
+      "created_rank_mean": 11.0,
+      "created_rank_min": 11,
+      "degree_max": 0,
+      "degree_mean": 0.0,
+      "degree_min": 0,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Germinal.md",
+      "weighted_degree_mean": 0.0
+    },
+    {
+      "basename": "Inside-the-AI-Model-Researchers-Study-Like-a-Weather-System.md",
+      "chunks": 15,
+      "created_rank_max": 28,
+      "created_rank_mean": 21.0,
+      "created_rank_min": 14,
+      "degree_max": 12,
+      "degree_mean": 6.133333333333334,
+      "degree_min": 2,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Inside-the-AI-Model-Researchers-Study-Like-a-Weather-System.md",
+      "weighted_degree_mean": 3.7371040939565625
+    },
+    {
+      "basename": "Libra.md",
+      "chunks": 1,
+      "created_rank_max": 10,
+      "created_rank_mean": 10.0,
+      "created_rank_min": 10,
+      "degree_max": 0,
+      "degree_mean": 0.0,
+      "degree_min": 0,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Libra.md",
+      "weighted_degree_mean": 0.0
+    },
+    {
+      "basename": "Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md",
+      "chunks": 10,
+      "created_rank_max": 9,
+      "created_rank_mean": 4.5,
+      "created_rank_min": 0,
+      "degree_max": 12,
+      "degree_mean": 11.8,
+      "degree_min": 10,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md",
+      "weighted_degree_mean": 8.568302524575534
+    }
+  ]
+}

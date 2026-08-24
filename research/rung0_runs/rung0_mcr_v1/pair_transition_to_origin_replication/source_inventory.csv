@@ -1,0 +1,16 @@
+source,basename,chunks,degree_min,degree_max,degree_mean,weighted_degree_mean,created_rank_min,created_rank_max,created_rank_mean
+/media/justin/IronWolf/git/vll_organism/corpus_drop/00_MCR_Origin.md,00_MCR_Origin.md,22,0,12,6.7727272727272725,4.489361294427468,56,77,66.5
+/media/justin/IronWolf/git/vll_organism/corpus_drop/01_MCR_Transition-to-Formal.md,01_MCR_Transition-to-Formal.md,39,4,12,8.615384615384615,5.802023987152145,78,116,97.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/02_MCR_Formal-Plan.md,02_MCR_Formal-Plan.md,37,6,12,9.972972972972974,7.033556506563219,117,153,135.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/03_MCR_Qualification.md,03_MCR_Qualification.md,41,0,12,9.024390243902438,6.135677763122367,154,194,174.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/04_MCR_Solution-Space-Resolution.md,04_MCR_Solution-Space-Resolution.md,28,6,12,8.857142857142858,6.0831936420785455,195,222,208.5
+/media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md,Analogistical-Constructivism-Deep-Research.md,27,1,12,8.074074074074074,5.176821522485748,29,55,42.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/Aura_Distinction_Inventory_v0.7.md,Aura_Distinction_Inventory_v0.7.md,92,0,12,7.054347826086956,4.445958448846571,223,314,268.5
+/media/justin/IronWolf/git/vll_organism/corpus_drop/Before-There-Were-Two-Things.md,Before-There-Were-Two-Things.md,15,0,12,6.333333333333333,4.175410123872002,315,329,322.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/CORTEX_ENGINE_RETAINED_BASELINE_20260726.md,CORTEX_ENGINE_RETAINED_BASELINE_20260726.md,12,2,8,4.5,2.8354433383920843,330,341,335.5
+/media/justin/IronWolf/git/vll_organism/corpus_drop/Chains-Imposed.md,Chains-Imposed.md,1,0,0,0.0,0.0,13,13,13.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/Foliation.md,Foliation.md,1,0,0,0.0,0.0,12,12,12.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/Germinal.md,Germinal.md,1,0,0,0.0,0.0,11,11,11.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/Inside-the-AI-Model-Researchers-Study-Like-a-Weather-System.md,Inside-the-AI-Model-Researchers-Study-Like-a-Weather-System.md,15,2,12,6.133333333333334,3.7371040939565625,14,28,21.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/Libra.md,Libra.md,1,0,0,0.0,0.0,10,10,10.0
+/media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md,Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md,10,10,12,11.8,8.568302524575534,0,9,4.5

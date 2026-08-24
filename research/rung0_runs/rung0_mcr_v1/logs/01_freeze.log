@@ -1,0 +1,6 @@
+RUNG0_SNAPSHOT_READY
+snapshot_dir: /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot
+db: /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db
+sha256: 632147b5e2573ce6962f32b6f23053c743fa1bb95f87dedfc61bbbf3f199b4c3
+tick=3600 chunks=342 nodes=342 edges=1505
+sources=15

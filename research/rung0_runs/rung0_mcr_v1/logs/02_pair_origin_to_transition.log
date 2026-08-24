@@ -1,0 +1,39 @@
+RUNG-0 PAIRWISE ROUTING BATTERY
+db=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db tick=3600 nodes=342 edges=1505
+source=00_MCR_Origin.md chunks=22
+related=['01_MCR_Transition-to-Formal.md'] chunks=39
+horizons=[20, 60, 120, 240] primary=120 heat=10.0
+[01/22] chunk:01a9a4e6ea6f58575231bc0e hops=3 direct=0/0 real=0.1528 null=0.1118 pR=0.29874 top=Analogistical-Constructivism-Deep-Research.md
+[02/22] chunk:0650195aa0f79d2aaec3925e hops=1 direct=4/0 real=0.6575 null=0.1189 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[03/22] chunk:127fc3636f803f97105575ad hops=2 direct=0/0 real=0.8387 null=0.1352 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[04/22] chunk:128415c43dd5cae04cb76583 hops=3 direct=0/1 real=0.1215 null=0.1144 pR=0.46031 top=Analogistical-Constructivism-Deep-Research.md
+[05/22] chunk:18169c1dbba2907a3cfadef4 hops=2 direct=0/0 real=0.8400 null=0.1336 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[06/22] chunk:1d44e027d4c9dafbde8050a1 hops=1 direct=1/0 real=0.8090 null=0.1189 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[07/22] chunk:373b61c72ce49ecf9f34bbfb hops=1 direct=10/0 real=0.7083 null=0.1190 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[08/22] chunk:5155efd8c3288419f68fb155 hops=2 direct=0/0 real=0.8399 null=0.1346 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[09/22] chunk:6a6f56de3ca6c558d8d78622 hops=4 direct=0/0 real=0.1405 null=0.1082 pR=0.35873 top=Analogistical-Constructivism-Deep-Research.md
+[10/22] chunk:8722ceaa74ecb0c8e285fc6f hops=3 direct=0/1 real=0.1466 null=0.1137 pR=0.31794 top=Analogistical-Constructivism-Deep-Research.md
+[11/22] chunk:8962bed7d63901564218076b hops=1 direct=6/2 real=0.5479 null=0.1208 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[12/22] chunk:9fb77421ec0ef8e6d78fc040 hops=3 direct=0/1 real=0.1283 null=0.1133 pR=0.41212 top=Analogistical-Constructivism-Deep-Research.md
+[13/22] chunk:a9659c505e49a3d42e4db844 hops=NA direct=0/0 real=NA null=NA pR=NA top=Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+[14/22] chunk:b6d7dbad9577436ab92a61cd hops=2 direct=0/0 real=0.6711 null=0.1093 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[15/22] chunk:bc6649925656594e6ec68677 hops=1 direct=1/0 real=0.8130 null=0.1266 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[16/22] chunk:bdb68aabe90b68e820bcc515 hops=3 direct=0/0 real=0.1964 null=0.1139 pR=0.15957 top=Analogistical-Constructivism-Deep-Research.md
+[17/22] chunk:c3ee8a1f1ff5c8662bfc3333 hops=2 direct=0/0 real=0.8398 null=0.1390 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[18/22] chunk:c5b57619b9b130cc30c81432 hops=3 direct=0/0 real=0.1794 null=0.1139 pR=0.19956 top=Analogistical-Constructivism-Deep-Research.md
+[19/22] chunk:d79171c9a68bd3a1a2ba6612 hops=2 direct=0/0 real=0.8448 null=0.1208 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[20/22] chunk:d96e6dc355c904b49f1f1236 hops=2 direct=0/0 real=0.3527 null=0.1149 pR=0.00040 top=Analogistical-Constructivism-Deep-Research.md
+[21/22] chunk:da11a50d9ac147f0f42efa40 hops=3 direct=0/2 real=0.1299 null=0.1159 pR=0.40712 top=Analogistical-Constructivism-Deep-Research.md
+[22/22] chunk:ffceb9939c29300973d8d7d8 hops=2 direct=0/2 real=0.2155 null=0.1147 pR=0.06219 top=Analogistical-Constructivism-Deep-Research.md
+
+BATTERY_COMPLETE
+output=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/pair_origin_to_transition
+node_q95_passes=12/21
+natural_multihop_q95_passes=7/16
+omnibus[all_reachable]: median_delta=0.428563 p=9.999e-05 pass_count=12 pass_p=0.00849915
+omnibus[natural_multihop]: median_delta=0.092203 p=0.0874913 pass_count=7 pass_p=0.0513949
+omnibus[one_hop]: median_delta=0.591362 p=9.999e-05 pass_count=5 pass_p=0.00869913
+omnibus[two_hop]: median_delta=0.743933 p=9.999e-05 pass_count=7 pass_p=0.00709929
+omnibus[three_plus_hop]: median_delta=0.031462 p=0.324068 pass_count=0 pass_p=1
+heat_scale_robustness=PASS
+creation_order_confound=True

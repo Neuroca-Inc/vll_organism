@@ -1,0 +1,56 @@
+RUNG-0 PAIRWISE ROUTING BATTERY
+db=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db tick=3600 nodes=342 edges=1505
+source=01_MCR_Transition-to-Formal.md chunks=39
+related=['00_MCR_Origin.md'] chunks=22
+horizons=[20, 60, 120, 240] primary=120 heat=10.0
+[01/39] chunk:0066126ec8be360207250c0e hops=3 direct=0/3 real=0.0597 null=0.0670 pR=0.56109 top=04_MCR_Solution-Space-Resolution.md
+[02/39] chunk:00d6a0ab0e74b4a9f5dd1bee hops=3 direct=0/0 real=0.0799 null=0.0538 pR=0.38212 top=04_MCR_Solution-Space-Resolution.md
+[03/39] chunk:046d440341933f706d1b8439 hops=2 direct=0/1 real=0.1099 null=0.0638 pR=0.19456 top=04_MCR_Solution-Space-Resolution.md
+[04/39] chunk:10d0a60b8e6386542f7f2e0f hops=2 direct=0/0 real=0.1435 null=0.0599 pR=0.07758 top=02_MCR_Formal-Plan.md
+[05/39] chunk:1509a86b23339a5bdecbd4ef hops=1 direct=2/2 real=0.1955 null=0.0653 pR=0.00420 top=02_MCR_Formal-Plan.md
+[06/39] chunk:15530bec75bd4255e14a2c87 hops=4 direct=0/2 real=0.0378 null=0.0553 pR=0.66427 top=04_MCR_Solution-Space-Resolution.md
+[07/39] chunk:1f6827b9769e9bd273517c15 hops=2 direct=0/0 real=0.1704 null=0.0608 pR=0.03879 top=02_MCR_Formal-Plan.md
+[08/39] chunk:200202c266d77d741c57e275 hops=3 direct=0/0 real=0.0822 null=0.0554 pR=0.37672 top=04_MCR_Solution-Space-Resolution.md
+[09/39] chunk:205b7623e89a9ec70a13a9d3 hops=1 direct=3/0 real=0.4519 null=0.0680 pR=0.00020 top=00_MCR_Origin.md
+[10/39] chunk:218189649ddef45adab80203 hops=2 direct=0/4 real=0.0421 null=0.0695 pR=0.84383 top=02_MCR_Formal-Plan.md
+[11/39] chunk:24e65a5f2a8e061ad4c91961 hops=3 direct=0/3 real=0.0443 null=0.0616 pR=0.63987 top=04_MCR_Solution-Space-Resolution.md
+[12/39] chunk:2e50cad7e426c2781b474e3b hops=2 direct=0/1 real=0.2166 null=0.0687 pR=0.00060 top=04_MCR_Solution-Space-Resolution.md
+[13/39] chunk:313954720059f5b11152616e hops=4 direct=0/0 real=0.0490 null=0.0523 pR=0.52290 top=04_MCR_Solution-Space-Resolution.md
+[14/39] chunk:34ff958b4487e21ea834c82f hops=3 direct=0/0 real=0.0795 null=0.0528 pR=0.37493 top=04_MCR_Solution-Space-Resolution.md
+[15/39] chunk:4079378cec36ca9b89a76f08 hops=2 direct=0/8 real=0.0307 null=0.0690 pR=0.92561 top=02_MCR_Formal-Plan.md
+[16/39] chunk:476d9cb14b9139a6f75ebb58 hops=1 direct=2/1 real=0.1849 null=0.0686 pR=0.00280 top=02_MCR_Formal-Plan.md
+[17/39] chunk:4a3adeb0e168d3e2c9af147d hops=3 direct=0/0 real=0.1274 null=0.0618 pR=0.11338 top=02_MCR_Formal-Plan.md
+[18/39] chunk:4dadb75dd249f646267bbb6c hops=1 direct=2/0 real=0.3885 null=0.0680 pR=0.00020 top=00_MCR_Origin.md
+[19/39] chunk:59de2f26accc6714c2cd2399 hops=3 direct=0/0 real=0.0794 null=0.0561 pR=0.38672 top=04_MCR_Solution-Space-Resolution.md
+[20/39] chunk:5ddc3c13de81f8329b499484 hops=3 direct=0/1 real=0.0710 null=0.0610 pR=0.43151 top=04_MCR_Solution-Space-Resolution.md
+[21/39] chunk:6e693544f78157ab1aeb4c4c hops=2 direct=0/2 real=0.0681 null=0.0687 pR=0.50950 top=02_MCR_Formal-Plan.md
+[22/39] chunk:6fa07759312d3e88f450bc4a hops=1 direct=2/0 real=0.4402 null=0.0683 pR=0.00020 top=00_MCR_Origin.md
+[23/39] chunk:89b6dba6c3ca2645a1b2618a hops=1 direct=1/0 real=0.1964 null=0.0642 pR=0.01020 top=02_MCR_Formal-Plan.md
+[24/39] chunk:90c159f3a371d7491d1e3024 hops=2 direct=0/1 real=0.1717 null=0.0648 pR=0.02300 top=02_MCR_Formal-Plan.md
+[25/39] chunk:90c5478ec5b43dbd0f0d9006 hops=2 direct=0/1 real=0.1602 null=0.0650 pR=0.03299 top=02_MCR_Formal-Plan.md
+[26/39] chunk:9aa2db6401c27d3deb8ade0c hops=2 direct=0/1 real=0.1022 null=0.0667 pR=0.20836 top=04_MCR_Solution-Space-Resolution.md
+[27/39] chunk:a0fe5ebca4badb3844a8bccd hops=3 direct=0/1 real=0.0738 null=0.0631 pR=0.43751 top=04_MCR_Solution-Space-Resolution.md
+[28/39] chunk:aaabe1523752fd3fa2a2866b hops=2 direct=0/2 real=0.1167 null=0.0658 pR=0.13257 top=02_MCR_Formal-Plan.md
+[29/39] chunk:ad3699d09adb7f37b9f30c4a hops=3 direct=0/2 real=0.0489 null=0.0606 pR=0.59348 top=04_MCR_Solution-Space-Resolution.md
+[30/39] chunk:b23cb7eaae87d76ac50f9133 hops=1 direct=1/0 real=0.2070 null=0.0626 pR=0.01100 top=02_MCR_Formal-Plan.md
+[31/39] chunk:b43cb594526c55277cf93a21 hops=1 direct=1/0 real=0.3682 null=0.0671 pR=0.00020 top=00_MCR_Origin.md
+[32/39] chunk:ba2c5a75c50fe1de5911398a hops=1 direct=2/0 real=0.3847 null=0.0670 pR=0.00020 top=00_MCR_Origin.md
+[33/39] chunk:bb5f975eeec2b993e7db9ac1 hops=1 direct=2/2 real=0.1520 null=0.0688 pR=0.01100 top=02_MCR_Formal-Plan.md
+[34/39] chunk:bd41bd16a7eefde8e2c8a15c hops=2 direct=0/1 real=0.1463 null=0.0655 pR=0.05419 top=02_MCR_Formal-Plan.md
+[35/39] chunk:d86c2aae83cb52a76e2ef9f8 hops=2 direct=0/0 real=0.1433 null=0.0641 pR=0.06879 top=02_MCR_Formal-Plan.md
+[36/39] chunk:e6e5c3c42746d4691fef50d1 hops=2 direct=0/0 real=0.1900 null=0.0670 pR=0.00560 top=04_MCR_Solution-Space-Resolution.md
+[37/39] chunk:e91caab6e66ff7ba10110e56 hops=2 direct=0/1 real=0.0814 null=0.0701 pR=0.36473 top=02_MCR_Formal-Plan.md
+[38/39] chunk:ea8f397990cf104864e04e9b hops=1 direct=5/0 real=0.6424 null=0.0686 pR=0.00020 top=00_MCR_Origin.md
+[39/39] chunk:f794e170f590b044c70126a4 hops=2 direct=0/2 real=0.0962 null=0.0653 pR=0.24375 top=02_MCR_Formal-Plan.md
+
+BATTERY_COMPLETE
+output=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/pair_transition_to_origin_replication
+node_q95_passes=16/39
+natural_multihop_q95_passes=5/28
+omnibus[all_reachable]: median_delta=0.058633 p=0.0335966 pass_count=20 pass_p=0.0194981
+omnibus[natural_multihop]: median_delta=0.017842 p=0.268373 pass_count=9 pass_p=0.0542946
+omnibus[one_hop]: median_delta=0.305062 p=9.999e-05 pass_count=11 pass_p=0.00259974
+omnibus[two_hop]: median_delta=0.061770 p=0.0255974 pass_count=8 pass_p=0.0374963
+omnibus[three_plus_hop]: median_delta=0.013062 p=0.366263 pass_count=1 pass_p=0.147285
+heat_scale_robustness=PASS
+creation_order_confound=True

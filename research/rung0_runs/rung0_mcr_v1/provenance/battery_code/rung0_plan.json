@@ -1,0 +1,105 @@
+{
+  "experiment_id": "rung0_mcr_routing_characterization_v1",
+  "snapshot_note": "Frozen Rung-0 baseline before adding another VDM mechanism",
+  "seed": 20260824,
+  "run_tests": true,
+  "pair_defaults": {
+    "heat": 10,
+    "primary_horizon": 120,
+    "horizons": [
+      20,
+      60,
+      120,
+      240
+    ],
+    "heat_levels": [
+      1,
+      10,
+      100
+    ],
+    "heat_robustness_tol": 0.02,
+    "node_controls": 5000,
+    "omnibus_controls": 10000,
+    "degree_controls": 10000
+  },
+  "pairs": [
+    {
+      "id": "origin_to_transition",
+      "source": "00_MCR_Origin.md",
+      "related": [
+        "01_MCR_Transition-to-Formal.md"
+      ]
+    },
+    {
+      "id": "transition_to_origin_replication",
+      "source": "01_MCR_Transition-to-Formal.md",
+      "related": [
+        "00_MCR_Origin.md"
+      ]
+    }
+  ],
+  "matrix": {
+    "enabled": true,
+    "heat": 10,
+    "ticks": 120,
+    "controls": 5000,
+    "sources": [
+      "00_MCR_Origin.md",
+      "01_MCR_Transition-to-Formal.md",
+      "02_MCR_Formal-Plan.md",
+      "Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md",
+      "Analogistical-Constructivism-Deep-Research.md"
+    ]
+  },
+  "order_sensitivity": {
+    "enabled": true,
+    "source": "00_MCR_Origin.md",
+    "related": [
+      "01_MCR_Transition-to-Formal.md"
+    ],
+    "heat": 10,
+    "ticks": 120,
+    "controls": 100,
+    "similarity_threshold": 0.55,
+    "similarity_candidate_cap": 200,
+    "max_out_degree": 6,
+    "similarity_cache_size": 50000
+  },
+  "claims": [
+    {
+      "id": "R0-C1",
+      "claim": "For the declared Origin\u2192Transition relation, source-wide heat routing is more concentrated in the designated destination than source-fixed identity permutations on the same weighted topology.",
+      "decisive_evidence": "pair origin_to_transition omnibus all_reachable median-delta and pass-count tests",
+      "decision_rule": "PASS only if both median_delta_p_right <= 0.01 and pass_count_p_right <= 0.01 using independent calibration/evaluation null streams.",
+      "falsifier": "Either omnibus p-value exceeds 0.01, or the runtime-equivalence/negative-control gates fail."
+    },
+    {
+      "id": "R0-C2",
+      "claim": "The declared Origin\u2192Transition relation exhibits source-wide natural multi-hop enrichment for targets with no direct related node in the top-12 diffusion neighborhood.",
+      "decisive_evidence": "pair origin_to_transition omnibus natural_multihop",
+      "decision_rule": "PASS only if median_delta_p_right <= 0.01 and pass_count_p_right <= 0.01; node anecdotes alone do not satisfy this claim.",
+      "falsifier": "The natural-multihop omnibus fails either decision rule or has fewer than 3 eligible targets."
+    },
+    {
+      "id": "R0-C3",
+      "claim": "The routing signature is not merely an artifact of pulse amplitude, diffusion being disabled, or best-target selection.",
+      "decisive_evidence": "heat-scale robustness, zero-diffusion negative control, maximum-delta omnibus, and all-target sweep",
+      "decision_rule": "PASS when zero-diffusion foreign AUC is zero within 1e-12, heat-scale max fraction deviation <= configured tolerance, and the maximum-delta omnibus is reported alongside source-wide statistics.",
+      "falsifier": "Any required gate fails."
+    },
+    {
+      "id": "R0-C4",
+      "claim": "The qualitative source-routing organization is characterized across the predeclared MCR/AC source family on one frozen organism state.",
+      "decisive_evidence": "source routing matrix with BH-adjusted cell tests and residual OTHER_FOREIGN shares",
+      "decision_rule": "CHARACTERIZATION; no single PASS is assigned. Report all cells and residual foreign heat without post-hoc source selection.",
+      "falsifier": "Selected source provenance overlaps ambiguously or the matrix stage cannot complete on the frozen snapshot."
+    },
+    {
+      "id": "R0-C5",
+      "claim": "The Origin\u2192Transition routing signature is not wholly dependent on the historical document ingestion order used to build the online graph.",
+      "decisive_evidence": "document-order sensitivity replay after exact stored-topology reproduction",
+      "decision_rule": "SENSITIVITY ONLY; report stored-order position within the randomized-order distribution and edge-Jaccard distribution. Do not interpret this stage as a semantic null p-value.",
+      "falsifier": "Exact graph replay fails; in that case order sensitivity is BLOCKED rather than guessed."
+    }
+  ]
+}

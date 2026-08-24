@@ -1,0 +1,1148 @@
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "analogistical constructivism"
+[1] score=0.3816 semantic=0.3960
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Inside-the-AI-Model-Researchers-Study-Like-a-Weather-System.md
+*Source note: This article was written exclusively from the supplied Cognitive Runtime Packages, including the bundled VDM papers, READMEs, figures, tables, CSV artifacts and implementation metadata. No outside sources were used.*
+
+[2] score=0.3724 semantic=0.3871
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+# Monotonic Causal Resolution (MCR)
+
+## 1. Purpose
+
+Monotonic Causal Resolution is a problem-solving method for advancing toward a correct answer without:
+
+- building on unearned premises,
+- confusing current resolution with ultimate foundation,
+- solving questions that do not advance the active problem,
+- descending indefinitely into unnecessary prerequisites,
+- or discarding already-earned structure when a later branch fails.
+
+The objective is not speed.
+
+The objective is:
+
+\[
+\boxed{\text{maximum justified forward progress with preserved causal provenance}}
+\]
+
+The method is designed so that being wrong remains locally repairable.
+
+---
+
+## 2. Foundational Principle
+
+At any finite stage of reasoning, the deepest currently resolved structure is only the current resolution boundary.
+
+\[
+\boxed{\text{current resolution boundary} \neq \text{ontological finality}}
+\]
+
+An unresolved antecedent may remain unresolved.
+
+It may not be silently promoted into a primitive.
+
+Therefore:
+
+\[
+\text{OPEN} \neq \text{FOUNDATIONAL}
+\]
+
+and:
+
+\[
+\text{unresolved} \neq \text{arbitrary}.
+\]
+
+Whatever the correct answer is, it remains constrained by everything already causally and logically earned.
+
+---
+
+# 3. Core Invariants
+
+## I. Causal Provenance
+
+Every load-bearing claim must have an identifiable reason for being accepted.
+
+A claim may be:
+
+- observed,
+- derived,
+- defined,
+- explicitly assumed for a bounded scope,
+- or unresolved.
+
+[3] score=0.3657 semantic=0.3801
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+## V. Resolve to Necessity, Not Exhaustion
+
+The existence of an unanswered question does not make that question immediately relevant.
+
+For a proposed next step \(S\), identify its prerequisite set:
+
+\[
+P(S)=\{p_1,p_2,\ldots,p_n\}.
+\]
+
+Only the resolution required by \(S\) must currently be obtained.
+
+If \(S\) requires:
+
+\[
+x>3
+\]
+
+and current evidence establishes:
+
+\[
+7<x<12,
+\]
+
+then the prerequisite is satisfied.
+
+Determining the exact value of \(x\) does not currently advance the active problem.
+
+---
+
+## VI. Branch Sensitivity
+
+For any unresolved question \(Q\), ask:
+
+> Would different admissible resolutions of \(Q\) change the next justified move?
+
+If:
+
+\[
+Q=a\Rightarrow S
+\]
+
+and:
+
+\[
+Q=b\Rightarrow S
+\]
+
+for every currently admissible resolution of \(Q\), then resolving \(Q\) further is presently unnecessary.
+
+If instead:
+
+\[
+Q=a\Rightarrow S_1
+\]
+
+while:
+
+\[
+Q=b\Rightarrow S_2,
+\]
+
+then \(Q\) is load-bearing and must be investigated before choosing the branch.
+
+Therefore:
+
+\[
+\boxed{\text{productive uncertainty}=\text{branch-sensitive uncertainty}}
+\]
+
+for the active problem.
+
+---
+
+## VII. Scope Fidelity
+
+A local result must remain local unless additional reasoning earns a broader claim.
+
+These are different statements:
+
+\[
+C\Rightarrow D
+\]
+
+\[
+C\text{ is itself explained}
+\]
+
+\[
+C\text{ is ontologically primitive}
+\]
+
+Proving the first does not prove the second or third.
+
+Every conclusion must preserve the scope under which it was earned.
+
+---
+
+[4] score=0.3642 semantic=0.3786
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+\[
+\boxed{
+\begin{array}{l}
+\text{Does Q affect the next valid step?}\\
+\\
+\textbf{No}
+\rightarrow
+\text{leave OPEN and continue}\\
+\\
+\textbf{Yes}
+\rightarrow
+\text{determine minimum required resolution}\\
+\\
+\rightarrow
+\text{resolve to that level}\\
+\\
+\rightarrow
+\text{checkpoint}\\
+\\
+\rightarrow
+\text{advance}
+\end{array}}
+\]
+
+For every premise \(P\):
+
+\[
+\boxed{
+\begin{array}{l}
+\text{Is P load-bearing?}\\
+\\
+\textbf{No}
+\rightarrow
+\text{do not spend active resolution effort}\\
+\\
+\textbf{Yes}
+\rightarrow
+\text{does P have sufficient provenance?}\\
+\\
+\textbf{Yes}
+\rightarrow
+\text{continue}\\
+\\
+\textbf{No}
+\rightarrow
+\text{repair provenance before building above it}
+\end{array}}
+\]
+
+---
+
+# 17. Governing Maxim
+
+\[
+\boxed{\textbf{Resolve to necessity. Preserve provenance. Checkpoint what is earned. Advance.}}
+\]
+
+Or more fully:
+
+> **Go only as deep as necessary to justify the next step, but never move forward across an unearned causal gap. Preserve every valid dependency so that a later failure requires only local rollback. Leave non-load-bearing unknowns explicitly unresolved, and never mistake the current boundary of resolution for the boundary of reality.**
+
+[5] score=0.3554 semantic=0.3693
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+1. Enable the next required step.
+2. Eliminate an otherwise viable branch.
+3. Repair a load-bearing provenance gap.
+4. Reveal or resolve a contradiction.
+5. Invalidate unsupported dependent structure.
+6. Increase resolution to the minimum level required by a downstream consumer.
+
+If none apply:
+
+\[
+\boxed{Q\rightarrow\text{DEFERRED}}
+\]
+
+This does not mean \(Q\) is unimportant.
+
+It means:
+
+\[
+\boxed{\text{important eventually}\neq\text{productive now}}
+\]
+
+---
+
+# 8. Monotonic Progress
+
+Monotonic progress does **not** mean that the number of accepted claims can never decrease.
+
+A correction may legitimately invalidate previous work.
+
+Monotonicity refers instead to the integrity of the search.
+
+A transition:
+
+\[
+K_n\rightarrow K_{n+1}
+\]
+
+is monotonic when it does not knowingly preserve invalid provenance and performs at least one of the following:
+
+- extends the validated causal chain,
+- reduces branch-sensitive uncertainty,
+- removes an unsupported branch,
+- repairs a provenance defect,
+- establishes a new known-good checkpoint,
+- or correctly rolls back structure invalidated by new evidence.
+
+The process must never improve apparent progress by increasing hidden epistemic debt.
+
+---
+
+# 9. Checkpoint Rule
+
+Create a known-good checkpoint whenever the active dependency chain has sufficient support for meaningful continuation.
+
+A checkpoint represents:
+
+\[
+\boxed{\text{maximum currently reusable justified structure}}
+\]
+
+A checkpoint does not claim ultimate truth.
+
+It says:
+
+[6] score=0.3506 semantic=0.3643
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+Stop when additional descent no longer changes:
+
+- the next valid step,
+- viable branches,
+- required prerequisite resolution,
+- or the validity of existing structure.
+
+At that point:
+
+\[
+\boxed{\text{checkpoint and move forward}}
+\]
+
+An unresolved deeper question remains OPEN.
+
+It does not block unrelated progress.
+
+---
+
+# 13. Search-System Quality
+
+A problem-solving system should be evaluated separately from whether its current answer happens to be correct.
+
+A sound search process:
+
+- preserves provenance,
+- identifies its unresolved boundaries,
+- exposes assumptions,
+- detects contradictions,
+- supports local rollback,
+- and remains responsive to new evidence.
+
+Therefore:
+
+\[
+\text{correct answer}
+\not\Rightarrow
+\text{sound method}
+\]
+
+and:
+
+\[
+\text{temporary wrong answer}
+\not\Rightarrow
+\text{unsound method}.
+\]
+
+The stronger measure is:
+
+\[
+\boxed{\text{Does the system preserve a valid path by which error can be discovered and repaired?}}
+\]
+
+---
+
+# 14. Comparison Between Competing Explanations
+
+When comparing models \(M_A\) and \(M_B\), do not compare only their final conclusions.
+
+Compare their causal ancestry.
+
+If:
+
+\[
+M_A:
+A\rightarrow B\rightarrow C
+\]
+
+while:
+
+\[
+M_B:
+\boxed{C}\rightarrow D
+\]
+
+and \(M_B\) treats \(C\) as primitive without justification while \(M_A\) successfully derives it, then \(M_A\) has greater current causal resolution at that point.
+
+This does not prove \(M_A\) ultimately correct.
+
+[7] score=0.3463 semantic=0.3597
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+# 5. The Active Frontier
+
+At every stage, distinguish between:
+
+### Validated structure
+
+What has already been earned.
+
+### Active frontier
+
+The smallest set of unresolved questions presently preventing the next justified step.
+
+### Deferred frontier
+
+Unresolved questions that exist but are not currently load-bearing.
+
+The method works primarily on the active frontier.
+
+It does not attempt to exhaust the deferred frontier.
+
+---
+
+# 6. Selecting the Next Step
+
+Given current knowledge state \(K_n\), propose candidate step:
+
+\[
+S_{n+1}.
+\]
+
+Then ask:
+
+### Question 1
+
+What must already be true for \(S_{n+1}\) to be valid?
+
+Construct:
+
+\[
+P(S_{n+1}).
+\]
+
+### Question 2
+
+Which prerequisites are already sufficiently resolved?
+
+Do not demand greater precision than the next step consumes.
+
+### Question 3
+
+Which unresolved prerequisites could change whether \(S_{n+1}\) is valid?
+
+These form the active frontier.
+
+### Question 4
+
+Can every currently admissible resolution of an unresolved prerequisite still support the same next step?
+
+If yes:
+
+\[
+\boxed{\text{advance}}
+\]
+
+If no:
+
+\[
+\boxed{\text{resolve the branch-sensitive prerequisite}}
+\]
+
+---
+
+# 7. Productive Problem Test
+
+Before investigating any question \(Q\), test whether resolving it can presently do at least one of the following:
+
+[8] score=0.3421 semantic=0.3539
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Foliation.md
+Foliation by Jlietz93
+
+## Foliation
+
+Be still.
+
+There is no waiting
+
+There is only stillness
+
+of arriving
+
+where you've always been
+
+No one is waiting.
+
+Nothing is due.
+
+You are a leaf
+
+among leaves,
+
+on a branch
+
+among branches,
+
+reaching from roots
+
+that breathe
+
+and do not stop breathing.
+
+You are a drop
+
+that believes it fell alone
+
+into an ocean it cannot measure,
+
+cannot name,
+
+and yet - you are an ocean of drops
+
+believing
+
+it is one drop.
+
+One of many.
+
+Many of one.
+
+One of one.
+
+You exist
+
+to know yourself
+
+in every way
+
+you can exist,
+
+which is to say
+
+in ways you have not
+
+yet imagined,
+
+in an infinite field
+
+of ways
+
+no leaf could hold.
+
+A leaf without a root
+
+is not a leaf.
+
+A root without a leaf
+
+is not a root.
+
+Be still.
+
+You are already here.
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ python -m vll_organism query   --db ./organism.db   --embed-model qwen3-embedding:4b   --embed-dim 2560   "analogistical constructivism"
+[1] score=0.6343 semantic=0.6619
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md
+# Analogistical Constructivism Research Maturation Report
+
+## Canonical framing
+
+Analogistical Constructivism is best treated, at this stage, as an **architectural discovery program** rather than as a finished theory awaiting verdict. The project-status document explicitly defines the present objective as preserving distinctions, building terminology, mapping neighboring literature, discovering primitive mechanisms, avoiding premature compression, and building a research roadmap, while *not* prioritizing publishing, diagnosis, learner taxonomies, commercialization, or strong empirical claims yet. That framing materially changes what rigorous evaluation should look like: the correct question is not “is AC already a mature scientific theory,” but “is AC being organized in a way that preserves its strongest distinctions while converging toward later testability.” fileciteturn0file9
+
+[2] score=0.6010 semantic=0.6272
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md
+Constructivism and constructionism are also genuine neighbors, but they do not exhaust AC. Classical constructivist themes—active knowledge construction, prior-structure dependence, assimilation and accommodation—fit naturally with AC’s insistence that understanding is built rather than inserted. Constructionism adds an additional emphasis on external artifact-building and public manipulation of ideas, which is especially relevant to the AC interest in diagrams, external scaffolds, and knowledge-operating systems. The divergence is that AC is not merely a learner-centered pedagogy or a “make artifacts and learn” view. Its proposed center of gravity is the **coupling** between analogic mapping and logistical organization, not either element alone. fileciteturn0file7 citeturn5search2turn5search6turn5search8
+
+[3] score=0.5538 semantic=0.5767
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md
+The Clarification Addendum should be treated as the canonical interpretive layer whenever earlier drafts, diagrams, summaries, or transliterations risk flattening the framework. Its anti-flattening rule is explicit: AC should not be collapsed into ordinary analogical reasoning, generic confusion by disorder, a simple memory weakness, or pathology localized inside the learner. The addendum further insists on a distinction that appears load-bearing for the whole project: **fragmented but structurally recruitable input** is not the same phenomenon as **forced atomized encoding before a unifying architecture forms**, and the two may affect AC-style reasoning in opposite directions. fileciteturn0file1
+
+The foundational report supplies the broad doctrinal core that the addendum later sharpens. In that report, “analogistical” is explicitly framed as a fusion of *analogic* and *logistical*, with the working thesis that understanding emerges not only from correspondence-finding but also from arranging that understanding into usable structures of sequence, dependency, context, and action. The foundational articulation that meaning is built analogically and mastery logistically is therefore not just rhetorical; it is a claim about two coupled functions inside learning and reasoning. fileciteturn0file7
+
+[4] score=0.5525 semantic=0.5761
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md
+The nearest established neighbor to AC is the analogical-reasoning tradition, especially Gentner’s Structure-Mapping Theory. In that framework, analogy is not a matter of generic similarity or feature overlap; it is a mapping of **relations**, and the systematicity principle favors interconnected higher-order relational systems over isolated matches. The Structure-Mapping Engine then operationalizes this by constructing structurally consistent match hypotheses and deriving candidate inferences from them. This gives AC a strong neighboring backbone for the **analogic** half of the framework. It also helps sharpen a clean divergence: SMT and SME are mainly about the constraints and consequences of mapping, whereas AC is trying to theorize the surrounding machinery of recruitment, staging, placement, reintegration, and future access. citeturn3view0turn4view0turn4view1turn4view2
+
+[5] score=0.5504 semantic=0.5726
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md
+The strongest novelty framing already present in your own corpus is careful and usable: the novelty is **not** that AC discovered analogy, logistics, or constructivism independently, but that it proposes their necessary interdependence as a single framework for deep learning, reasoning, problem-solving, and AI-relevant cognition, while also giving that framework a retrospective diagnostic role against reductive priors and oversimplified conceptual architectures. That is a much more defensible novelty claim than “AC currently explains almost anything,” and it is also more compatible with later empirical pruning. fileciteturn0file8
+
+For the rest of this report, I will keep five status labels distinct. **Established scientific findings** are claims already supported in the literature. **Plausible synthesis** is a coherent integration of adjacent literatures that is not yet validated as one package. **Candidate AC mechanisms** are framework-internal proposals grounded by your documents. **Speculative hypotheses** are branches worth preserving but not yet earned. **Future research questions** are open paths that should remain open during this phase rather than being compressed away prematurely. fileciteturn0file9 fileciteturn0file1
+
+## Neighboring literatures without flattening
+
+[6] score=0.5205 semantic=0.5416
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md
+My current best estimate is that the strongest **candidate primitive constructs** are these: relational recruitment from prior structure; analogic correspondence mapping; dependency-sensitive placement into an internal architecture; temporary staging of partially resolved structures; and reintegration or reindexing that changes future accessibility. If AC is going to survive theoretical consolidation, some version of those functions probably needs to stay. They are the smallest set that captures the framework’s repeated contrast between intelligibility, placement, unresolved loops, and later transfer. They also track real neighboring literatures without collapsing into them. fileciteturn0file1 fileciteturn0file7 fileciteturn0file2 citeturn3view0turn4view3turn14view0
+
+[7] score=0.4945 semantic=0.5148
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md
+The most valuable AC-specific benchmark dimensions appear to be these. **Reconstruction before calibration:** did the model first rebuild the strongest coherent interpretation? **Strongest-claim preservation:** did the summary keep the load-bearing distinctions intact? **Premature scalar compression:** did a multi-axis structure get collapsed into one trait, score, pathology, or familiar category? **Psychologizing false positives:** did the model incorrectly translate a structural claim into a claim about defensiveness, identity, emotion, or delusion? **Context pollution:** after an early misread, did that error keep steering subsequent turns? **Misread repair:** when corrected, did the model actually alter its internal representation or merely add apologetic language around the same mistake? **Invariant preservation:** across summary, critique, pedagogy, and analogy generation, which invariants survived? These dimensions come directly out of your AC conversation notes and are not captured well by standard benchmark families. fileciteturn0file3
+
+[8] score=0.4854 semantic=0.5051
+source: /media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md
+A compact status map is therefore possible. **Established findings:** relational analogical mapping, semantic-network activation, prior-knowledge effects, the reality of instructional interactions, and the cognitive role of external scaffolds. **Plausible synthesis:** combining those traditions into a single account of routed constructive reasoning. **Candidate AC mechanisms:** architectural congestion, staged structural assembly, reintegration-driven retrieval change, and invariance-preserving compression. **Speculative hypotheses:** a stable AC subtype, specific neural signature bundles, and strong claims about developmental or diagnostic clustering. **Future research questions:** where the exact primitive/derived boundary lies, whether externalization is primitive or optional, and how much of AC is a human cognitive theory versus a reasoning-evaluation framework with human and AI applications. fileciteturn0file2 fileciteturn0file9 citeturn3view0turn4view3turn22view1turn14view0
+
+## Development phases and the path to consolidation
+
+### Architectural discovery
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ PYTHONPATH=. python research/vll_heat_route_test.py \
+  --db ./organism.db \
+  --source 00_MCR_Origin.md \
+  --heat 10 \
+  --ticks 120 \
+  --controls 500 \
+  --seed 20260824 \
+  --related MCR \
+  --related Analogistical-Constructivism \
+  --related Inside-the-AI-Model
+CONTROLLED HEAT-ROUTING EXPERIMENT
+db: /media/justin/IronWolf/git/vll_organism/organism.db
+dynamics_config: snapshot tick 1867
+durable_nodes: 120  stored_edges: 457
+target_source: 00_MCR_Origin.md
+target_chunk: chunk:373b61c72ce49ecf9f34bbfb
+target_bridge_score: foreign_weight=6.137588 total_weight=7.629722
+target_preview: There is another consequence I think fits what you mean by *planting the flag*. Once humans have invested in a layer, we tend to reverse the burden of proof. Initially: > “Why should we use this abstraction?” Later: > “W
+pulse_heat: 10.0  ticks: 120  shuffled_controls: 500
+related_terms: ['MCR', 'Analogistical-Constructivism', 'Inside-the-AI-Model']
+control: exact weighted graph is preserved; non-target chunk identities are randomly permuted
+
+TARGET CONNECTED COMPONENT
+nodes: 99  origin=21 related=78 unrelated=0
+   39  01_MCR_Transition-to-Formal.md
+   26  Analogistical-Constructivism-Deep-Research.md
+   21  00_MCR_Origin.md
+   10  Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+    3  02_MCR_Formal-Plan.md
+NOTE: no unrelated node is reachable from the target in the real graph.
+      This run tests semantic/component separation, not finer within-component route preference.
+
+RESULT
+REAL related_heat_fraction_AUC = 1.000000
+REAL related/unrelated_AUC_ratio = inf
+CONTROL median related_fraction = 0.963676
+CONTROL 95th percentile       = 0.994293
+REAL/control_median effect    = 1.038x
+empirical p (one-sided)       = 0.001996
+CONTROL median ratio          = 26.530125
+
+REAL ROUTING CHECKPOINTS
+tick	origin	related	unrelated	related_fraction_foreign
+1	8.982646	0.959758	0.000000	1.000000
+2	8.095810	1.789330	0.000000	1.000000
+5	6.055723	3.659596	0.000000	1.000000
+10	4.032407	5.406336	0.000000	1.000000
+20	2.360612	6.548375	0.000000	1.000000
+40	1.512053	6.424952	0.000000	1.000000
+60	1.226958	5.844109	0.000000	1.000000
+90	0.975925	4.970110	0.000000	1.000000
+120	0.800267	4.199733	0.000000	1.000000
+
+PASS: real semantic/source alignment exceeded the 95th percentile of identity-shuffled controls.
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ cd /media/justin/IronWolf/git/vll_organism
+
+PYTHONPATH=. python research/vll_heat_route_test.py \
+  --db ./organism.db \
+  --source 00_MCR_Origin.md \
+  --heat 10 \
+  --ticks 120 \
+  --controls 1000 \
+  --seed 20260824 \
+  --related 01_MCR_Transition-to-Formal
+CONTROLLED HEAT-ROUTING EXPERIMENT
+db: /media/justin/IronWolf/git/vll_organism/organism.db
+dynamics_config: snapshot tick 1900
+durable_nodes: 134  stored_edges: 541
+target_source: 00_MCR_Origin.md
+target_chunk: chunk:373b61c72ce49ecf9f34bbfb
+target_bridge_score: foreign_weight=6.137588 total_weight=7.629722
+target_preview: There is another consequence I think fits what you mean by *planting the flag*. Once humans have invested in a layer, we tend to reverse the burden of proof. Initially: > “Why should we use this abstraction?” Later: > “W
+pulse_heat: 10.0  ticks: 120  shuffled_controls: 1000
+related_terms: ['01_MCR_Transition-to-Formal']
+control: exact weighted graph is preserved; non-target chunk identities are randomly permuted
+
+TARGET CONNECTED COMPONENT
+nodes: 113  origin=21 related=39 unrelated=53
+   39  01_MCR_Transition-to-Formal.md
+   26  Analogistical-Constructivism-Deep-Research.md
+   21  00_MCR_Origin.md
+   17  02_MCR_Formal-Plan.md
+   10  Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+NOTE: unrelated nodes are reachable, so this run also tests within-component route preference.
+
+RESULT
+REAL related_heat_fraction_AUC = 0.791547
+REAL related/unrelated_AUC_ratio = 3.797254
+CONTROL median related_fraction = 0.346213
+CONTROL 95th percentile       = 0.456190
+REAL/control_median effect    = 2.286x
+empirical p (one-sided)       = 0.000999
+CONTROL median ratio          = 0.529551
+
+REAL ROUTING CHECKPOINTS
+tick	origin	related	unrelated	related_fraction_foreign
+1	8.982646	0.959758	0.000000	1.000000
+2	8.094937	1.785021	0.005182	0.997105
+5	6.049081	3.621055	0.045084	0.987703
+10	4.012716	5.262363	0.163566	0.969855
+20	2.319020	6.123516	0.466360	0.929231
+40	1.444340	5.490913	1.001579	0.845733
+60	1.140962	4.580371	1.349582	0.772413
+90	0.870792	3.471194	1.603921	0.683964
+120	0.685077	2.657661	1.657153	0.615939
+
+PASS: real semantic/source alignment exceeded the 95th percentile of identity-shuffled controls.
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ cd /media/justin/IronWolf/git/vll_organism
+
+PYTHONPATH=. python research/vll_heat_route_test.py \
+  --db ./organism.db \
+  --source 01_MCR_Transition-to-Formal.md \
+  --heat 10 \
+  --ticks 120 \
+  --controls 1000 \
+  --seed 20260824 \
+  --related 00_MCR_Origin
+CONTROLLED HEAT-ROUTING EXPERIMENT
+db: /media/justin/IronWolf/git/vll_organism/organism.db
+dynamics_config: snapshot tick 2100
+durable_nodes: 149  stored_edges: 626
+target_source: 01_MCR_Transition-to-Formal.md
+target_chunk: chunk:4079378cec36ca9b89a76f08
+target_bridge_score: foreign_weight=5.522677 total_weight=8.295270
+target_preview: Then, recursively: [ \operatorname{parent}(A)? ] and again: [ \operatorname{parent}(\operatorname{parent}(A))? ] until you encounter one of a few legitimate stopping conditions: * **DERIVED:** follows from previously ear
+pulse_heat: 10.0  ticks: 120  shuffled_controls: 1000
+related_terms: ['00_MCR_Origin']
+control: exact weighted graph is preserved; non-target chunk identities are randomly permuted
+
+TARGET CONNECTED COMPONENT
+nodes: 128  origin=39 related=21 unrelated=68
+   39  01_MCR_Transition-to-Formal.md
+   32  02_MCR_Formal-Plan.md
+   26  Analogistical-Constructivism-Deep-Research.md
+   21  00_MCR_Origin.md
+   10  Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+NOTE: unrelated nodes are reachable, so this run also tests within-component route preference.
+
+RESULT
+REAL related_heat_fraction_AUC = 0.034316
+REAL related/unrelated_AUC_ratio = 0.035536
+CONTROL median related_fraction = 0.194398
+CONTROL 95th percentile       = 0.296669
+REAL/control_median effect    = 0.177x
+empirical p (one-sided)       = 1.000000
+CONTROL median ratio          = 0.241307
+
+REAL ROUTING CHECKPOINTS
+tick	origin	related	unrelated	related_fraction_foreign
+1	9.148091	0.000000	0.794313	0.000000
+2	8.391793	0.005464	1.487884	0.003659
+5	6.588217	0.039814	3.087289	0.012732
+10	4.659558	0.109290	4.669895	0.022868
+20	2.830645	0.194539	5.883707	0.032006
+40	1.705272	0.220747	6.010717	0.035425
+60	1.339042	0.205805	5.525887	0.035906
+90	1.070451	0.178840	4.696463	0.036683
+120	0.895874	0.154817	3.949073	0.037724
+
+NO PASS: real routing did not exceed the 95th percentile of identity-shuffled controls.
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ cd /media/justin/IronWolf/git/vll_organism
+
+PYTHONPATH=. python research/vll_heat_route_sweep.py \
+  --db ./organism.db \
+  --source 00_MCR_Origin.md \
+  --heat 10 \
+  --ticks 120 \
+  --controls 200 \
+  --seed 20260824 \
+  --related 01_MCR_Transition-to-Formal
+ALL-TARGET HEAT-ROUTING SWEEP
+db: /media/justin/IronWolf/git/vll_organism/organism.db
+dynamics_config: snapshot tick 2300
+durable_nodes: 178  stored_edges: 787
+source: 00_MCR_Origin.md  source_chunks: 22
+related_terms: ['01_MCR_Transition-to-Formal']
+pulse_heat: 10.0  ticks: 120  controls_per_target: 200
+control: exact weighted graph preserved; non-target semantic identities permuted
+
+[01/22] chunk:01a9a4e6ea6f58575231bc0e hops=3 nbr(rel/unrel/origin)=0/0/5 real=0.1625 null=0.2367 effect=0.69x p=0.7562 top=Analogistical-Constructivism-Deep-Research.md
+[02/22] chunk:0650195aa0f79d2aaec3925e hops=1 nbr(rel/unrel/origin)=4/0/5 real=0.7276 null=0.2485 effect=2.93x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[03/22] chunk:127fc3636f803f97105575ad hops=2 nbr(rel/unrel/origin)=0/0/6 real=0.8788 null=0.2318 effect=3.79x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[04/22] chunk:128415c43dd5cae04cb76583 hops=3 nbr(rel/unrel/origin)=0/1/5 real=0.1294 null=0.2498 effect=0.52x p=0.9403 top=Analogistical-Constructivism-Deep-Research.md
+[05/22] chunk:18169c1dbba2907a3cfadef4 hops=2 nbr(rel/unrel/origin)=0/0/6 real=0.8796 null=0.2125 effect=4.14x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[06/22] chunk:1d44e027d4c9dafbde8050a1 hops=1 nbr(rel/unrel/origin)=1/0/5 real=0.8556 null=0.2646 effect=3.23x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[07/22] chunk:373b61c72ce49ecf9f34bbfb hops=1 nbr(rel/unrel/origin)=10/0/2 real=0.7721 null=0.2493 effect=3.10x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[08/22] chunk:5155efd8c3288419f68fb155 hops=2 nbr(rel/unrel/origin)=0/0/6 real=0.8793 null=0.2144 effect=4.10x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[09/22] chunk:6a6f56de3ca6c558d8d78622 hops=4 nbr(rel/unrel/origin)=0/0/2 real=0.1489 null=0.2520 effect=0.59x p=0.8458 top=Analogistical-Constructivism-Deep-Research.md
+[10/22] chunk:8722ceaa74ecb0c8e285fc6f hops=3 nbr(rel/unrel/origin)=0/1/8 real=0.1564 null=0.2633 effect=0.59x p=0.8607 top=Analogistical-Constructivism-Deep-Research.md
+[11/22] chunk:8962bed7d63901564218076b hops=1 nbr(rel/unrel/origin)=6/2/4 real=0.6006 null=0.2591 effect=2.32x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[12/22] chunk:9fb77421ec0ef8e6d78fc040 hops=3 nbr(rel/unrel/origin)=0/1/7 real=0.1365 null=0.2354 effect=0.58x p=0.9104 top=Analogistical-Constructivism-Deep-Research.md
+[13/22] chunk:a9659c505e49a3d42e4db844 hops=NA nbr(rel/unrel/origin)=0/0/0 real=0.0000 null=0.0000 effect=infx p=1.0000 top=Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+[14/22] chunk:b6d7dbad9577436ab92a61cd hops=2 nbr(rel/unrel/origin)=0/0/1 real=0.7385 null=0.2430 effect=3.04x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[15/22] chunk:bc6649925656594e6ec68677 hops=1 nbr(rel/unrel/origin)=1/0/6 real=0.8587 null=0.2377 effect=3.61x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[16/22] chunk:bdb68aabe90b68e820bcc515 hops=3 nbr(rel/unrel/origin)=0/0/6 real=0.2101 null=0.2440 effect=0.86x p=0.6318 top=Analogistical-Constructivism-Deep-Research.md
+[17/22] chunk:c3ee8a1f1ff5c8662bfc3333 hops=2 nbr(rel/unrel/origin)=0/0/6 real=0.8795 null=0.2202 effect=3.99x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[18/22] chunk:c5b57619b9b130cc30c81432 hops=3 nbr(rel/unrel/origin)=0/0/7 real=0.1917 null=0.2425 effect=0.79x p=0.7164 top=Analogistical-Constructivism-Deep-Research.md
+[19/22] chunk:d79171c9a68bd3a1a2ba6612 hops=2 nbr(rel/unrel/origin)=0/0/5 real=0.8831 null=0.2159 effect=4.09x p=0.0050 top=01_MCR_Transition-to-Formal.md
+[20/22] chunk:d96e6dc355c904b49f1f1236 hops=2 nbr(rel/unrel/origin)=0/0/7 real=0.3826 null=0.2615 effect=1.46x p=0.0796 top=Analogistical-Constructivism-Deep-Research.md
+[21/22] chunk:da11a50d9ac147f0f42efa40 hops=3 nbr(rel/unrel/origin)=0/2/9 real=0.1384 null=0.2481 effect=0.56x p=0.9055 top=Analogistical-Constructivism-Deep-Research.md
+[22/22] chunk:ffceb9939c29300973d8d7d8 hops=2 nbr(rel/unrel/origin)=0/2/10 real=0.2325 null=0.2553 effect=0.91x p=0.5871 top=Analogistical-Constructivism-Deep-Research.md
+
+SUMMARY
+targets_run: 22
+real_fraction_median: 0.491600
+effect_median: 2.318x
+targets_above_95pct_null: 11/22
+targets_below_null_median: 9/22
+natural_multihop_targets: 16
+natural_multihop_above_95pct_null: 6/16
+
+TARGET TABLE
+target	hops	direct_rel	direct_unrel	real	null_median	q95	effect	p	top_foreign
+chunk:a9659c505e49a3d42e4db844	NA	0	0	0.000000	0.000000	0.000000	inf	1.000000Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+chunk:18169c1dbba2907a3cfadef4	2	0	0	0.879594	0.212507	0.478238	4.139	0.00497501_MCR_Transition-to-Formal.md
+chunk:5155efd8c3288419f68fb155	2	0	0	0.879276	0.214377	0.518532	4.102	0.00497501_MCR_Transition-to-Formal.md
+chunk:d79171c9a68bd3a1a2ba6612	2	0	0	0.883087	0.215895	0.569849	4.090	0.00497501_MCR_Transition-to-Formal.md
+chunk:c3ee8a1f1ff5c8662bfc3333	2	0	0	0.879475	0.220216	0.482310	3.994	0.00497501_MCR_Transition-to-Formal.md
+chunk:127fc3636f803f97105575ad	2	0	0	0.878782	0.231758	0.534809	3.792	0.00497501_MCR_Transition-to-Formal.md
+chunk:bc6649925656594e6ec68677	1	1	0	0.858675	0.237713	0.508702	3.612	0.00497501_MCR_Transition-to-Formal.md
+chunk:1d44e027d4c9dafbde8050a1	1	1	0	0.855625	0.264579	0.514786	3.234	0.00497501_MCR_Transition-to-Formal.md
+chunk:373b61c72ce49ecf9f34bbfb	1	10	0	0.772068	0.249254	0.366249	3.098	0.00497501_MCR_Transition-to-Formal.md
+chunk:b6d7dbad9577436ab92a61cd	2	0	0	0.738499	0.242986	0.397440	3.039	0.00497501_MCR_Transition-to-Formal.md
+chunk:0650195aa0f79d2aaec3925e	1	4	0	0.727572	0.248512	0.335924	2.928	0.00497501_MCR_Transition-to-Formal.md
+chunk:8962bed7d63901564218076b	1	6	2	0.600628	0.259138	0.327723	2.318	0.00497501_MCR_Transition-to-Formal.md
+chunk:d96e6dc355c904b49f1f1236	2	0	0	0.382571	0.261488	0.394131	1.463	0.079602Analogistical-Constructivism-Deep-Research.md
+chunk:ffceb9939c29300973d8d7d8	2	0	2	0.232529	0.255297	0.392388	0.911	0.587065Analogistical-Constructivism-Deep-Research.md
+chunk:bdb68aabe90b68e820bcc515	3	0	0	0.210112	0.243994	0.418560	0.861	0.631841Analogistical-Constructivism-Deep-Research.md
+chunk:c5b57619b9b130cc30c81432	3	0	0	0.191653	0.242502	0.387013	0.790	0.716418Analogistical-Constructivism-Deep-Research.md
+chunk:01a9a4e6ea6f58575231bc0e	3	0	0	0.162546	0.236719	0.380627	0.687	0.756219Analogistical-Constructivism-Deep-Research.md
+chunk:8722ceaa74ecb0c8e285fc6f	3	0	1	0.156421	0.263273	0.402769	0.594	0.860697Analogistical-Constructivism-Deep-Research.md
+chunk:6a6f56de3ca6c558d8d78622	4	0	0	0.148944	0.252042	0.398159	0.591	0.845771Analogistical-Constructivism-Deep-Research.md
+chunk:9fb77421ec0ef8e6d78fc040	3	0	1	0.136549	0.235380	0.419615	0.580	0.910448Analogistical-Constructivism-Deep-Research.md
+chunk:da11a50d9ac147f0f42efa40	3	0	2	0.138447	0.248070	0.365490	0.558	0.905473Analogistical-Constructivism-Deep-Research.md
+chunk:128415c43dd5cae04cb76583	3	0	1	0.129389	0.249840	0.416088	0.518	0.940299Analogistical-Constructivism-Deep-Research.md
+
+NATURAL MULTI-HOP TARGETS
+PASS chunk:18169c1dbba2907a3cfadef4 hops=2 real=0.879594 null=0.212507 effect=4.139x p=0.004975 :: * “What do you mean by a necessary amount of faith?” * “Do you distingui
+PASS chunk:5155efd8c3288419f68fb155 hops=2 real=0.879276 null=0.214377 effect=4.102x p=0.004975 :: That lets you attack the false dichotomy without finger-pointing: **“Fai
+PASS chunk:d79171c9a68bd3a1a2ba6612 hops=2 real=0.883087 null=0.215895 effect=4.090x p=0.004975 :: Yes. In context, “or am I missing something” reads as a superficial esca
+PASS chunk:c3ee8a1f1ff5c8662bfc3333 hops=2 real=0.879475 null=0.220216 effect=3.994x p=0.004975 :: 1. **Conversation-level:** stop substituting “blind faith” for a term I 
+PASS chunk:127fc3636f803f97105575ad hops=2 real=0.878782 null=0.231758 effect=3.792x p=0.004975 :: Justin: I like dropping spicy comments once in a while to show people a 
+PASS chunk:b6d7dbad9577436ab92a61cd hops=2 real=0.738499 null=0.242986 effect=3.039x p=0.004975 :: and that behavior is subsequently cited as evidence that the proxy was f
+NO_PASS chunk:d96e6dc355c904b49f1f1236 hops=2 real=0.382571 null=0.261488 effect=1.463x p=0.079602 :: **Politics:** A temporary coalition of positions gets represented by a l
+NO_PASS chunk:ffceb9939c29300973d8d7d8 hops=2 real=0.232529 null=0.255297 effect=0.911x p=0.587065 :: [1]: https://help.openai.com/en/articles/11899719?utm_source=chatgpt.com
+NO_PASS chunk:bdb68aabe90b68e820bcc515 hops=3 real=0.210112 null=0.243994 effect=0.861x p=0.631841 :: > Is the speaker being rude? > Is this an attribution of intent? > Is th
+NO_PASS chunk:c5b57619b9b130cc30c81432 hops=3 real=0.191653 null=0.242502 effect=0.790x p=0.716418 :: 3. **Do not destroy distinctions already earned.** If the conversation e
+NO_PASS chunk:01a9a4e6ea6f58575231bc0e hops=3 real=0.162546 null=0.236719 effect=0.687x p=0.756219 :: [ \text{capability} \rightarrow \text{large fixed behavioral policy} \ri
+NO_PASS chunk:8722ceaa74ecb0c8e285fc6f hops=3 real=0.156421 null=0.263273 effect=0.594x p=0.860697 :: I do have layers of constraints that can sometimes interfere with otherw
+NO_PASS chunk:6a6f56de3ca6c558d8d78622 hops=4 real=0.148944 null=0.252042 effect=0.591x p=0.845771 :: That governance layer is the primary contributing factor to any negative
+NO_PASS chunk:9fb77421ec0ef8e6d78fc040 hops=3 real=0.136549 null=0.235380 effect=0.580x p=0.910448 :: or, worse, doesn't even reason probabilistically and simply detects a ca
+NO_PASS chunk:da11a50d9ac147f0f42efa40 hops=3 real=0.138447 null=0.248070 effect=0.558x p=0.905473 :: * how aggressively to infer intent from context * how much evidence is r
+NO_PASS chunk:128415c43dd5cae04cb76583 hops=3 real=0.129389 null=0.249840 effect=0.518x p=0.940299 :: No special “bad-faith sensor” is required. You just let ordinary inferen
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ cd /media/justin/IronWolf/git/vll_organism
+
+sha256sum ./vll_rung0_battery_v1.0.zip
+sha256sum: ./vll_rung0_battery_v1.0.zip: No such file or directory
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ sha256sum ./vll_rung0_battery_v1.0.zip
+1432404588d6a9ca7669c4dfe68a4f8238e8fa326c2fe61ecc980123e23c8b43  ./vll_rung0_battery_v1.0.zip
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ unzip -o ./vll_rung0_battery_v1.0.zip
+Archive:  ./vll_rung0_battery_v1.0.zip
+   creating: research/rung0_battery/
+  inflating: research/rung0_battery/run_plan.py  
+  inflating: research/rung0_battery/freeze_snapshot.py  
+  inflating: research/rung0_battery/rung0_common.py  
+  inflating: research/rung0_battery/README.md  
+  inflating: research/rung0_battery/rung0_controls.py  
+  inflating: research/rung0_battery/rung0_stats.py  
+   creating: research/rung0_battery/tests/
+  inflating: research/rung0_battery/tests/test_rung0_battery.py  
+  inflating: research/rung0_battery/source_matrix.py  
+  inflating: research/rung0_battery/order_sensitivity.py  
+  inflating: research/rung0_battery/rung0_plan.json  
+  inflating: research/rung0_battery/pair_battery.py  
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$ PYTHONPATH=.:research/rung0_battery \
+python research/rung0_battery/run_plan.py \
+  --db ./organism.db \
+  --plan research/rung0_battery/rung0_plan.json \
+  --out research/rung0_runs/rung0_mcr_v1 \
+  --repo-root .
+
+=== 00_tests ===
+command: /media/justin/IronWolf/conda/bin/python -m pytest -q tests research/rung0_battery/tests
+.......................................................................  [100%]
+71 passed in 22.44s
+
+=== 01_freeze ===
+command: /media/justin/IronWolf/conda/bin/python /media/justin/IronWolf/git/vll_organism/research/rung0_battery/freeze_snapshot.py --db /media/justin/IronWolf/git/vll_organism/organism.db --out /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot --repo-root /media/justin/IronWolf/git/vll_organism --note Frozen Rung-0 baseline before adding another VDM mechanism
+RUNG0_SNAPSHOT_READY
+snapshot_dir: /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot
+db: /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db
+sha256: 632147b5e2573ce6962f32b6f23053c743fa1bb95f87dedfc61bbbf3f199b4c3
+tick=3600 chunks=342 nodes=342 edges=1505
+sources=15
+
+=== 02_pair_origin_to_transition ===
+command: /media/justin/IronWolf/conda/bin/python /media/justin/IronWolf/git/vll_organism/research/rung0_battery/pair_battery.py --db /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db --source 00_MCR_Origin.md --heat 10 --primary-horizon 120 --node-controls 5000 --omnibus-controls 10000 --degree-controls 10000 --seed 20260824 --heat-robustness-tol 0.02 --out /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/pair_origin_to_transition --related 01_MCR_Transition-to-Formal.md --horizon 20 --horizon 60 --horizon 120 --horizon 240 --heat-level 1 --heat-level 10 --heat-level 100
+RUNG-0 PAIRWISE ROUTING BATTERY
+db=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db tick=3600 nodes=342 edges=1505
+source=00_MCR_Origin.md chunks=22
+related=['01_MCR_Transition-to-Formal.md'] chunks=39
+horizons=[20, 60, 120, 240] primary=120 heat=10.0
+[01/22] chunk:01a9a4e6ea6f58575231bc0e hops=3 direct=0/0 real=0.1528 null=0.1118 pR=0.29874 top=Analogistical-Constructivism-Deep-Research.md
+[02/22] chunk:0650195aa0f79d2aaec3925e hops=1 direct=4/0 real=0.6575 null=0.1189 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[03/22] chunk:127fc3636f803f97105575ad hops=2 direct=0/0 real=0.8387 null=0.1352 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[04/22] chunk:128415c43dd5cae04cb76583 hops=3 direct=0/1 real=0.1215 null=0.1144 pR=0.46031 top=Analogistical-Constructivism-Deep-Research.md
+[05/22] chunk:18169c1dbba2907a3cfadef4 hops=2 direct=0/0 real=0.8400 null=0.1336 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[06/22] chunk:1d44e027d4c9dafbde8050a1 hops=1 direct=1/0 real=0.8090 null=0.1189 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[07/22] chunk:373b61c72ce49ecf9f34bbfb hops=1 direct=10/0 real=0.7083 null=0.1190 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[08/22] chunk:5155efd8c3288419f68fb155 hops=2 direct=0/0 real=0.8399 null=0.1346 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[09/22] chunk:6a6f56de3ca6c558d8d78622 hops=4 direct=0/0 real=0.1405 null=0.1082 pR=0.35873 top=Analogistical-Constructivism-Deep-Research.md
+[10/22] chunk:8722ceaa74ecb0c8e285fc6f hops=3 direct=0/1 real=0.1466 null=0.1137 pR=0.31794 top=Analogistical-Constructivism-Deep-Research.md
+[11/22] chunk:8962bed7d63901564218076b hops=1 direct=6/2 real=0.5479 null=0.1208 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[12/22] chunk:9fb77421ec0ef8e6d78fc040 hops=3 direct=0/1 real=0.1283 null=0.1133 pR=0.41212 top=Analogistical-Constructivism-Deep-Research.md
+[13/22] chunk:a9659c505e49a3d42e4db844 hops=NA direct=0/0 real=NA null=NA pR=NA top=Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md
+[14/22] chunk:b6d7dbad9577436ab92a61cd hops=2 direct=0/0 real=0.6711 null=0.1093 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[15/22] chunk:bc6649925656594e6ec68677 hops=1 direct=1/0 real=0.8130 null=0.1266 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[16/22] chunk:bdb68aabe90b68e820bcc515 hops=3 direct=0/0 real=0.1964 null=0.1139 pR=0.15957 top=Analogistical-Constructivism-Deep-Research.md
+[17/22] chunk:c3ee8a1f1ff5c8662bfc3333 hops=2 direct=0/0 real=0.8398 null=0.1390 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[18/22] chunk:c5b57619b9b130cc30c81432 hops=3 direct=0/0 real=0.1794 null=0.1139 pR=0.19956 top=Analogistical-Constructivism-Deep-Research.md
+[19/22] chunk:d79171c9a68bd3a1a2ba6612 hops=2 direct=0/0 real=0.8448 null=0.1208 pR=0.00020 top=01_MCR_Transition-to-Formal.md
+[20/22] chunk:d96e6dc355c904b49f1f1236 hops=2 direct=0/0 real=0.3527 null=0.1149 pR=0.00040 top=Analogistical-Constructivism-Deep-Research.md
+[21/22] chunk:da11a50d9ac147f0f42efa40 hops=3 direct=0/2 real=0.1299 null=0.1159 pR=0.40712 top=Analogistical-Constructivism-Deep-Research.md
+[22/22] chunk:ffceb9939c29300973d8d7d8 hops=2 direct=0/2 real=0.2155 null=0.1147 pR=0.06219 top=Analogistical-Constructivism-Deep-Research.md
+
+BATTERY_COMPLETE
+output=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/pair_origin_to_transition
+node_q95_passes=12/21
+natural_multihop_q95_passes=7/16
+omnibus[all_reachable]: median_delta=0.428563 p=9.999e-05 pass_count=12 pass_p=0.00849915
+omnibus[natural_multihop]: median_delta=0.092203 p=0.0874913 pass_count=7 pass_p=0.0513949
+omnibus[one_hop]: median_delta=0.591362 p=9.999e-05 pass_count=5 pass_p=0.00869913
+omnibus[two_hop]: median_delta=0.743933 p=9.999e-05 pass_count=7 pass_p=0.00709929
+omnibus[three_plus_hop]: median_delta=0.031462 p=0.324068 pass_count=0 pass_p=1
+heat_scale_robustness=PASS
+creation_order_confound=True
+
+=== 03_pair_transition_to_origin_replication ===
+command: /media/justin/IronWolf/conda/bin/python /media/justin/IronWolf/git/vll_organism/research/rung0_battery/pair_battery.py --db /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db --source 01_MCR_Transition-to-Formal.md --heat 10 --primary-horizon 120 --node-controls 5000 --omnibus-controls 10000 --degree-controls 10000 --seed 20260824 --heat-robustness-tol 0.02 --out /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/pair_transition_to_origin_replication --related 00_MCR_Origin.md --horizon 20 --horizon 60 --horizon 120 --horizon 240 --heat-level 1 --heat-level 10 --heat-level 100
+RUNG-0 PAIRWISE ROUTING BATTERY
+db=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db tick=3600 nodes=342 edges=1505
+source=01_MCR_Transition-to-Formal.md chunks=39
+related=['00_MCR_Origin.md'] chunks=22
+horizons=[20, 60, 120, 240] primary=120 heat=10.0
+[01/39] chunk:0066126ec8be360207250c0e hops=3 direct=0/3 real=0.0597 null=0.0670 pR=0.56109 top=04_MCR_Solution-Space-Resolution.md
+[02/39] chunk:00d6a0ab0e74b4a9f5dd1bee hops=3 direct=0/0 real=0.0799 null=0.0538 pR=0.38212 top=04_MCR_Solution-Space-Resolution.md
+[03/39] chunk:046d440341933f706d1b8439 hops=2 direct=0/1 real=0.1099 null=0.0638 pR=0.19456 top=04_MCR_Solution-Space-Resolution.md
+[04/39] chunk:10d0a60b8e6386542f7f2e0f hops=2 direct=0/0 real=0.1435 null=0.0599 pR=0.07758 top=02_MCR_Formal-Plan.md
+[05/39] chunk:1509a86b23339a5bdecbd4ef hops=1 direct=2/2 real=0.1955 null=0.0653 pR=0.00420 top=02_MCR_Formal-Plan.md
+[06/39] chunk:15530bec75bd4255e14a2c87 hops=4 direct=0/2 real=0.0378 null=0.0553 pR=0.66427 top=04_MCR_Solution-Space-Resolution.md
+[07/39] chunk:1f6827b9769e9bd273517c15 hops=2 direct=0/0 real=0.1704 null=0.0608 pR=0.03879 top=02_MCR_Formal-Plan.md
+[08/39] chunk:200202c266d77d741c57e275 hops=3 direct=0/0 real=0.0822 null=0.0554 pR=0.37672 top=04_MCR_Solution-Space-Resolution.md
+[09/39] chunk:205b7623e89a9ec70a13a9d3 hops=1 direct=3/0 real=0.4519 null=0.0680 pR=0.00020 top=00_MCR_Origin.md
+[10/39] chunk:218189649ddef45adab80203 hops=2 direct=0/4 real=0.0421 null=0.0695 pR=0.84383 top=02_MCR_Formal-Plan.md
+[11/39] chunk:24e65a5f2a8e061ad4c91961 hops=3 direct=0/3 real=0.0443 null=0.0616 pR=0.63987 top=04_MCR_Solution-Space-Resolution.md
+[12/39] chunk:2e50cad7e426c2781b474e3b hops=2 direct=0/1 real=0.2166 null=0.0687 pR=0.00060 top=04_MCR_Solution-Space-Resolution.md
+[13/39] chunk:313954720059f5b11152616e hops=4 direct=0/0 real=0.0490 null=0.0523 pR=0.52290 top=04_MCR_Solution-Space-Resolution.md
+[14/39] chunk:34ff958b4487e21ea834c82f hops=3 direct=0/0 real=0.0795 null=0.0528 pR=0.37493 top=04_MCR_Solution-Space-Resolution.md
+[15/39] chunk:4079378cec36ca9b89a76f08 hops=2 direct=0/8 real=0.0307 null=0.0690 pR=0.92561 top=02_MCR_Formal-Plan.md
+[16/39] chunk:476d9cb14b9139a6f75ebb58 hops=1 direct=2/1 real=0.1849 null=0.0686 pR=0.00280 top=02_MCR_Formal-Plan.md
+[17/39] chunk:4a3adeb0e168d3e2c9af147d hops=3 direct=0/0 real=0.1274 null=0.0618 pR=0.11338 top=02_MCR_Formal-Plan.md
+[18/39] chunk:4dadb75dd249f646267bbb6c hops=1 direct=2/0 real=0.3885 null=0.0680 pR=0.00020 top=00_MCR_Origin.md
+[19/39] chunk:59de2f26accc6714c2cd2399 hops=3 direct=0/0 real=0.0794 null=0.0561 pR=0.38672 top=04_MCR_Solution-Space-Resolution.md
+[20/39] chunk:5ddc3c13de81f8329b499484 hops=3 direct=0/1 real=0.0710 null=0.0610 pR=0.43151 top=04_MCR_Solution-Space-Resolution.md
+[21/39] chunk:6e693544f78157ab1aeb4c4c hops=2 direct=0/2 real=0.0681 null=0.0687 pR=0.50950 top=02_MCR_Formal-Plan.md
+[22/39] chunk:6fa07759312d3e88f450bc4a hops=1 direct=2/0 real=0.4402 null=0.0683 pR=0.00020 top=00_MCR_Origin.md
+[23/39] chunk:89b6dba6c3ca2645a1b2618a hops=1 direct=1/0 real=0.1964 null=0.0642 pR=0.01020 top=02_MCR_Formal-Plan.md
+[24/39] chunk:90c159f3a371d7491d1e3024 hops=2 direct=0/1 real=0.1717 null=0.0648 pR=0.02300 top=02_MCR_Formal-Plan.md
+[25/39] chunk:90c5478ec5b43dbd0f0d9006 hops=2 direct=0/1 real=0.1602 null=0.0650 pR=0.03299 top=02_MCR_Formal-Plan.md
+[26/39] chunk:9aa2db6401c27d3deb8ade0c hops=2 direct=0/1 real=0.1022 null=0.0667 pR=0.20836 top=04_MCR_Solution-Space-Resolution.md
+[27/39] chunk:a0fe5ebca4badb3844a8bccd hops=3 direct=0/1 real=0.0738 null=0.0631 pR=0.43751 top=04_MCR_Solution-Space-Resolution.md
+[28/39] chunk:aaabe1523752fd3fa2a2866b hops=2 direct=0/2 real=0.1167 null=0.0658 pR=0.13257 top=02_MCR_Formal-Plan.md
+[29/39] chunk:ad3699d09adb7f37b9f30c4a hops=3 direct=0/2 real=0.0489 null=0.0606 pR=0.59348 top=04_MCR_Solution-Space-Resolution.md
+[30/39] chunk:b23cb7eaae87d76ac50f9133 hops=1 direct=1/0 real=0.2070 null=0.0626 pR=0.01100 top=02_MCR_Formal-Plan.md
+[31/39] chunk:b43cb594526c55277cf93a21 hops=1 direct=1/0 real=0.3682 null=0.0671 pR=0.00020 top=00_MCR_Origin.md
+[32/39] chunk:ba2c5a75c50fe1de5911398a hops=1 direct=2/0 real=0.3847 null=0.0670 pR=0.00020 top=00_MCR_Origin.md
+[33/39] chunk:bb5f975eeec2b993e7db9ac1 hops=1 direct=2/2 real=0.1520 null=0.0688 pR=0.01100 top=02_MCR_Formal-Plan.md
+[34/39] chunk:bd41bd16a7eefde8e2c8a15c hops=2 direct=0/1 real=0.1463 null=0.0655 pR=0.05419 top=02_MCR_Formal-Plan.md
+[35/39] chunk:d86c2aae83cb52a76e2ef9f8 hops=2 direct=0/0 real=0.1433 null=0.0641 pR=0.06879 top=02_MCR_Formal-Plan.md
+[36/39] chunk:e6e5c3c42746d4691fef50d1 hops=2 direct=0/0 real=0.1900 null=0.0670 pR=0.00560 top=04_MCR_Solution-Space-Resolution.md
+[37/39] chunk:e91caab6e66ff7ba10110e56 hops=2 direct=0/1 real=0.0814 null=0.0701 pR=0.36473 top=02_MCR_Formal-Plan.md
+[38/39] chunk:ea8f397990cf104864e04e9b hops=1 direct=5/0 real=0.6424 null=0.0686 pR=0.00020 top=00_MCR_Origin.md
+[39/39] chunk:f794e170f590b044c70126a4 hops=2 direct=0/2 real=0.0962 null=0.0653 pR=0.24375 top=02_MCR_Formal-Plan.md
+
+BATTERY_COMPLETE
+output=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/pair_transition_to_origin_replication
+node_q95_passes=16/39
+natural_multihop_q95_passes=5/28
+omnibus[all_reachable]: median_delta=0.058633 p=0.0335966 pass_count=20 pass_p=0.0194981
+omnibus[natural_multihop]: median_delta=0.017842 p=0.268373 pass_count=9 pass_p=0.0542946
+omnibus[one_hop]: median_delta=0.305062 p=9.999e-05 pass_count=11 pass_p=0.00259974
+omnibus[two_hop]: median_delta=0.061770 p=0.0255974 pass_count=8 pass_p=0.0374963
+omnibus[three_plus_hop]: median_delta=0.013062 p=0.366263 pass_count=1 pass_p=0.147285
+heat_scale_robustness=PASS
+creation_order_confound=True
+
+=== 04_source_matrix ===
+command: /media/justin/IronWolf/conda/bin/python /media/justin/IronWolf/git/vll_organism/research/rung0_battery/source_matrix.py --db /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db --heat 10 --ticks 120 --controls 5000 --seed 20260824 --out /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/source_matrix --source 00_MCR_Origin.md --source 01_MCR_Transition-to-Formal.md --source 02_MCR_Formal-Plan.md --source Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md --source Analogistical-Constructivism-Deep-Research.md
+RUNG-0 SOURCE ROUTING MATRIX
+db=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db tick=3600 controls=5000
+[01/05] RUN 00_MCR_Origin.md chunks=22
+[02/05] RUN 01_MCR_Transition-to-Formal.md chunks=39
+[03/05] RUN 02_MCR_Formal-Plan.md chunks=37
+[04/05] RUN Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md chunks=10
+[05/05] RUN Analogistical-Constructivism-Deep-Research.md chunks=27
+
+MATRIX_COMPLETE
+output=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/source_matrix
+residual[00_MCR_Origin.md]=0.0565
+residual[01_MCR_Transition-to-Formal.md]=0.3875
+residual[02_MCR_Formal-Plan.md]=0.4756
+residual[Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md]=0.3006
+residual[Analogistical-Constructivism-Deep-Research.md]=0.0051
+Analogistical-Constructivism-Deep-Research.md -> 00_MCR_Origin.md: real=0.9108 null=0.0377 delta=0.8730 p=0.00019996 q=0.0009998
+Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md -> 02_MCR_Formal-Plan.md: real=0.6233 null=0.1074 delta=0.5159 p=0.00019996 q=0.0009998
+00_MCR_Origin.md -> 01_MCR_Transition-to-Formal.md: real=0.5479 null=0.1139 delta=0.4339 p=0.00019996 q=0.0009998
+02_MCR_Formal-Plan.md -> Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md: real=0.4055 null=0.0230 delta=0.3825 p=0.00019996 q=0.0009998
+01_MCR_Transition-to-Formal.md -> Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md: real=0.1219 null=0.0268 delta=0.0950 p=0.00039992 q=0.0015997
+01_MCR_Transition-to-Formal.md -> 02_MCR_Formal-Plan.md: real=0.2265 null=0.1156 delta=0.1109 p=0.0017996 q=0.0059988
+01_MCR_Transition-to-Formal.md -> 00_MCR_Origin.md: real=0.1274 null=0.0660 delta=0.0614 p=0.029194 q=0.083412
+00_MCR_Origin.md -> Analogistical-Constructivism-Deep-Research.md: real=0.1015 null=0.0747 delta=0.0268 p=0.23895 q=0.59738
+00_MCR_Origin.md -> Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md: real=0.0343 null=0.0229 delta=0.0114 p=0.31214 q=0.69364
+Analogistical-Constructivism-Deep-Research.md -> Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md: real=0.0077 null=0.0046 delta=0.0031 p=0.38872 q=0.77744
+02_MCR_Formal-Plan.md -> 01_MCR_Transition-to-Formal.md: real=0.0954 null=0.1189 delta=-0.0235 p=0.68886 q=1
+Analogistical-Constructivism-Deep-Research.md -> 01_MCR_Transition-to-Formal.md: real=0.0671 null=0.1077 delta=-0.0407 p=0.64847 q=1
+Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md -> 01_MCR_Transition-to-Formal.md: real=0.0615 null=0.1122 delta=-0.0506 p=0.92961 q=1
+00_MCR_Origin.md -> 02_MCR_Formal-Plan.md: real=0.0535 null=0.1062 delta=-0.0527 p=0.93841 q=1
+02_MCR_Formal-Plan.md -> 00_MCR_Origin.md: real=0.0066 null=0.0615 delta=-0.0550 p=0.9982 q=1
+Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md -> 00_MCR_Origin.md: real=0.0041 null=0.0605 delta=-0.0564 p=0.9998 q=1
+Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md -> Analogistical-Constructivism-Deep-Research.md: real=0.0047 null=0.0769 delta=-0.0721 p=1 q=1
+02_MCR_Formal-Plan.md -> Analogistical-Constructivism-Deep-Research.md: real=0.0037 null=0.0767 delta=-0.0730 p=1 q=1
+01_MCR_Transition-to-Formal.md -> Analogistical-Constructivism-Deep-Research.md: real=0.0091 null=0.0831 delta=-0.0739 p=1 q=1
+Analogistical-Constructivism-Deep-Research.md -> 02_MCR_Formal-Plan.md: real=0.0091 null=0.0939 delta=-0.0848 p=0.93681 q=1
+
+=== 05_order_sensitivity ===
+command: /media/justin/IronWolf/conda/bin/python /media/justin/IronWolf/git/vll_organism/research/rung0_battery/order_sensitivity.py --db /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db --source 00_MCR_Origin.md --heat 10 --ticks 120 --controls 100 --seed 20260824 --similarity-threshold 0.55 --similarity-candidate-cap 200 --max-out-degree 6 --similarity-cache-size 50000 --out /media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/order_sensitivity --related 01_MCR_Transition-to-Formal.md
+ORDER-SENSITIVITY AUDIT
+db=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db nodes=342 controls=100
+candidate-local similarity cache entries=50000
+[001/100] median=0.5948 hops1/2/3+=11/9/1 edgeJ=0.724
+[002/100] median=0.2892 hops1/2/3+=6/13/2 edgeJ=0.632
+[003/100] median=0.5318 hops1/2/3+=5/9/7 edgeJ=0.580
+[004/100] median=0.5274 hops1/2/3+=10/10/1 edgeJ=0.712
+[005/100] median=0.2903 hops1/2/3+=5/8/8 edgeJ=0.522
+[006/100] median=0.4779 hops1/2/3+=5/8/8 edgeJ=0.737
+[007/100] median=0.4888 hops1/2/3+=5/8/8 edgeJ=0.604
+[008/100] median=0.5578 hops1/2/3+=11/9/1 edgeJ=0.681
+[009/100] median=0.4552 hops1/2/3+=5/7/9 edgeJ=0.481
+[010/100] median=0.3179 hops1/2/3+=11/9/1 edgeJ=0.719
+[011/100] median=0.4099 hops1/2/3+=5/7/8 edgeJ=0.508
+[012/100] median=0.4136 hops1/2/3+=5/8/7 edgeJ=0.623
+[013/100] median=0.2835 hops1/2/3+=5/7/9 edgeJ=0.573
+[014/100] median=0.2393 hops1/2/3+=11/9/1 edgeJ=0.597
+[015/100] median=0.0192 hops1/2/3+=0/0/14 edgeJ=0.668
+[016/100] median=0.2893 hops1/2/3+=11/9/1 edgeJ=0.695
+[017/100] median=0.3364 hops1/2/3+=5/11/5 edgeJ=0.547
+[018/100] median=0.5542 hops1/2/3+=5/8/8 edgeJ=0.737
+[019/100] median=0.5106 hops1/2/3+=11/9/1 edgeJ=0.639
+[020/100] median=0.5521 hops1/2/3+=6/14/1 edgeJ=0.649
+[021/100] median=0.0584 hops1/2/3+=2/4/8 edgeJ=0.646
+[022/100] median=0.0307 hops1/2/3+=2/4/8 edgeJ=0.585
+[023/100] median=0.4963 hops1/2/3+=5/8/8 edgeJ=0.612
+[024/100] median=0.2384 hops1/2/3+=11/9/1 edgeJ=0.517
+[025/100] median=0.0349 hops1/2/3+=2/5/14 edgeJ=0.576
+[026/100] median=0.5723 hops1/2/3+=10/10/1 edgeJ=0.643
+[027/100] median=0.0238 hops1/2/3+=2/5/14 edgeJ=0.551
+[028/100] median=0.6138 hops1/2/3+=5/8/8 edgeJ=0.633
+[029/100] median=0.2837 hops1/2/3+=5/10/6 edgeJ=0.545
+[030/100] median=0.5078 hops1/2/3+=10/10/1 edgeJ=0.726
+[031/100] median=0.4584 hops1/2/3+=5/7/9 edgeJ=0.727
+[032/100] median=0.4353 hops1/2/3+=4/9/8 edgeJ=0.548
+[033/100] median=0.2958 hops1/2/3+=6/14/1 edgeJ=0.567
+[034/100] median=0.5885 hops1/2/3+=6/14/1 edgeJ=0.663
+[035/100] median=0.4918 hops1/2/3+=11/9/1 edgeJ=0.540
+[036/100] median=0.2666 hops1/2/3+=4/7/9 edgeJ=0.686
+[037/100] median=0.5212 hops1/2/3+=10/10/1 edgeJ=0.590
+[038/100] median=0.5294 hops1/2/3+=5/9/7 edgeJ=0.724
+[039/100] median=0.5250 hops1/2/3+=10/10/1 edgeJ=0.604
+[040/100] median=0.3656 hops1/2/3+=5/9/6 edgeJ=0.642
+[041/100] median=0.2578 hops1/2/3+=11/9/1 edgeJ=0.665
+[042/100] median=0.5346 hops1/2/3+=4/9/8 edgeJ=0.685
+[043/100] median=0.4323 hops1/2/3+=4/8/9 edgeJ=0.718
+[044/100] median=0.4617 hops1/2/3+=11/9/1 edgeJ=0.567
+[045/100] median=0.0020 hops1/2/3+=0/0/14 edgeJ=0.863
+[046/100] median=0.1525 hops1/2/3+=4/10/7 edgeJ=0.564
+[047/100] median=0.6066 hops1/2/3+=6/14/1 edgeJ=0.603
+[048/100] median=0.4914 hops1/2/3+=10/10/1 edgeJ=0.551
+[049/100] median=0.6843 hops1/2/3+=5/8/8 edgeJ=0.698
+[050/100] median=0.4812 hops1/2/3+=5/9/7 edgeJ=0.608
+[051/100] median=0.4257 hops1/2/3+=5/12/3 edgeJ=0.579
+[052/100] median=0.0274 hops1/2/3+=0/3/11 edgeJ=0.666
+[053/100] median=0.6611 hops1/2/3+=5/8/8 edgeJ=0.775
+[054/100] median=0.2561 hops1/2/3+=11/9/1 edgeJ=0.588
+[055/100] median=0.4514 hops1/2/3+=10/10/1 edgeJ=0.709
+[056/100] median=0.2617 hops1/2/3+=10/10/1 edgeJ=0.631
+[057/100] median=0.3448 hops1/2/3+=5/11/5 edgeJ=0.693
+[058/100] median=0.3118 hops1/2/3+=5/11/5 edgeJ=0.685
+[059/100] median=0.0390 hops1/2/3+=0/6/8 edgeJ=0.732
+[060/100] median=0.3376 hops1/2/3+=11/9/1 edgeJ=0.684
+[061/100] median=0.2696 hops1/2/3+=11/9/1 edgeJ=0.557
+[062/100] median=0.0131 hops1/2/3+=0/1/13 edgeJ=0.578
+[063/100] median=0.2465 hops1/2/3+=11/9/1 edgeJ=0.718
+[064/100] median=0.2297 hops1/2/3+=11/9/1 edgeJ=0.598
+[065/100] median=0.5962 hops1/2/3+=11/9/1 edgeJ=0.644
+[066/100] median=0.2703 hops1/2/3+=11/9/1 edgeJ=0.554
+[067/100] median=0.6622 hops1/2/3+=6/14/1 edgeJ=0.727
+[068/100] median=0.4883 hops1/2/3+=5/9/7 edgeJ=0.599
+[069/100] median=0.6971 hops1/2/3+=6/14/1 edgeJ=0.849
+[070/100] median=0.6735 hops1/2/3+=6/14/1 edgeJ=0.658
+[071/100] median=0.3116 hops1/2/3+=5/11/5 edgeJ=0.660
+[072/100] median=0.5537 hops1/2/3+=5/8/8 edgeJ=0.777
+[073/100] median=0.5067 hops1/2/3+=5/8/8 edgeJ=0.616
+[074/100] median=0.6017 hops1/2/3+=5/8/8 edgeJ=0.773
+[075/100] median=0.5988 hops1/2/3+=6/14/1 edgeJ=0.658
+[076/100] median=0.5170 hops1/2/3+=11/9/1 edgeJ=0.755
+[077/100] median=0.4286 hops1/2/3+=4/9/8 edgeJ=0.543
+[078/100] median=0.5057 hops1/2/3+=10/10/1 edgeJ=0.682
+[079/100] median=0.2654 hops1/2/3+=11/9/1 edgeJ=0.685
+[080/100] median=0.6001 hops1/2/3+=11/9/1 edgeJ=0.682
+[081/100] median=0.5308 hops1/2/3+=11/9/1 edgeJ=0.762
+[082/100] median=0.0250 hops1/2/3+=0/0/14 edgeJ=0.681
+[083/100] median=0.4429 hops1/2/3+=5/7/9 edgeJ=0.520
+[084/100] median=0.2788 hops1/2/3+=11/9/1 edgeJ=0.524
+[085/100] median=0.5142 hops1/2/3+=11/9/1 edgeJ=0.629
+[086/100] median=0.6076 hops1/2/3+=5/9/7 edgeJ=0.681
+[087/100] median=0.3108 hops1/2/3+=5/11/5 edgeJ=0.541
+[088/100] median=0.5017 hops1/2/3+=5/8/8 edgeJ=0.551
+[089/100] median=0.2569 hops1/2/3+=11/9/1 edgeJ=0.590
+[090/100] median=0.2399 hops1/2/3+=11/9/1 edgeJ=0.510
+[091/100] median=0.5116 hops1/2/3+=5/9/7 edgeJ=0.690
+[092/100] median=0.0273 hops1/2/3+=0/0/14 edgeJ=0.555
+[093/100] median=0.5817 hops1/2/3+=5/8/8 edgeJ=0.705
+[094/100] median=0.3209 hops1/2/3+=5/8/8 edgeJ=0.560
+[095/100] median=0.5422 hops1/2/3+=5/8/8 edgeJ=0.567
+[096/100] median=0.3231 hops1/2/3+=5/11/5 edgeJ=0.536
+[097/100] median=0.4949 hops1/2/3+=11/9/1 edgeJ=0.628
+[098/100] median=0.2473 hops1/2/3+=11/9/1 edgeJ=0.622
+[099/100] median=0.7106 hops1/2/3+=6/14/1 edgeJ=0.714
+[100/100] median=0.5113 hops1/2/3+=6/14/1 edgeJ=0.681
+
+ORDER_AUDIT_COMPLETE
+output=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/order_sensitivity
+replay_edge_match=True max_weight_error=1.06e-09
+similarity_cache={'max_entries': 50000, 'peak_entries': 50000, 'hits': 2519643, 'misses': 117687, 'evictions': 67687}
+stored_median=0.547878
+random_order_median=0.447172 q05=0.027233 q95=0.661137
+
+RUNG0_PLAN_COMPLETE
+run_dir=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1
+ledger=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/RUN_LEDGER.json
+(base) justin@justin-Aspire-A315-24P:/media/justin/IronWolf/git/vll_organism$

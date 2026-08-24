@@ -1,0 +1,58 @@
+{
+  "cells": [
+    {
+      "delta": 0.8730467582148638,
+      "destination": "/media/justin/IronWolf/git/vll_organism/corpus_drop/00_MCR_Origin.md",
+      "destination_basename": "00_MCR_Origin.md",
+      "null_median": 0.03770743734877074,
+      "null_q95": 0.2294038751518694,
+      "p_right": 0.0001999600079984003,
+      "real_median_foreign_share": 0.9107541955636345,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md",
+      "source_basename": "Analogistical-Constructivism-Deep-Research.md"
+    },
+    {
+      "delta": -0.040681474196967674,
+      "destination": "/media/justin/IronWolf/git/vll_organism/corpus_drop/01_MCR_Transition-to-Formal.md",
+      "destination_basename": "01_MCR_Transition-to-Formal.md",
+      "null_median": 0.1077454805128816,
+      "null_q95": 0.31442213154042686,
+      "p_right": 0.6484703059388123,
+      "real_median_foreign_share": 0.06706400631591393,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md",
+      "source_basename": "Analogistical-Constructivism-Deep-Research.md"
+    },
+    {
+      "delta": -0.08483642853513548,
+      "destination": "/media/justin/IronWolf/git/vll_organism/corpus_drop/02_MCR_Formal-Plan.md",
+      "destination_basename": "02_MCR_Formal-Plan.md",
+      "null_median": 0.09389407834992036,
+      "null_q95": 0.30626589171121965,
+      "p_right": 0.9368126374725055,
+      "real_median_foreign_share": 0.009057649814784872,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md",
+      "source_basename": "Analogistical-Constructivism-Deep-Research.md"
+    },
+    {
+      "delta": 0.00306328095013392,
+      "destination": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md",
+      "destination_basename": "Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md",
+      "null_median": 0.004642272061291948,
+      "null_q95": 0.13375813761637007,
+      "p_right": 0.3887222555488902,
+      "real_median_foreign_share": 0.0077055530114258685,
+      "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md",
+      "source_basename": "Analogistical-Constructivism-Deep-Research.md"
+    }
+  ],
+  "other_foreign_real_median": 0.005067945483610559,
+  "real_row": {
+    "/media/justin/IronWolf/git/vll_organism/corpus_drop/00_MCR_Origin.md": 0.9107541955636345,
+    "/media/justin/IronWolf/git/vll_organism/corpus_drop/01_MCR_Transition-to-Formal.md": 0.06706400631591393,
+    "/media/justin/IronWolf/git/vll_organism/corpus_drop/02_MCR_Formal-Plan.md": 0.009057649814784872,
+    "/media/justin/IronWolf/git/vll_organism/corpus_drop/Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md": 0.0077055530114258685
+  },
+  "source": "/media/justin/IronWolf/git/vll_organism/corpus_drop/Analogistical-Constructivism-Deep-Research.md",
+  "source_basename": "Analogistical-Constructivism-Deep-Research.md",
+  "targets_with_foreign_heat": 27
+}

@@ -1,0 +1,35 @@
+RUNG-0 SOURCE ROUTING MATRIX
+db=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/snapshot/organism.db tick=3600 controls=5000
+[01/05] RUN 00_MCR_Origin.md chunks=22
+[02/05] RUN 01_MCR_Transition-to-Formal.md chunks=39
+[03/05] RUN 02_MCR_Formal-Plan.md chunks=37
+[04/05] RUN Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md chunks=10
+[05/05] RUN Analogistical-Constructivism-Deep-Research.md chunks=27
+
+MATRIX_COMPLETE
+output=/media/justin/IronWolf/git/vll_organism/research/rung0_runs/rung0_mcr_v1/source_matrix
+residual[00_MCR_Origin.md]=0.0565
+residual[01_MCR_Transition-to-Formal.md]=0.3875
+residual[02_MCR_Formal-Plan.md]=0.4756
+residual[Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md]=0.3006
+residual[Analogistical-Constructivism-Deep-Research.md]=0.0051
+Analogistical-Constructivism-Deep-Research.md -> 00_MCR_Origin.md: real=0.9108 null=0.0377 delta=0.8730 p=0.00019996 q=0.0009998
+Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md -> 02_MCR_Formal-Plan.md: real=0.6233 null=0.1074 delta=0.5159 p=0.00019996 q=0.0009998
+00_MCR_Origin.md -> 01_MCR_Transition-to-Formal.md: real=0.5479 null=0.1139 delta=0.4339 p=0.00019996 q=0.0009998
+02_MCR_Formal-Plan.md -> Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md: real=0.4055 null=0.0230 delta=0.3825 p=0.00019996 q=0.0009998
+01_MCR_Transition-to-Formal.md -> Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md: real=0.1219 null=0.0268 delta=0.0950 p=0.00039992 q=0.0015997
+01_MCR_Transition-to-Formal.md -> 02_MCR_Formal-Plan.md: real=0.2265 null=0.1156 delta=0.1109 p=0.0017996 q=0.0059988
+01_MCR_Transition-to-Formal.md -> 00_MCR_Origin.md: real=0.1274 null=0.0660 delta=0.0614 p=0.029194 q=0.083412
+00_MCR_Origin.md -> Analogistical-Constructivism-Deep-Research.md: real=0.1015 null=0.0747 delta=0.0268 p=0.23895 q=0.59738
+00_MCR_Origin.md -> Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md: real=0.0343 null=0.0229 delta=0.0114 p=0.31214 q=0.69364
+Analogistical-Constructivism-Deep-Research.md -> Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md: real=0.0077 null=0.0046 delta=0.0031 p=0.38872 q=0.77744
+02_MCR_Formal-Plan.md -> 01_MCR_Transition-to-Formal.md: real=0.0954 null=0.1189 delta=-0.0235 p=0.68886 q=1
+Analogistical-Constructivism-Deep-Research.md -> 01_MCR_Transition-to-Formal.md: real=0.0671 null=0.1077 delta=-0.0407 p=0.64847 q=1
+Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md -> 01_MCR_Transition-to-Formal.md: real=0.0615 null=0.1122 delta=-0.0506 p=0.92961 q=1
+00_MCR_Origin.md -> 02_MCR_Formal-Plan.md: real=0.0535 null=0.1062 delta=-0.0527 p=0.93841 q=1
+02_MCR_Formal-Plan.md -> 00_MCR_Origin.md: real=0.0066 null=0.0615 delta=-0.0550 p=0.9982 q=1
+Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md -> 00_MCR_Origin.md: real=0.0041 null=0.0605 delta=-0.0564 p=0.9998 q=1
+Monotonic-Causal-Resolution-MCR_Problem-Solving-Method-v0.1.md -> Analogistical-Constructivism-Deep-Research.md: real=0.0047 null=0.0769 delta=-0.0721 p=1 q=1
+02_MCR_Formal-Plan.md -> Analogistical-Constructivism-Deep-Research.md: real=0.0037 null=0.0767 delta=-0.0730 p=1 q=1
+01_MCR_Transition-to-Formal.md -> Analogistical-Constructivism-Deep-Research.md: real=0.0091 null=0.0831 delta=-0.0739 p=1 q=1
+Analogistical-Constructivism-Deep-Research.md -> 02_MCR_Formal-Plan.md: real=0.0091 null=0.0939 delta=-0.0848 p=0.93681 q=1

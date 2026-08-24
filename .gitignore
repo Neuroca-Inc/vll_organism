@@ -1,0 +1,11 @@
+*.db
+*.db-shm
+*.db-wal
+*.db.writer.lock
+venv
+.venv
+.pytest_cache
+corpus_drop/*.txt
+corpus_drop/*.md
+__pycache__
+vll_organism.egg-info/*
