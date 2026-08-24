@@ -5,8 +5,8 @@ It is meant to stay running in the background, ingest changed files, maintain a 
 structure, continue low-cost endogenous dynamics while external embedding work is slow, and expose
 bounded retrieval without requiring a vector database or an LLM generation loop.
 
-The project borrows a **small set of useful dynamics** from the larger VDM_RT line of work. It is
-not a miniature VDM_RT runtime. Every live mechanism here has a direct job in this tool.
+The project borrows a **small set of useful dynamics** from the larger [VDM_RT](https://github.com/Neuroca-Inc/vdm_rt) line of work. It is
+not a miniature [VDM_RT](https://github.com/Neuroca-Inc/vdm_rt) runtime. Every live mechanism here has a direct job in this tool.
 
 ## Current invariants
 
