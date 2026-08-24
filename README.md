@@ -1,4 +1,4 @@
-# vll_organism
+![VLL Organism Github Banner](/docs/assets/vll-banner.png)
 
 `vll_organism` is a local, persistent knowledge organism for a folder of text/Markdown files.
 It is meant to stay running in the background, ingest changed files, maintain a sparse semantic
