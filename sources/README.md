@@ -1,8 +1,8 @@
 # VLL Corpus Sources
 
-This directory contains the reproducible source-ingestion pipeline used to build external text corpora for `vll_organism` research.
+This directory contains the reproducible external-corpus acquisition and cleanup pipeline used by `vll_organism` research.
 
-The pipeline separates three things deliberately:
+The generated data directories are disposable:
 
 ```text
 corpus_sources.tsv
@@ -10,80 +10,24 @@ corpus_sources.tsv
         v
 build_corpus.sh
         |
-        +--> corpus/                 raw downloaded sources
+        +--> corpus/
+        |      raw verified upstream sources
         |
-        +--> corpus_harvest/         cleaned text suitable for VLL ingestion
+        +--> corpus_harvest/
+        |      cleaned content suitable for VLL ingestion
+        |
+        +--> corpus_source_receipts.tsv
+        |      provenance/integrity receipts for raw sources
         |
         +--> corpus_harvest_report.tsv
-                                     audit of every keep/reject decision
+               audit of every harvest keep/reject decision
 ```
 
-`corpus/` is the raw source cache. `corpus_harvest/` is the curated semantic corpus.
+`corpus/` is the reproducible raw-source cache.
+
+`corpus_harvest/` is generated output. It may be deleted at any time; the next run reconstructs it from `corpus/`.
 
 Do not feed `corpus/` directly into VLL.
-
-## Why this exists
-
-Text repositories contain a lot of material that is technically text but is poor knowledge-corpus material:
-
-- `404.md`
-- READMEs and contribution instructions
-- licenses and changelogs
-- site templates
-- navigation indexes
-- build metadata
-- configuration files
-- JavaScript/CSS/assets
-- empty frontmatter pages
-- generated or malformed markup
-
-The corpus builder downloads source material first, then applies a conservative cleanup pass so VLL receives content-bearing prose, formal material, grammar definitions, and other structurally useful text rather than repository/site machinery.
-
-The cleanup is intentionally auditable. Nothing is silently discarded without a row in `corpus_harvest_report.tsv`.
-
----
-
-## Files
-
-### `corpus_sources.tsv`
-
-Extensible source manifest.
-
-Schema:
-
-```text
-type<TAB>name<TAB>url
-```
-
-Supported source types:
-
-- `git` — shallow-clone a Git repository
-- `file` — download one file over HTTP(S)
-
-Example:
-
-```text
-git	open_music_theory	https://github.com/openmusictheory/openmusictheory.github.io.git
-file	rfc9293_tcp.txt	https://www.rfc-editor.org/rfc/rfc9293.txt
-```
-
-Lines beginning with `#` and blank lines are ignored.
-
-Add new sources to this file. The harvest script does not need to be modified when the manifest grows.
-
-### `build_corpus.sh`
-
-Downloads or updates every source in the manifest and rebuilds the curated harvest.
-
-Default outputs:
-
-```text
-corpus/
-corpus_harvest/
-corpus_harvest_report.tsv
-```
-
----
 
 ## Requirements
 
@@ -93,9 +37,10 @@ Required:
 bash
 git
 python3
+sha256sum
 ```
 
-One of:
+For online acquisition, one of:
 
 ```text
 curl
@@ -104,40 +49,132 @@ wget
 
 No third-party Python packages are required.
 
----
-
 ## Quick start
 
-From the repository:
+From `vll_organism/sources/`:
 
 ```bash
-cd sources
 chmod +x build_corpus.sh
 ./build_corpus.sh
 ```
 
-The script processes each manifest entry sequentially.
+For an offline integrity/harvest replay using already-downloaded raw sources:
 
-For `git` entries:
+```bash
+OFFLINE=1 ./build_corpus.sh
+```
 
-- missing repositories are shallow-cloned with `--depth 1`;
-- existing Git checkouts are updated with `git pull --ff-only`;
-- a non-Git path occupying the requested destination is treated as an error.
+## Source manifest
 
-For `file` entries:
+`corpus_sources.tsv` is tab-separated:
 
-- non-empty existing files are reused;
-- missing files are downloaded;
-- partial downloads use a `.part` file and are renamed only after success;
-- downloads retry transient failures.
+```text
+type<TAB>name<TAB>url
+```
 
-After acquisition finishes, `corpus_harvest/` is rebuilt from scratch from the current contents of `corpus/`.
+Supported types:
 
----
+```text
+git
+file
+```
 
-## What gets harvested
+Example:
 
-The cleanup pass currently accepts content-bearing files with these extensions:
+```text
+git	open_music_theory	https://github.com/openmusictheory/openmusictheory.github.io.git
+file	rfc9293_tcp.txt	https://www.rfc-editor.org/rfc/rfc9293.txt
+```
+
+Blank lines and lines beginning with `#` are ignored.
+
+Add sources to the manifest. The builder does not need to be edited when the list grows.
+
+## Raw-source verification
+
+Every online run verifies the raw source layer before harvesting.
+
+### Standalone files
+
+Standalone URLs are downloaded to a temporary file on every online run.
+
+The temporary download is compared against:
+
+- the current local copy;
+- the previous source receipt.
+
+This detects:
+
+```text
+missing local source
+local corruption/modification
+upstream content change
+manifest URL change
+```
+
+A verified or repaired file is then recorded in `corpus_source_receipts.tsv`.
+
+### Git repositories
+
+Existing Git sources are treated as generated caches.
+
+Before updating, the script:
+
+1. verifies the configured origin URL;
+2. runs Git object-integrity checks;
+3. restores tracked files to `HEAD`;
+4. removes untracked generated debris;
+5. performs a shallow fast-forward update.
+
+If the source cache is corrupt, it is recloned from the manifest URL.
+
+The receipt records:
+
+- resolved `HEAD` commit;
+- SHA-256 of `git archive HEAD`;
+- byte count of that archive stream.
+
+This gives each repository both a Git-native revision identity and a content fingerprint.
+
+## `corpus_source_receipts.tsv`
+
+Columns:
+
+```text
+type
+name
+url
+resolved_revision
+sha256
+bytes
+verified_at_utc
+action
+```
+
+Typical actions include:
+
+```text
+DOWNLOADED
+CLONED
+VERIFIED
+UPSTREAM_CHANGED
+REPAIRED_LOCAL
+RECLONED
+SOURCE_URL_CHANGED
+OFFLINE_VERIFIED
+```
+
+The receipt is the provenance/integrity record for the raw corpus used to construct the current harvest.
+
+For publication-grade experiments, preserve this file with the experimental results.
+
+## Clean harvest
+
+`corpus_harvest/` is rebuilt from scratch on every run.
+
+This is intentional. Missing, stale, manually edited, or partially deleted harvest files cannot become authoritative. The builder removes the old harvest and regenerates it from the verified raw corpus.
+
+The cleaner accepts content-bearing sources such as:
 
 ```text
 .txt
@@ -162,77 +199,39 @@ The cleanup pass currently accepts content-bearing files with these extensions:
 .peg
 ```
 
-This list is deliberately narrower than "all text files."
+### OpenStax routing and textbook modules
 
-Formats such as JSON, YAML, TOML, lockfiles, configuration files, source code, CSS, and JavaScript are not admitted merely because they are readable text.
+OpenStax bundle repositories use their XML metadata as an authoritative table of contents.
 
-### Markdown
-
-The cleaner removes:
-
-- YAML frontmatter
-- HTML comments
-- Jekyll/Liquid block tags
-- Jekyll/Liquid expression tags
-
-It also rejects short Markdown files that are primarily navigation/link indexes.
-
-### HTML / XHTML
-
-The cleaner extracts visible text and suppresses content inside common non-semantic containers such as:
+The builder follows this chain:
 
 ```text
-script
-style
-svg
-nav
-footer
-header
+META-INF/books.xml
+        ->
+collections/<book>.collection.xml
+        ->
+<col:module document="m#####">
+        ->
+modules/m#####/index.cnxml
 ```
 
-The harvested output receives an additional `.txt` suffix to avoid collisions and make the transformation explicit.
+The routing files are **control data**, not VLL corpus content.
 
-Example:
+The builder therefore:
 
-```text
-chapter.html
-    ->
-chapter.html.txt
-```
+1. parses `META-INF/books.xml`;
+2. follows every declared collection `href`;
+3. extracts every referenced module ID;
+4. verifies that `modules/<id>/index.cnxml` exists locally;
+5. admits only those referenced module bodies;
+6. excludes `META-INF/`, `collections/`, media, covers, and unreferenced/orphan modules from `corpus_harvest/`.
 
-### XML / CNXML
+A referenced module that is missing from the cloned repository is a hard build failure. The script does not silently produce an incomplete textbook.
 
-XML and OpenStax CNXML are parsed and reduced to textual content while preserving element text order.
+The Git clone already retrieves the module tree. The collection manifests determine **which modules constitute the declared books**.
 
-Malformed XML falls back to tag removal rather than being automatically accepted as raw markup.
 
-Harvested XML/CNXML output also receives a `.txt` suffix.
-
-### TeX / LaTeX
-
-TeX comments are removed.
-
-Equations and TeX commands are retained because mathematical and formal structure can be useful to VLL.
-
-### Grammar files
-
-Files such as:
-
-```text
-.gram
-.grammar
-.ebnf
-.bnf
-.peg
-```
-
-are treated as structural artifacts rather than prose. They use a separate minimum-size rule instead of the normal prose-word threshold.
-
----
-
-## Automatic rejection rules
-
-Repository and site machinery is excluded before semantic cleanup.
+### Repository/site machinery excluded
 
 Common excluded directories include:
 
@@ -240,8 +239,7 @@ Common excluded directories include:
 .git/
 .github/
 .gitlab/
-.idea/
-.vscode/
+META-INF/
 node_modules/
 vendor/
 target/
@@ -250,9 +248,6 @@ build/
 __pycache__/
 .venv/
 venv/
-.tox/
-.pytest_cache/
-coverage/
 assets/
 images/
 img/
@@ -267,25 +262,58 @@ _sass/
 Common excluded files include:
 
 ```text
-404.md
-404.html
+404*
 README*
 LICENSE*
 LICENCE*
 COPYING*
 CONTRIBUTING*
 CODE_OF_CONDUCT*
-SECURITY.md
+SECURITY*
 CHANGELOG*
-CHANGES.md
+CHANGES*
 AUTHORS*
 CONTRIBUTORS*
 CITATION*
+mimetype
 ```
 
-A file that survives path filtering can still be rejected after cleanup.
+These are rejected because being textual is not sufficient for semantic-corpus admission.
 
-Normal prose-like sources must contain at least:
+### Content cleanup
+
+Markdown:
+
+- YAML frontmatter is removed;
+- HTML comments are removed;
+- Jekyll/Liquid directives are removed;
+- Markdown URLs are stripped while retaining visible link text;
+- short navigation/link indexes are rejected.
+
+HTML/XHTML:
+
+- visible text is extracted;
+- script/style/SVG/navigation/header/footer content is suppressed.
+
+XML/CNXML:
+
+- element text is extracted in document order;
+- malformed XML falls back to conservative tag removal.
+
+TeX/LaTeX:
+
+- comments are removed;
+- equations and formal commands are retained.
+
+Grammar formats:
+
+- `.gram`, `.grammar`, `.ebnf`, `.bnf`, and `.peg` are treated as structural artifacts rather than prose.
+
+Exact duplicate cleaned content is admitted only once to prevent repository duplication from artificially weighting retrieval.
+
+## Harvest admission thresholds
+
+Normal prose-like material must contain at least:
 
 ```text
 300 cleaned characters
@@ -293,30 +321,19 @@ Normal prose-like sources must contain at least:
 180 alphabetic characters
 ```
 
-Grammar artifacts must contain at least:
+Grammar artifacts use a separate minimum:
 
 ```text
 120 cleaned characters
 ```
 
-The cleaner also rejects:
+The objective is not maximum file count.
 
-- binary/NUL-containing files
-- files that are not valid UTF-8
-- very small cleaned artifacts
-- short Markdown navigation/link indexes
+The objective is a corpus containing enough semantic, procedural, mathematical, grammatical, or relational structure to be useful to VLL.
 
-The goal is not to maximize file count. It is to keep sources that contain enough semantic or relational structure to be useful to the organism.
+## `corpus_harvest_report.tsv`
 
----
-
-## Audit report
-
-Every run writes:
-
-```text
-corpus_harvest_report.tsv
-```
+Every raw file receives a KEEP or REJECT decision.
 
 Columns:
 
@@ -330,207 +347,134 @@ bytes_out
 words
 ```
 
-Example:
+Examples:
 
 ```text
-REJECT	open_music_theory/404.md		excluded repository/site file: 404.md	...
-KEEP	open_music_theory/romanNumeralIntroduction.md	open_music_theory/romanNumeralIntroduction.md	content-bearing source	...
+REJECT  open_music_theory/404.md
+        excluded repository/site file: 404.md
+
+REJECT  openstax_biology/META-INF/container.xml
+        excluded directory: META-INF
+
+KEEP    ...
+        content-bearing source
 ```
 
-Use this report when tuning the cleanup rules.
+If a useful file is rejected, improve the general cleanup rule rather than manually copying it into `corpus_harvest/`.
 
-If a useful source is rejected, prefer improving a general rule in `build_corpus.sh` rather than manually copying the file into the harvest.
-
-Likewise, if junk survives, add a general exclusion or content test instead of deleting the harvested copy by hand.
+If junk survives, add a general exclusion/content rule rather than deleting the generated output by hand.
 
 That keeps corpus construction reproducible.
 
----
+## Preserve source boundaries
 
-## Adding a source
+Do not concatenate the harvest into one giant file before VLL ingestion.
 
-Add one row to `corpus_sources.tsv`.
+Relative paths preserve provenance and allow experiments to measure:
 
-### Repository
+- cross-document edges;
+- source-to-source transport;
+- bridge chunks;
+- source routing matrices;
+- same-source versus cross-source activation.
 
-```text
-git	my_source	https://github.com/example/project.git
-```
+## Do not encode benchmark labels
 
-The repository will appear under:
+The organism should not be told which documents are intended structural analogues.
 
-```text
-corpus/my_source/
-```
-
-Accepted text within it will be mirrored under:
-
-```text
-corpus_harvest/my_source/
-```
-
-### Individual file
-
-```text
-file	my_reference.txt	https://example.org/reference.txt
-```
-
-It will appear as:
-
-```text
-corpus/my_reference.txt
-corpus_harvest/my_reference.txt
-```
-
-if it passes cleanup.
-
-Then rerun:
-
-```bash
-./build_corpus.sh
-```
-
-No script edit is required.
-
----
-
-## Custom paths
-
-The manifest can be supplied as the first argument:
-
-```bash
-./build_corpus.sh my_sources.tsv
-```
-
-Output locations can be overridden with environment variables:
-
-```bash
-CORPUS_DIR=/tmp/vll-corpus \
-HARVEST_DIR=/tmp/vll-harvest \
-HARVEST_REPORT=/tmp/vll-harvest-report.tsv \
-./build_corpus.sh corpus_sources.tsv
-```
-
----
-
-## Current source mix
-
-The supplied manifest intentionally spans unrelated domains so VLL experiments can distinguish topical similarity from relational or structural similarity.
-
-It currently includes material from:
-
-- TCP, SMTP, and DNS protocol specifications
-- CPython parser/compiler documentation and PEG grammar
-- formal logic
-- music theory
-- Rust language semantics
-- Git history/provenance
-- chemistry
-- biology
-- university physics
-- historical engineering texts
-- general science writing
-- narrative fiction
-
-This diversity is deliberate.
-
-For experiments involving missing elements, wrong order, wrong attachment, causal ancestry, closure, state transitions, dependency structure, or cross-domain analogy, a heterogeneous corpus is more informative than a collection of documents all written about the same research vocabulary.
-
----
-
-## Corpus-use guidance
-
-### Preserve source boundaries
-
-Do not concatenate the harvest into one giant file before ingestion.
-
-The relative paths retained in `corpus_harvest/` provide useful source provenance and allow downstream experiments to measure:
-
-- cross-document edges
-- source-to-source transport
-- bridge chunks
-- source routing matrices
-- same-source versus cross-source activation
-
-### Do not encode benchmark labels into the corpus
-
-For structural-retrieval experiments, the organism should not be told that two documents are intended analogues.
-
-Avoid adding metadata such as:
+Avoid metadata such as:
 
 ```text
 problem_17 -> solution_17
-same_relation = true
 analogue_of = ...
+same_relation = true
 ```
 
-Those labels belong to the evaluator, not the organism.
+Those labels belong to the evaluator.
 
-### Keep raw and curated data separate
+## Why the corpus is heterogeneous
 
-`corpus/` exists so source acquisition is reproducible and cleanup decisions can be revisited.
+The supplied manifest intentionally spans unrelated domains:
 
-`corpus_harvest/` is disposable and deterministic: every run recreates it from `corpus/`.
+- TCP, SMTP, DNS;
+- formal logic;
+- parser/compiler grammar;
+- music theory;
+- Git history/provenance;
+- chemistry;
+- biology;
+- physics;
+- engineering;
+- narrative prose.
 
----
+For VLL experiments, this allows topical similarity to compete against relations such as:
 
-## Git repository policy
+```text
+missing element
+wrong ordering
+wrong attachment
+causal ancestry
+closure
+state transition
+dependency structure
+cross-domain analogy
+```
 
-The scripts and manifest are intended to be committed.
+A homogeneous corpus would make those experiments much less discriminating.
 
-The downloaded corpora normally should not be.
+## Git policy
 
-Recommended `.gitignore` entries:
+Commit the source pipeline:
+
+```text
+sources/README.md
+sources/build_corpus.sh
+sources/corpus_sources.tsv
+```
+
+Normally do not commit generated upstream content:
 
 ```gitignore
 sources/corpus/
 sources/corpus_harvest/
+sources/corpus_source_receipts.tsv
 sources/corpus_harvest_report.tsv
 ```
 
-This avoids:
-
-- bloating the repository;
-- duplicating upstream projects;
-- accidentally redistributing material under incompatible terms;
-- committing generated harvest output.
-
-Users can reproduce the local corpus by running:
-
-```bash
-cd sources
-./build_corpus.sh
-```
+For a published experiment, preserve the receipts/report with the experimental artifact even if they are not kept in the main Git history.
 
 Each upstream source remains governed by its own license and terms.
 
----
+## Custom paths
 
-## Reproducibility boundary
+```bash
+./build_corpus.sh another_manifest.tsv
+```
 
-The manifest fixes **where source material comes from**, but most Git entries currently follow the upstream repository's latest default branch because they are shallow-cloned without pinning a commit.
+or:
 
-Therefore two runs performed at different dates may not produce byte-identical corpora.
+```bash
+CORPUS_DIR=/tmp/corpus \
+HARVEST_DIR=/tmp/harvest \
+SOURCE_RECEIPTS=/tmp/source_receipts.tsv \
+HARVEST_REPORT=/tmp/harvest_report.tsv \
+./build_corpus.sh
+```
 
-For publication-grade experiments, record at least:
+## Authority chain
 
-- the date of acquisition;
-- Git commit hashes for repository sources;
-- checksums for downloaded standalone files;
-- the resulting `corpus_harvest_report.tsv`.
+The intended authority chain is:
 
-A future manifest revision can add optional pinned revisions/checksums if exact corpus reconstruction becomes an experimental requirement.
+```text
+manifest + upstream source
+        ->
+verified corpus/
+        ->
+cleaning rules
+        ->
+generated corpus_harvest/
+```
 
----
+`corpus_harvest/` is never authoritative.
 
-## Design principle
-
-The source pipeline follows one simple rule:
-
-> **Raw text availability is not sufficient for corpus admission.**
-
-The raw layer preserves upstream material.
-
-The harvest layer admits content that has enough semantic, formal, procedural, or relational structure to be useful to VLL.
-
-The audit report preserves the boundary between them.
+The raw source receipts make missing, corrupted, changed, or updated inputs visible before the VLL corpus is rebuilt.

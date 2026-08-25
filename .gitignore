@@ -12,3 +12,5 @@ vll_organism.egg-info/*
 
 sources/corpus/*
 sources/corpus_harvest/*
+sources/corpus_source_receipts.tsv
+sources/corpus_harvest_report.tsv
