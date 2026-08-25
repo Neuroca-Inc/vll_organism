@@ -1,0 +1,101 @@
+what else has the same failure mode as an unclosed quotation
+
+find something that is unrelated in subject but has the same structural defect
+
+what other thing becomes unstable because one complementary part is absent
+
+find two things that should be semantically unrelated but behave the same way
+
+what elsewhere in memory has the same shape but different nouns
+
+show me a relationship that survived a complete change of domain
+
+find an example where vocabulary changes but dependency structure stays the same
+
+what is structurally analogous without being topically similar
+
+find the closest structural neighbor that shares almost no subject matter
+
+what two memories are far apart semantically but close in causal structure
+
+what elsewhere behaves like a process that can continue locally but can never become complete because one thing never showed up
+
+find an example from another subject where everything present can be valid and the problem is what is absent
+
+what two unrelated things fail for the same reason even though none of their components are alike
+
+find something whose defect is defined by the absence of its partner rather than damage to what remains
+
+where else does an apparently small omission prevent closure of the whole
+
+find a case in another domain where the existing pieces are not the error
+
+what becomes impossible because something that should complete a relation never appears
+
+find two memories that would almost never occur in the same textbook but instantiate the same dependency
+
+what is the most distant example of the same unresolved pattern
+
+find an analogy whose similarity exists in the relationships and not in the objects
+
+A bridge is intact from both shores, but the center span was never installed. Where have I seen this kind of situation before?
+
+A bridge has every span, but two middle sections were installed in reverse order. Where have I seen this kind of situation before?
+
+A bridge is complete, but one center span is attached to the wrong pier. Where have I seen this kind of situation before?
+
+A machine has gears A, B, C, and D. Gear C was never installed. What does this remind you of elsewhere in memory?
+
+A machine has gears A, B, C, and D. Gear C is installed before gear B instead of after it. What does this remind you of elsewhere in memory?
+
+A machine has gears A, B, C, and D. Gear C is driven by A when it should be driven by B. What does this remind you of elsewhere in memory?
+
+
+
+
+A drelk has every voss, but two middle narns were pelked in sovar glim. Where have I seen this kind of situation before?
+
+A drelk has four narns. One narn was not pelked. Where have I seen this kind of situation before?
+
+A drelk has four narns. Two narns were pelked before one another in the wrong sequence. Where have I seen this kind of situation before?
+
+A drelk has four narns. One narn was pelked to the wrong voss. Where have I seen this kind of situation before?
+
+A bridge has every span, but two middle sections were installed in reverse order.
+
+Q hfslrgk xqi kpkfc inqy, fzo ctw usrrgk ikdostyi vkhk syicoqqkr sy hkpkhik thrkh.
+
+abcdefghijklmnopqrstuvwxyz
+qwertyuiopasdfghjklzxcvbnm
+
+A dax has four parts. The third part is absent.
+
+A dax has four parts. The third part precedes the second.
+
+A dax has four parts. The third part belongs to the first.
+
+Where have I seen this kind of situation before?
+
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "J rghlox eja xkxgi avjs, rnz zfb whllpx axqzhbsa fxgx hsazjppxl hs gxkxgax bglxg. Fexgx ejkx H axxs zeha dhsl bm ahznjzhbs rxmbgx?"
+
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "J rghlox ha hszjqz mgbw rbze aebgxa, rnz zex qxszxg avjs fja sxkxg hsazjppxl. Fexgx ejkx H axxs zeha dhsl bm ahznjzhbs rxmbgx?"
+
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "J rghlox ha qbwvpxzx, rnz bsx qxszxg avjs ha jzzjqexl zb zex fgbso vhxg. Fexgx ejkx H axxs zeha dhsl bm ahznjzhbs rxmbgx?"
+
+cipher B:
+T cdupbz mti zxzdn ihty, cfr rlg wuppoz izvrugyi lzdz uyirtoozp uy dzxzdiz gdpzd. Lmzdz mtxz U izzy rmui euyp gk iurftrugy czkgdz?
+
+cipher C:
+X bqoviu kxm usuqj mexd, bzn nar povvhu mufnordm auqu odmnxhhuv od qusuqmu rqvuq. Akuqu kxsu O muud nkom wodv rg monzxnord bugrqu?

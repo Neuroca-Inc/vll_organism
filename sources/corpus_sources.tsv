@@ -1,0 +1,23 @@
+# type	name	url
+# type: git | file
+# name: destination directory/file name under corpus/
+# url: clone/download URL
+
+git	open_music_theory	https://github.com/openmusictheory/openmusictheory.github.io.git
+git	open_logic_project	https://github.com/OpenLogicProject/OpenLogic.git
+git	rust_reference	https://github.com/rust-lang/reference.git
+git	pro_git	https://github.com/progit/progit2.git
+git	openstax_chemistry	https://github.com/openstax/osbooks-chemistry-bundle.git
+git	openstax_biology	https://github.com/openstax/osbooks-biology-bundle.git
+git	openstax_university_physics	https://github.com/openstax/osbooks-university-physics-bundle.git
+
+file	rfc9293_tcp.txt	https://www.rfc-editor.org/rfc/rfc9293.txt
+file	rfc5321_smtp.txt	https://www.rfc-editor.org/rfc/rfc5321.txt
+file	rfc1035_dns.txt	https://www.rfc-editor.org/rfc/rfc1035.txt
+file	cpython_parser.md	https://raw.githubusercontent.com/python/cpython/main/InternalDocs/parser.md
+file	cpython_compiler.md	https://raw.githubusercontent.com/python/cpython/main/InternalDocs/compiler.md
+file	python.gram	https://raw.githubusercontent.com/python/cpython/main/Grammar/python.gram
+file	asce_tunnel_engineering.txt	https://www.gutenberg.org/ebooks/42149.txt.utf-8
+file	baldwin_locomotives.txt	https://www.gutenberg.org/ebooks/39329.txt.utf-8
+file	scientific_american_1871.txt	https://www.gutenberg.org/ebooks/19180.txt.utf-8
+file	sherlock_holmes.txt	https://www.gutenberg.org/cache/epub/1661/pg1661.txt

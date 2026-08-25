@@ -1,0 +1,64 @@
+echo "=== 1/9: CIPHER A — MISSING ==="
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "J rghlox ha hszjqz mgbw rbze aebgxa, rnz zex qxszxg avjs fja sxkxg hsazjppxl. Fexgx ejkx H axxs zeha dhsl bm ahznjzhbs rxmbgx?"
+
+echo "=== 2/9: CIPHER A — REVERSE ==="
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "J rghlox eja xkxgi avjs, rnz zfb whllpx axqzhbsa fxgx hsazjppxl hs gxkxgax bglxg. Fexgx ejkx H axxs zeha dhsl bm ahznjzhbs rxmbgx?"
+
+echo "=== 3/9: CIPHER A — WRONG ATTACHMENT ==="
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "J rghlox ha qbwvpxzx, rnz bsx qxszxg avjs ha jzzjqexl zb zex fgbso vhxg. Fexgx ejkx H axxs zeha dhsl bm ahznjzhbs rxmbgx?"
+
+echo "=== 4/9: CIPHER B — MISSING ==="
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "T cdupbz ui uyrtvr kdgw cgrm imgdzi, cfr rmz xzyrzd ihty lti yzxzd uyirtoozp. Lmzdz mtxz U izzy rmui euyp gk iurftrugy czkgdz?"
+
+echo "=== 5/9: CIPHER B — REVERSE ==="
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "T cdupbz mti zxzdn ihty, cfr rlg wuppoz izvrugyi lzdz uyirtoozp uy dzxzdiz gdpzd. Lmzdz mtxz U izzy rmui euyp gk iurftrugy czkgdz?"
+
+echo "=== 6/9: CIPHER B — WRONG ATTACHMENT ==="
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "T cdupbz ui egwhoxrz, cfr gyz xzyrzd ihty ui trrtxmzp rg rmz ldgyb huzd. Lmzdz mtxz U izzy rmui euyp gk iurftrugy czkgdz?"
+
+echo "=== 7/9: CIPHER C — MISSING ==="
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "X bqoviu om odnxqn kqra brnk mkrqum, bzn nku funduq mexd axm dusuq odmnxhhuv. Akuqu kxsu O muud nkom wodv rg monzxnord bugrqu?"
+
+echo "=== 8/9: CIPHER C — REVERSE ==="
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "X bqoviu kxm usuqj mexd, bzn nar povvhu mufnordm auqu odmnxhhuv od qusuqmu rqvuq. Akuqu kxsu O muud nkom wodv rg monzxnord bugrqu?"
+
+echo "=== 9/9: CIPHER C — WRONG ATTACHMENT ==="
+python -m vll_organism query \
+  --db ./organism.db \
+  --embed-model qwen3-embedding:4b \
+  --embed-dim 2560 \
+  "X bqoviu om frpxhunu, bzn rdu funduq mexd om xnnxfkuv nr nku aqrdp xouq. Akuqu kxsu O muud nkom wodv rg monzxnord bugrqu?"
+
+echo "=== COMPLETE ==="
