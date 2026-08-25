@@ -479,23 +479,38 @@ class Organism:
             self.storage.set_meta("watch_folder_ok", "1")
 
         perturbed = 0
-        for name in sorted(os.listdir(folder)):
-            path = os.path.join(folder, name)
-            if not os.path.isfile(path):
-                continue
-            mtime = os.path.getmtime(path)
-            if self._known_files.get(path) == mtime:
-                continue
-            try:
-                result = self.perturb_file(path)
-            except Exception:
-                logger.exception("Unexpected error perturbing %s -- retrying next scan", path)
-                continue
-            if result.retry_required:
-                continue
-            self._known_files[path] = mtime
-            if result:
-                perturbed += 1
+
+        for root, dirs, files in os.walk(folder, followlinks=False):
+            dirs.sort()
+            files.sort()
+
+            for name in files:
+                path = os.path.join(root, name)
+
+                if not os.path.isfile(path):
+                    continue
+
+                mtime = os.path.getmtime(path)
+                if self._known_files.get(path) == mtime:
+                    continue
+
+                try:
+                    result = self.perturb_file(path)
+                except Exception:
+                    logger.exception(
+                        "Unexpected error perturbing %s -- retrying next scan",
+                        path,
+                    )
+                    continue
+
+                if result.retry_required:
+                    continue
+
+                self._known_files[path] = mtime
+
+                if result:
+                    perturbed += 1
+
         return perturbed
 
     def watch_forever(self, folder: str, poll_interval_s: float = 5.0) -> None:
