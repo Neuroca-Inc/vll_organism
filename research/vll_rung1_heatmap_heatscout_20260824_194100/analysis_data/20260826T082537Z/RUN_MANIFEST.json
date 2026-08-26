@@ -1,0 +1,243 @@
+{
+  "command": "research/vll_rung1_heatmap_heatscout_20260824_194100/scripts/run_rung1.py",
+  "critical_repo_files": [
+    {
+      "exists": true,
+      "path": "pyproject.toml",
+      "sha256": "445558bcd4df46530e41693f1e6b299667867b04827a7271cb2b91332d1b35a2"
+    },
+    {
+      "exists": true,
+      "path": "vll_organism/dynamics.py",
+      "sha256": "bbf0920ec341a0d0aa9b107158d95c02a0dea95edd9fd34f0bbcd5cdddd68057"
+    },
+    {
+      "exists": true,
+      "path": "vll_organism/graph.py",
+      "sha256": "4d7395c8c39dadc3360ace33b54ad96ee52e68125f2544817760d64926bf1924"
+    },
+    {
+      "exists": true,
+      "path": "vll_organism/storage.py",
+      "sha256": "45cda7bad049e46a2e27f80a3e105407d7e30330d6d41f7276183ef38c8be3c7"
+    }
+  ],
+  "plan_sha256": "f0411958c1f7085c84805137998d150c51f7cf9465ad3be5ad8c20db42d375f3",
+  "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]",
+  "repo_root": "/media/justin/IronWolf/git/vll_organism",
+  "run_files": [
+    {
+      "path": "EXPERIMENT_PLAN.json",
+      "sha256": "f0411958c1f7085c84805137998d150c51f7cf9465ad3be5ad8c20db42d375f3",
+      "size": 3034
+    },
+    {
+      "path": "FINDINGS.md",
+      "sha256": "51b3750a039bae00ad8076972c256944cedb6a848ac7c069cb9f51251dfd6458",
+      "size": 258
+    },
+    {
+      "path": "PACKAGE_INPUT_MANIFEST.json",
+      "sha256": "6dfc0fc71fb57e26e39e4db4b11a82d0d8ea3168b53990fa2414395a9f7eca2a",
+      "size": 5060
+    },
+    {
+      "path": "PACKAGE_INPUT_SHA256SUMS.txt",
+      "sha256": "53c3c52d96ddecc74d42adc3f2dad74eaacc40442f0d7f279709090e72989e72",
+      "size": 2837
+    },
+    {
+      "path": "README.md",
+      "sha256": "6773570c38c4f9c1d4698a1281037717703c7d0cbab128f36b43fa1abe22b649",
+      "size": 5815
+    },
+    {
+      "path": "analysis_data/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "analysis_data/20260826T082537Z/frozen_organism.db",
+      "sha256": "f579ba0457dfe8502977536477a3317e4aa4ca7a9a8c7fce214649698cdd2497",
+      "size": 110010368
+    },
+    {
+      "path": "analysis_data/20260826T082537Z/gate_results.json",
+      "sha256": "13d3952555383896d7cc6489531f0202e0028b176df923fce696b7dde11bae5f",
+      "size": 3161
+    },
+    {
+      "path": "analysis_data/20260826T082537Z/heatmap_signal_targets.csv",
+      "sha256": "d68281c21fee6ec2f9a04cd8cf9c2b43bfe221c020ffcfcbadc1f941b790ec9c",
+      "size": 7266
+    },
+    {
+      "path": "analysis_data/20260826T082537Z/synthetic_choice_gate.csv",
+      "sha256": "f7809c90a801e0d773ba0e19fe43ab20a508243c0be5a51fdd52b357f84e64de",
+      "size": 455
+    },
+    {
+      "path": "analysis_data/20260826T082537Z/target_summary.csv",
+      "sha256": "328a2227c6e4af4b7c2ea383cf963d340794ce85bdd3b0085985416240d74ade",
+      "size": 18125
+    },
+    {
+      "path": "analysis_data/20260826T082537Z/walker_trials.csv.gz",
+      "sha256": "db756f6d6d9dc1ec8b52e983a17fe757238d47dacc2348f901d7160cb0c3ebda",
+      "size": 2208841
+    },
+    {
+      "path": "docs/20260826T082537Z_RESULTS.md",
+      "sha256": "bba74a8fbce56cfd1423f94e1deeebfc5eca80f965b3d5a0289521cc1a1a31e3",
+      "size": 1849
+    },
+    {
+      "path": "docs/PACKAGE_BUILD_VERIFICATION.md",
+      "sha256": "e885ae27b1c77d05d172fbd9dbc7be2f83921ab7652ca6b3209b06824071cfd6",
+      "size": 1271
+    },
+    {
+      "path": "docs/RUNG1A_PROTOCOL.md",
+      "sha256": "b4e2d6081b449991f517deceb54bfd6c56327f04ce962414d9b24583b169bc8f",
+      "size": 629
+    },
+    {
+      "path": "docs/reference/CORTEX_SOURCE_PROVENANCE.json",
+      "sha256": "424a8052845708f50299b4e4d396cdc427918f656c865b77a18608fc13cc2e14",
+      "size": 1912
+    },
+    {
+      "path": "docs/reference/Void-Walker-Rules.md",
+      "sha256": "41fc74e8a9c4d99fdeb897b3c6162a180390e51403c8bd9c5277d0f20dd52c96",
+      "size": 33351
+    },
+    {
+      "path": "docs/reference/Void-Walkers.md",
+      "sha256": "4ab6f18d9b8be910174e66e8b8a9bba8ecb819dc1d5d8e087a6e383a8fa43687",
+      "size": 15297
+    },
+    {
+      "path": "figures/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "figures/20260826T082537Z/heatmap_signal_gate.svg",
+      "sha256": "1f1d12fc01099f9d9570f777f1ada690784aa61ddd4dc3ba907a0acebacf4842",
+      "size": 3852
+    },
+    {
+      "path": "figures/20260826T082537Z/semantic_secondary.svg",
+      "sha256": "7a2a74c55cda2dbe734fc5b896bcb934d281d08c717b068248e82b7a07546bbd",
+      "size": 3104
+    },
+    {
+      "path": "figures/20260826T082537Z/static_attention_gain.svg",
+      "sha256": "aa490bcf744e06c8f1f482ea55fcd3412cce48bb2d83094a226cd4005f6226f3",
+      "size": 8734
+    },
+    {
+      "path": "figures/20260826T082537Z/synthetic_choice_law.svg",
+      "sha256": "eefdb67d387de329e8bd1318ce88ea7bbc9856c74e3dc6f30756e920a48fdf2a",
+      "size": 1162
+    },
+    {
+      "path": "scripts/run_rung1.py",
+      "sha256": "c541ee334e515858a7b38fd4c6d4b4e083706fe9ad911831013f66e2508ce88e",
+      "size": 21120
+    },
+    {
+      "path": "scripts/rung1_figures.py",
+      "sha256": "d19b31d3a71cef4102bb2e7efdbb880bad0e6d1471cb168861d5e92f4460c735",
+      "size": 4894
+    },
+    {
+      "path": "scripts/rung1_io.py",
+      "sha256": "52c0fb6b11da0f360efa9ed5c309655ac3540ab588b39be254040964d94031de",
+      "size": 6989
+    },
+    {
+      "path": "scripts/rung1_mechanism.py",
+      "sha256": "8be782a30efa5092ccc1ed436d89876d4df0e25bf590d6dd20addfd5a15cff83",
+      "size": 10455
+    },
+    {
+      "path": "scripts/rung1_stats.py",
+      "sha256": "5e5007d0e7ee4facd4e3bfb425d600cb0ca82b88be239eb16a529f577b6491bb",
+      "size": 2566
+    },
+    {
+      "path": "scripts/tests/test_rung1_package.py",
+      "sha256": "a2fa7bfe7ff7493db7f08494d471c60e0f78d26ba301ff58e1c3a8ec46897185",
+      "size": 2269
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/cortex/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/cortex/maps/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/cortex/maps/base_decay_map.py",
+      "sha256": "50b84644428d2217bb02780ed1ed85404abde33b9917dd82843205eff223c2f8",
+      "size": 5121
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/cortex/maps/heatmap.py",
+      "sha256": "0f96877c173ba56a855d0f9a0b0c1e8ff49a825941a5bf60c72b04fdb43da21e",
+      "size": 2950
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/cortex/void_walkers/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/cortex/void_walkers/base.py",
+      "sha256": "a6420123527f091dec1903488bad4e0039e3e60c411ccc59ffeb63feaf25198c",
+      "size": 8808
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/cortex/void_walkers/void_heat_scout.py",
+      "sha256": "f5662d84cdaa96e97f547304c5605e08da4dbcf7b2694ba603fe3118e1fb6d28",
+      "size": 9072
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/proprioception/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "scripts/vendor/vdm_rt/core/proprioception/events.py",
+      "sha256": "30139927ee817b86ac7ac67e9b7326d4d01137bac7d9bd44a4ba0fd9d5e053ff",
+      "size": 972
+    },
+    {
+      "path": "trace_logs/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "trace_logs/20260826T082537Z.log",
+      "sha256": "05f089c6cfde97f170e3b1914fa202ce48f25cc62bd030c96af4e0e1d6433bcd",
+      "size": 8767
+    }
+  ],
+  "run_stamp": "20260826T082537Z",
+  "schema_version": 1,
+  "source_db": "/media/justin/IronWolf/git/vll_organism/organism.db"
+}

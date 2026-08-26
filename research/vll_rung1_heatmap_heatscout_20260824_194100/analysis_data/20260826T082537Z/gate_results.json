@@ -1,0 +1,88 @@
+{
+  "claim": "Under matched bounded local work, correctly situated HeatMap information lets HeatScout select destinations with greater authoritative V0 heat than (a) the same HeatScout with no heat information and (b) the same HeatMap values shuffled onto the wrong graph positions.",
+  "db_unchanged": true,
+  "directions": {
+    "origin_to_transition": {
+      "delta_real_blind_median": 0.43620620818296185,
+      "delta_real_shuffled_median": 0.4364355521014879,
+      "eligible_target_fraction": 0.9545454545454546,
+      "eligible_targets": 21,
+      "signal_gate_pass": true,
+      "signal_informative_fraction": 0.9090909090909091,
+      "signal_median_spearman": 0.9535714285714285,
+      "targets": 22
+    },
+    "transition_to_origin": {
+      "delta_real_blind_median": 0.44292637102967936,
+      "delta_real_shuffled_median": 0.43979419815717175,
+      "eligible_target_fraction": 1.0,
+      "eligible_targets": 39,
+      "signal_gate_pass": true,
+      "signal_informative_fraction": 1.0,
+      "signal_median_spearman": 0.9523809523809523,
+      "targets": 39
+    }
+  },
+  "experiment_id": "VLL-R1A-HEATMAP-HEATSCOUT-01",
+  "frozen_db_sha256_after": "f579ba0457dfe8502977536477a3317e4aa4ca7a9a8c7fce214649698cdd2497",
+  "frozen_db_sha256_before": "f579ba0457dfe8502977536477a3317e4aa4ca7a9a8c7fce214649698cdd2497",
+  "hypothesis_tests": {
+    "origin_to_transition:real_vs_blind": {
+      "exceed": 11,
+      "holm_p": 0.0006999650017499125,
+      "median_delta": 0.43620620818296185,
+      "p": 0.000599970001499925
+    },
+    "origin_to_transition:real_vs_shuffled": {
+      "exceed": 6,
+      "holm_p": 0.0006999650017499125,
+      "median_delta": 0.4364355521014879,
+      "p": 0.00034998250087495624
+    },
+    "transition_to_origin:real_vs_blind": {
+      "exceed": 0,
+      "holm_p": 0.000199990000499975,
+      "median_delta": 0.44292637102967936,
+      "p": 4.999750012499375e-05
+    },
+    "transition_to_origin:real_vs_shuffled": {
+      "exceed": 0,
+      "holm_p": 0.000199990000499975,
+      "median_delta": 0.43979419815717175,
+      "p": 4.999750012499375e-05
+    }
+  },
+  "mode": "full",
+  "nonclaims": [
+    "No claim of semantic reasoning, learning, topology modification, or general intelligence.",
+    "Semantic cross-source routing is characterization only and is not an admission criterion.",
+    "The V0-to-HeatMap weighted vt_touch bridge is a research adapter, not claimed as canonical VDM runtime wiring."
+  ],
+  "run_stamp": "20260826T082537Z",
+  "schema_version": 1,
+  "scope_lock": "HeatMap + HeatScout only. No TrailMap, other walkers, topology mutation, CF04, plasticity, or parameter tuning from outcomes.",
+  "snapshot": {
+    "chunks": 4454,
+    "edges": 13258,
+    "integrity": {
+      "foreign_key_violations": [],
+      "quick_check": [
+        "ok"
+      ]
+    },
+    "meta": {
+      "daemon_state": "running",
+      "embedding_dim": "2560",
+      "embedding_model": "ollama:qwen3-embedding:4b",
+      "tick_interval_s": "3.0"
+    },
+    "nodes": 4454,
+    "tick": 36900
+  },
+  "synthetic_gate": {
+    "max_abs_error": 0.006400000000000017,
+    "pass": true,
+    "tolerance": 0.03
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="25" text-anchor="middle" font-size="18">Target-level counterfactual local-attention gain</text>
+<line x1="90" y1="485" x2="865" y2="485" stroke="black"/>
+<line x1="90" y1="45" x2="90" y2="485" stroke="black"/>
+<text x="450.0" y="540" text-anchor="middle" font-size="14">target index</text>
+<text x="20" y="280.0" text-anchor="middle" font-size="14" transform="rotate(-90 20 280.0)">delta mean destination V0 heat</text>
+<circle cx="94.13" cy="152.68" r="3.3" fill="black"/>
+<rect x="95.78" y="150.04" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="107.05" cy="153.12" r="3.3" fill="black"/>
+<rect x="108.70" y="150.24" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="119.97" cy="210.66" r="3.3" fill="black"/>
+<rect x="121.62" y="207.61" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="132.88" cy="172.12" r="3.3" fill="black"/>
+<rect x="134.53" y="169.53" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="145.80" cy="213.14" r="3.3" fill="black"/>
+<rect x="147.45" y="210.15" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="158.72" cy="197.59" r="3.3" fill="black"/>
+<rect x="160.37" y="194.60" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="171.63" cy="200.71" r="3.3" fill="black"/>
+<rect x="173.28" y="197.83" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="184.55" cy="211.32" r="3.3" fill="black"/>
+<rect x="186.20" y="208.12" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="197.47" cy="125.45" r="3.3" fill="black"/>
+<rect x="199.12" y="122.96" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="210.38" cy="174.00" r="3.3" fill="black"/>
+<rect x="212.03" y="171.70" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="223.30" cy="196.50" r="3.3" fill="black"/>
+<rect x="224.95" y="193.59" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="236.22" cy="179.35" r="3.3" fill="black"/>
+<rect x="237.87" y="176.30" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="249.13" cy="45.08" r="3.3" fill="black"/>
+<rect x="250.78" y="42.00" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="262.05" cy="193.83" r="3.3" fill="black"/>
+<rect x="263.70" y="190.78" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="274.97" cy="182.54" r="3.3" fill="black"/>
+<rect x="276.62" y="179.77" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="287.88" cy="208.82" r="3.3" fill="black"/>
+<rect x="289.53" y="205.60" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="300.80" cy="173.81" r="3.3" fill="black"/>
+<rect x="302.45" y="171.01" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="313.72" cy="213.33" r="3.3" fill="black"/>
+<rect x="315.37" y="210.40" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="326.63" cy="177.67" r="3.3" fill="black"/>
+<rect x="328.28" y="174.62" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="339.55" cy="175.35" r="3.3" fill="black"/>
+<rect x="341.20" y="172.13" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="352.47" cy="175.07" r="3.3" fill="black"/>
+<rect x="354.12" y="172.51" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="365.38" cy="190.83" r="3.3" fill="black"/>
+<rect x="367.03" y="187.44" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="378.30" cy="170.34" r="3.3" fill="black"/>
+<rect x="379.95" y="167.51" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="391.22" cy="174.11" r="3.3" fill="black"/>
+<rect x="392.87" y="171.12" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="404.13" cy="199.29" r="3.3" fill="black"/>
+<rect x="405.78" y="195.94" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="417.05" cy="192.67" r="3.3" fill="black"/>
+<rect x="418.70" y="189.62" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="429.97" cy="167.55" r="3.3" fill="black"/>
+<rect x="431.62" y="164.95" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="442.88" cy="190.94" r="3.3" fill="black"/>
+<rect x="444.53" y="188.11" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="455.80" cy="164.69" r="3.3" fill="black"/>
+<rect x="457.45" y="161.61" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="468.72" cy="192.20" r="3.3" fill="black"/>
+<rect x="470.37" y="189.48" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="481.63" cy="219.07" r="3.3" fill="black"/>
+<rect x="483.28" y="215.86" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="494.55" cy="177.91" r="3.3" fill="black"/>
+<rect x="496.20" y="175.64" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="507.47" cy="198.55" r="3.3" fill="black"/>
+<rect x="509.12" y="195.51" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="520.38" cy="151.71" r="3.3" fill="black"/>
+<rect x="522.03" y="148.90" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="533.30" cy="176.09" r="3.3" fill="black"/>
+<rect x="534.95" y="172.77" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="546.22" cy="194.02" r="3.3" fill="black"/>
+<rect x="547.87" y="190.97" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="559.13" cy="177.42" r="3.3" fill="black"/>
+<rect x="560.78" y="174.19" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="572.05" cy="177.17" r="3.3" fill="black"/>
+<rect x="573.70" y="174.38" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="584.97" cy="192.66" r="3.3" fill="black"/>
+<rect x="586.62" y="189.75" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="597.88" cy="168.67" r="3.3" fill="black"/>
+<rect x="599.53" y="165.84" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="610.80" cy="158.04" r="3.3" fill="black"/>
+<rect x="612.45" y="155.62" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="623.72" cy="176.58" r="3.3" fill="black"/>
+<rect x="625.37" y="173.51" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="636.63" cy="153.48" r="3.3" fill="black"/>
+<rect x="638.28" y="150.59" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="649.55" cy="179.31" r="3.3" fill="black"/>
+<rect x="651.20" y="176.36" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="662.47" cy="176.32" r="3.3" fill="black"/>
+<rect x="664.12" y="173.06" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="675.38" cy="193.86" r="3.3" fill="black"/>
+<rect x="677.03" y="191.33" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="688.30" cy="181.45" r="3.3" fill="black"/>
+<rect x="689.95" y="178.30" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="701.22" cy="178.03" r="3.3" fill="black"/>
+<rect x="702.87" y="175.48" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="714.13" cy="173.66" r="3.3" fill="black"/>
+<rect x="715.78" y="170.97" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="727.05" cy="164.35" r="3.3" fill="black"/>
+<rect x="728.70" y="160.95" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="739.97" cy="178.92" r="3.3" fill="black"/>
+<rect x="741.62" y="176.30" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="752.88" cy="179.73" r="3.3" fill="black"/>
+<rect x="754.53" y="177.50" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="765.80" cy="191.45" r="3.3" fill="black"/>
+<rect x="767.45" y="188.71" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="778.72" cy="198.02" r="3.3" fill="black"/>
+<rect x="780.37" y="195.12" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="791.63" cy="176.14" r="3.3" fill="black"/>
+<rect x="793.28" y="173.08" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="804.55" cy="175.01" r="3.3" fill="black"/>
+<rect x="806.20" y="172.34" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="817.47" cy="182.61" r="3.3" fill="black"/>
+<rect x="819.12" y="179.88" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="830.38" cy="166.36" r="3.3" fill="black"/>
+<rect x="832.03" y="163.71" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="843.30" cy="183.25" r="3.3" fill="black"/>
+<rect x="844.95" y="180.29" width="6" height="6" fill="none" stroke="black"/>
+<circle cx="856.22" cy="191.05" r="3.3" fill="black"/>
+<rect x="857.87" y="188.08" width="6" height="6" fill="none" stroke="black"/>
+<line x1="90" y1="265.00" x2="865" y2="265.00" stroke="black" stroke-dasharray="4,5"/>
+<text x="605" y="65" font-size="13">filled: real-blind; open square: real-shuffled</text>
+</svg>

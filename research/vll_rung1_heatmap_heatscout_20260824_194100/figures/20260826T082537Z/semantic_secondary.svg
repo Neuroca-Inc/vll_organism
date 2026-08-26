@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="25" text-anchor="middle" font-size="18">Secondary semantic characterization (not an admission gate)</text>
+<line x1="90" y1="485" x2="865" y2="485" stroke="black"/>
+<line x1="90" y1="45" x2="90" y2="485" stroke="black"/>
+<text x="450.0" y="540" text-anchor="middle" font-size="14">target index</text>
+<text x="20" y="280.0" text-anchor="middle" font-size="14" transform="rotate(-90 20 280.0)">delta related fraction: real - blind</text>
+<circle cx="90.00" cy="210.29" r="3.5" fill="black"/>
+<circle cx="108.02" cy="293.07" r="3.5" fill="black"/>
+<circle cx="126.05" cy="252.02" r="3.5" fill="black"/>
+<circle cx="144.07" cy="224.62" r="3.5" fill="black"/>
+<circle cx="162.09" cy="304.87" r="3.5" fill="black"/>
+<circle cx="180.12" cy="249.93" r="3.5" fill="black"/>
+<circle cx="198.14" cy="294.77" r="3.5" fill="black"/>
+<circle cx="216.16" cy="247.35" r="3.5" fill="black"/>
+<circle cx="234.19" cy="292.04" r="3.5" fill="black"/>
+<circle cx="252.21" cy="317.13" r="3.5" fill="black"/>
+<circle cx="270.23" cy="281.74" r="3.5" fill="black"/>
+<circle cx="288.26" cy="295.64" r="3.5" fill="black"/>
+<circle cx="306.28" cy="246.10" r="3.5" fill="black"/>
+<circle cx="324.30" cy="225.18" r="3.5" fill="black"/>
+<circle cx="342.33" cy="270.80" r="3.5" fill="black"/>
+<circle cx="360.35" cy="327.11" r="3.5" fill="black"/>
+<circle cx="378.37" cy="191.48" r="3.5" fill="black"/>
+<circle cx="396.40" cy="274.08" r="3.5" fill="black"/>
+<circle cx="414.42" cy="272.27" r="3.5" fill="black"/>
+<circle cx="432.44" cy="326.55" r="3.5" fill="black"/>
+<circle cx="450.47" cy="273.16" r="3.5" fill="black"/>
+<circle cx="468.49" cy="275.94" r="3.5" fill="black"/>
+<circle cx="486.51" cy="235.82" r="3.5" fill="black"/>
+<circle cx="504.53" cy="314.69" r="3.5" fill="black"/>
+<circle cx="522.56" cy="178.57" r="3.5" fill="black"/>
+<circle cx="540.58" cy="279.47" r="3.5" fill="black"/>
+<circle cx="558.60" cy="282.02" r="3.5" fill="black"/>
+<circle cx="576.63" cy="180.71" r="3.5" fill="black"/>
+<circle cx="594.65" cy="118.71" r="3.5" fill="black"/>
+<circle cx="612.67" cy="330.11" r="3.5" fill="black"/>
+<circle cx="630.70" cy="335.28" r="3.5" fill="black"/>
+<circle cx="648.72" cy="308.72" r="3.5" fill="black"/>
+<circle cx="666.74" cy="286.25" r="3.5" fill="black"/>
+<circle cx="684.77" cy="311.66" r="3.5" fill="black"/>
+<circle cx="702.79" cy="273.94" r="3.5" fill="black"/>
+<circle cx="720.81" cy="121.41" r="3.5" fill="black"/>
+<circle cx="738.84" cy="164.13" r="3.5" fill="black"/>
+<circle cx="756.86" cy="177.14" r="3.5" fill="black"/>
+<circle cx="774.88" cy="245.27" r="3.5" fill="black"/>
+<circle cx="792.91" cy="319.74" r="3.5" fill="black"/>
+<circle cx="810.93" cy="307.62" r="3.5" fill="black"/>
+<circle cx="828.95" cy="289.29" r="3.5" fill="black"/>
+<circle cx="846.98" cy="211.12" r="3.5" fill="black"/>
+<circle cx="865.00" cy="306.83" r="3.5" fill="black"/>
+<line x1="90" y1="265.00" x2="865" y2="265.00" stroke="black" stroke-dasharray="4,5"/>
+</svg>

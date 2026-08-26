@@ -1,0 +1,47 @@
+{
+  "cortex_archive": {
+    "path": "cortex.zip",
+    "sha256": "76ff967b4ee8a183ca842aa28ac9e086446d482671311d9c3e66e2ac8065c138",
+    "size": 55349
+  },
+  "event_schema_authority": {
+    "archive_path": "core/proprioception/events.py",
+    "sha256": "372fccbfd0d117ff068a01a09eaf073214925a280d6c859bc27a75e672bdd82f",
+    "size": 16954
+  },
+  "event_shim": {
+    "path": "scripts/vendor/vdm_rt/core/proprioception/events.py",
+    "reason": "Keep the isolated HeatMap/HeatScout experiment free of unrelated VDM config/runtime imports.",
+    "scope": "BaseEvent, VTTouchEvent, EdgeOnEvent, SpikeEvent, DeltaWEvent dataclass-compatible subset only",
+    "sha256": "30139927ee817b86ac7ac67e9b7326d4d01137bac7d9bd44a4ba0fd9d5e053ff"
+  },
+  "native_source_edit_policy": "Vendored HeatMap, BaseDecayMap, HeatScout, and BaseScout bytes are unchanged. Reproducibility control for HeatScout module-global RNG is applied only by the harness.",
+  "schema_version": 1,
+  "vdm_rt_archive": {
+    "path": "vdm_rt(1).zip",
+    "sha256": "5ed1a3e243b7cbe876d6be153d161dabe28856a66322375fa1af3b8e12c42a5b",
+    "size": 6883976
+  },
+  "vendored_native_sources": {
+    "maps/base_decay_map.py": {
+      "archive_path": "maps/base_decay_map.py",
+      "sha256": "50b84644428d2217bb02780ed1ed85404abde33b9917dd82843205eff223c2f8",
+      "size": 5121
+    },
+    "maps/heatmap.py": {
+      "archive_path": "maps/heatmap.py",
+      "sha256": "0f96877c173ba56a855d0f9a0b0c1e8ff49a825941a5bf60c72b04fdb43da21e",
+      "size": 2950
+    },
+    "void_walkers/base.py": {
+      "archive_path": "void_walkers/base.py",
+      "sha256": "a6420123527f091dec1903488bad4e0039e3e60c411ccc59ffeb63feaf25198c",
+      "size": 8808
+    },
+    "void_walkers/void_heat_scout.py": {
+      "archive_path": "void_walkers/void_heat_scout.py",
+      "sha256": "f5662d84cdaa96e97f547304c5605e08da4dbcf7b2694ba603fe3118e1fb6d28",
+      "size": 9072
+    }
+  }
+}

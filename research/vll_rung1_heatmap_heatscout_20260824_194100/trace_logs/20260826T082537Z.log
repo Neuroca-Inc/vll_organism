@@ -1,0 +1,90 @@
+VLL RUNG 1A — HEATMAP + HEATSCOUT
+package: /media/justin/IronWolf/git/vll_organism/research/vll_rung1_heatmap_heatscout_20260824_194100
+repo: /media/justin/IronWolf/git/vll_organism
+mode: FULL/DECISIVE
+test_heatscout_respects_declared_edge_budget (test_rung1_package.PackageTests.test_heatscout_respects_declared_edge_budget) ... ok
+test_holm_adjustment_is_monotone_and_bounded (test_rung1_package.PackageTests.test_holm_adjustment_is_monotone_and_bounded) ... ok
+test_large_heat_difference_controls_first_choice (test_rung1_package.PackageTests.test_large_heat_difference_controls_first_choice) ... ok
+test_native_heatscout_exact_replay_under_harness_seed (test_rung1_package.PackageTests.test_native_heatscout_exact_replay_under_harness_seed) ... ok
+test_permutation_is_reproducible_and_bijective (test_rung1_package.PackageTests.test_permutation_is_reproducible_and_bijective) ... ok
+test_spearman_ties_and_order (test_rung1_package.PackageTests.test_spearman_ties_and_order) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK
+snapshot tick=36900 chunks=4454 nodes=4454 edges=13258
+frozen db sha256=f579ba0457dfe8502977536477a3317e4aa4ca7a9a8c7fce214649698cdd2497
+synthetic gate: {'max_abs_error': 0.006400000000000017, 'tolerance': 0.03, 'pass': True}
+direction origin_to_transition: targets=22
+  [01/22] chunk:01a9a4e6ea6f58575231bc0e valid=1.000 delta_rb=0.5720080505447718 delta_rs=0.5701707538974663
+  [02/22] chunk:0650195aa0f79d2aaec3925e valid=1.000 delta_rb=0.5697405529789902 delta_rs=0.5691407655300955
+  [03/22] chunk:127fc3636f803f97105575ad valid=1.000 delta_rb=0.27674734201553397 delta_rs=0.2769630352639323
+  [04/22] chunk:128415c43dd5cae04cb76583 valid=1.000 delta_rb=0.47302634817053935 delta_rs=0.47093033070850165
+  [05/22] chunk:18169c1dbba2907a3cfadef4 valid=1.000 delta_rb=0.2640893077789299 delta_rs=0.26403863188225474
+  [06/22] chunk:1d44e027d4c9dafbde8050a1 valid=1.000 delta_rb=0.34327032094392684 delta_rs=0.34324210455674964
+  [07/22] chunk:373b61c72ce49ecf9f34bbfb valid=1.000 delta_rb=0.32742809020643543 delta_rs=0.3268058549746392
+  [08/22] chunk:5155efd8c3288419f68fb155 valid=1.000 delta_rb=0.27338145812035664 delta_rs=0.2743900104821062
+  [09/22] chunk:6a6f56de3ca6c558d8d78622 valid=1.000 delta_rb=0.7106879171043095 delta_rs=0.7080744849132058
+  [10/22] chunk:8722ceaa74ecb0c8e285fc6f valid=1.000 delta_rb=0.46343255904132086 delta_rs=0.45988507497997116
+  [11/22] chunk:8962bed7d63901564218076b valid=1.000 delta_rb=0.34881972419806445 delta_rs=0.34836495202262524
+  [12/22] chunk:9fb77421ec0ef8e6d78fc040 valid=1.000 delta_rb=0.43620620818296185 delta_rs=0.4364355521014879
+  [13/22] chunk:a9659c505e49a3d42e4db844 valid=0.000 delta_rb=None delta_rs=None
+  [14/22] chunk:b6d7dbad9577436ab92a61cd valid=1.000 delta_rb=1.1199473071955 delta_rs=1.1203778658162147
+  [15/22] chunk:bc6649925656594e6ec68677 valid=1.000 delta_rb=0.36242704914581714 delta_rs=0.3626974379411846
+  [16/22] chunk:bdb68aabe90b68e820bcc515 valid=1.000 delta_rb=0.4199541645064272 delta_rs=0.4187466503808004
+  [17/22] chunk:c3ee8a1f1ff5c8662bfc3333 valid=1.000 delta_rb=0.28611237611479545 delta_rs=0.2872316710019076
+  [18/22] chunk:c5b57619b9b130cc30c81432 valid=1.000 delta_rb=0.46438220955195775 delta_rs=0.4633641778260206
+  [19/22] chunk:d79171c9a68bd3a1a2ba6612 valid=1.000 delta_rb=0.2631168357828495 delta_rs=0.26278197667444014
+  [20/22] chunk:d96e6dc355c904b49f1f1236 valid=1.000 delta_rb=0.44475466353578946 delta_rs=0.44497863712225977
+  [21/22] chunk:da11a50d9ac147f0f42efa40 valid=1.000 delta_rb=0.4565470937252089 delta_rs=0.4576644912018922
+  [22/22] chunk:ffceb9939c29300973d8d7d8 valid=1.000 delta_rb=0.45800471506907187 delta_rs=0.4557140907908098
+direction transition_to_origin: targets=39
+  [01/39] chunk:0066126ec8be360207250c0e valid=1.000 delta_rb=0.37773346196947055 delta_rs=0.37972604315095365
+  [02/39] chunk:00d6a0ab0e74b4a9f5dd1bee valid=1.000 delta_rb=0.48205300378914595 delta_rs=0.48120689975365194
+  [03/39] chunk:046d440341933f706d1b8439 valid=1.000 delta_rb=0.4628885327703554 delta_rs=0.4628198044877139
+  [04/39] chunk:10d0a60b8e6386542f7f2e0f valid=1.000 delta_rb=0.3346449941268834 delta_rs=0.3364100060001557
+  [05/39] chunk:1509a86b23339a5bdecbd4ef valid=1.000 delta_rb=0.3683484497174286 delta_rs=0.36861912222214344
+  [06/39] chunk:15530bec75bd4255e14a2c87 valid=1.000 delta_rb=0.4962640929014105 delta_rs=0.4942204986677312
+  [07/39] chunk:1f6827b9769e9bd273517c15 valid=1.000 delta_rb=0.3771660285428229 delta_rs=0.37629633439671684
+  [08/39] chunk:200202c266d77d741c57e275 valid=1.000 delta_rb=0.5108566146080256 delta_rs=0.5112670457175291
+  [09/39] chunk:205b7623e89a9ec70a13a9d3 valid=1.000 delta_rb=0.3707446104637423 delta_rs=0.36930151821832874
+  [10/39] chunk:218189649ddef45adab80203 valid=1.000 delta_rb=0.2339218144871642 delta_rs=0.23494995314494743
+  [11/39] chunk:24e65a5f2a8e061ad4c91961 valid=1.000 delta_rb=0.443541374842848 delta_rs=0.43979419815717175
+  [12/39] chunk:2e50cad7e426c2781b474e3b valid=1.000 delta_rb=0.3384252124135748 delta_rs=0.33860361543072104
+  [13/39] chunk:313954720059f5b11152616e valid=1.000 delta_rb=0.5769653920917744 delta_rs=0.5759949003607892
+  [14/39] chunk:34ff958b4487e21ea834c82f valid=1.000 delta_rb=0.4527967433666733 delta_rs=0.4544215447784694
+  [15/39] chunk:4079378cec36ca9b89a76f08 valid=1.000 delta_rb=0.36149946091944607 delta_rs=0.3617453682694811
+  [16/39] chunk:476d9cb14b9139a6f75ebb58 valid=1.000 delta_rb=0.4459918013778481 delta_rs=0.44716850876275227
+  [17/39] chunk:4a3adeb0e168d3e2c9af147d valid=1.000 delta_rb=0.44730392197885294 delta_rs=0.4462092862405415
+  [18/39] chunk:4dadb75dd249f646267bbb6c valid=1.000 delta_rb=0.3684069360257907 delta_rs=0.36795114462491096
+  [19/39] chunk:59de2f26accc6714c2cd2399 valid=1.000 delta_rb=0.4905812186494404 delta_rs=0.4896834468540273
+  [20/39] chunk:5ddc3c13de81f8329b499484 valid=1.000 delta_rb=0.5447155885248033 delta_rs=0.5417488210464821
+  [21/39] chunk:6e693544f78157ab1aeb4c4c valid=1.000 delta_rb=0.4502812846046097 delta_rs=0.4506510224036455
+  [22/39] chunk:6fa07759312d3e88f450bc4a valid=1.000 delta_rb=0.5679077585416801 delta_rs=0.5673572188191504
+  [23/39] chunk:89b6dba6c3ca2645a1b2618a valid=1.000 delta_rb=0.43639232067561895 delta_rs=0.4361412270335223
+  [24/39] chunk:90c159f3a371d7491d1e3024 valid=1.000 delta_rb=0.45163893158392016 delta_rs=0.45295358825703663
+  [25/39] chunk:90c5478ec5b43dbd0f0d9006 valid=1.000 delta_rb=0.36226557681891514 delta_rs=0.3598860188351639
+  [26/39] chunk:9aa2db6401c27d3deb8ade0c valid=1.000 delta_rb=0.4255118586930192 delta_rs=0.4262745301174581
+  [27/39] chunk:a0fe5ebca4badb3844a8bccd valid=1.000 delta_rb=0.44292637102967936 delta_rs=0.44060831055033617
+  [28/39] chunk:aaabe1523752fd3fa2a2866b valid=1.000 delta_rb=0.46517198358808587 delta_rs=0.46358002216103544
+  [29/39] chunk:ad3699d09adb7f37b9f30c4a valid=1.000 delta_rb=0.5125679175996056 delta_rs=0.5145931628851318
+  [30/39] chunk:b23cb7eaae87d76ac50f9133 valid=1.000 delta_rb=0.4383667723632815 delta_rs=0.4364202438287955
+  [31/39] chunk:b43cb594526c55277cf93a21 valid=1.000 delta_rb=0.4342248002964208 delta_rs=0.43035035655784093
+  [32/39] chunk:ba2c5a75c50fe1de5911398a valid=1.000 delta_rb=0.37456921812653665 delta_rs=0.37324925529021763
+  [33/39] chunk:bb5f975eeec2b993e7db9ac1 valid=1.000 delta_rb=0.3410809337325222 delta_rs=0.3405797668006013
+  [34/39] chunk:bd41bd16a7eefde8e2c8a15c valid=1.000 delta_rb=0.4525072400891544 delta_rs=0.45285610539067594
+  [35/39] chunk:d86c2aae83cb52a76e2ef9f8 valid=1.000 delta_rb=0.4583024734542192 delta_rs=0.4566027384136793
+  [36/39] chunk:e6e5c3c42746d4691fef50d1 valid=1.000 delta_rb=0.41958200806782336 delta_rs=0.41823080921003536
+  [37/39] chunk:e91caab6e66ff7ba10110e56 valid=1.000 delta_rb=0.5023414428175867 delta_rs=0.5005771235466078
+  [38/39] chunk:ea8f397990cf104864e04e9b valid=1.000 delta_rb=0.4163469771843588 delta_rs=0.4160938045697431
+  [39/39] chunk:f794e170f590b044c70126a4 valid=1.000 delta_rb=0.37659675266931597 delta_rs=0.3764707658755548
+
+VERDICT: PASS
+origin_to_transition:real_vs_blind: median=0.436206208 p=0.000599970001 holm=0.000699965002
+origin_to_transition:real_vs_shuffled: median=0.436435552 p=0.000349982501 holm=0.000699965002
+transition_to_origin:real_vs_blind: median=0.442926371 p=4.99975001e-05 holm=0.00019999
+transition_to_origin:real_vs_shuffled: median=0.439794198 p=4.99975001e-05 holm=0.00019999
+results: /media/justin/IronWolf/git/vll_organism/research/vll_rung1_heatmap_heatscout_20260824_194100/docs/20260826T082537Z_RESULTS.md
+run data: /media/justin/IronWolf/git/vll_organism/research/vll_rung1_heatmap_heatscout_20260824_194100/analysis_data/20260826T082537Z
+STOP: no next mechanism is admitted by this package.

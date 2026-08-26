@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "experiment_id": "VLL-R1A-HEATMAP-HEATSCOUT-01",
+  "scope_lock": "HeatMap + HeatScout only. No TrailMap, other walkers, topology mutation, CF04, plasticity, or parameter tuning from outcomes.",
+  "claim": "Under matched bounded local work, correctly situated HeatMap information lets HeatScout select destinations with greater authoritative V0 heat than (a) the same HeatScout with no heat information and (b) the same HeatMap values shuffled onto the wrong graph positions.",
+  "nonclaims": [
+    "No claim of semantic reasoning, learning, topology modification, or general intelligence.",
+    "Semantic cross-source routing is characterization only and is not an admission criterion.",
+    "The V0-to-HeatMap weighted vt_touch bridge is a research adapter, not claimed as canonical VDM runtime wiring."
+  ],
+  "seed": 20260824,
+  "pulse_heat": 10.0,
+  "warmup_ticks": 20,
+  "source_pairs": [
+    {
+      "name": "origin_to_transition",
+      "origin": "00_MCR_Origin.md",
+      "related": ["01_MCR_Transition-to-Formal.md"]
+    },
+    {
+      "name": "transition_to_origin",
+      "origin": "01_MCR_Transition-to-Formal.md",
+      "related": ["00_MCR_Origin.md"]
+    }
+  ],
+  "heatmap": {
+    "head_k": 256,
+    "half_life_ticks": 200,
+    "keep_max": 4096,
+    "vt_touch_gain": 0.25,
+    "spike_gain": 1.0,
+    "dW_gain": 0.5
+  },
+  "heatscout": {
+    "gamma_heat": 1.0,
+    "tau": 1.0,
+    "theta_mem": 0.0,
+    "rho_trail": 0.0
+  },
+  "walker_budget": {
+    "visits": 8,
+    "edges": 7,
+    "ttl": 7
+  },
+  "synthetic": {
+    "heat_deltas": [-2.0, -1.0, -0.5, 0.0, 0.5, 1.0, 2.0],
+    "trials_per_condition": 10000,
+    "max_abs_error": 0.03
+  },
+  "signal_gate": {
+    "median_spearman_min": 0.70,
+    "informative_target_fraction_min": 0.80
+  },
+  "static_attention": {
+    "trials_per_target": 1000,
+    "min_valid_trial_fraction_per_target": 0.95,
+    "min_eligible_target_fraction_per_direction": 0.90,
+    "sign_flip_controls": 20000,
+    "holm_family_alpha": 0.05
+  },
+  "primary_metric": "matched-prefix mean authoritative V0 heat at EdgeOn destinations; each three-arm trial is truncated to the minimum realized edge count before scoring.",
+  "negative_controls": [
+    "Heat-blind HeatScout: identical walker code and budgets, heat_dict returns zero.",
+    "Heat-shuffled HeatScout: identical HeatMap values, deterministically permuted over graph positions per trial.",
+    "Synthetic fork reversals and equal-heat condition.",
+    "Frozen snapshot database SHA-256 before/after run to exclude topology/state mutation."
+  ],
+  "decision_rule": "Decisive R1A PASS requires: synthetic choice-law gate PASS; V0-to-HeatMap signal gate PASS in both reciprocal source directions; at least 90% eligible target coverage in each direction; positive target-level real-minus-blind and real-minus-shuffled medians in both directions; all four one-sided target-level sign-flip tests Holm-adjusted <= 0.05; frozen DB hash unchanged. Otherwise FAIL/BLOCKED is localized without adding another mechanism."
+}

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="25" text-anchor="middle" font-size="18">V0 activity retained by HeatMap at local neighbor decisions</text>
+<line x1="90" y1="485" x2="865" y2="485" stroke="black"/>
+<line x1="90" y1="45" x2="90" y2="485" stroke="black"/>
+<text x="450.0" y="540" text-anchor="middle" font-size="14">target index</text>
+<text x="20" y="280.0" text-anchor="middle" font-size="14" transform="rotate(-90 20 280.0)">Spearman rho</text>
+<circle cx="90.00" cy="111.00" r="3.5" fill="black"/>
+<circle cx="103.36" cy="52.33" r="3.5" fill="black"/>
+<circle cx="116.72" cy="57.57" r="3.5" fill="black"/>
+<circle cx="130.09" cy="95.29" r="3.5" fill="black"/>
+<circle cx="143.45" cy="57.57" r="3.5" fill="black"/>
+<circle cx="156.81" cy="57.57" r="3.5" fill="black"/>
+<circle cx="170.17" cy="66.54" r="3.5" fill="black"/>
+<circle cx="183.53" cy="45.00" r="3.5" fill="black"/>
+<circle cx="196.90" cy="45.00" r="3.5" fill="black"/>
+<circle cx="210.26" cy="45.00" r="3.5" fill="black"/>
+<circle cx="223.62" cy="60.38" r="3.5" fill="black"/>
+<circle cx="236.98" cy="50.24" r="3.5" fill="black"/>
+<circle cx="250.34" cy="60.71" r="3.5" fill="black"/>
+<circle cx="263.71" cy="45.00" r="3.5" fill="black"/>
+<circle cx="277.07" cy="82.71" r="3.5" fill="black"/>
+<circle cx="290.43" cy="52.86" r="3.5" fill="black"/>
+<circle cx="303.79" cy="67.00" r="3.5" fill="black"/>
+<circle cx="317.16" cy="52.86" r="3.5" fill="black"/>
+<circle cx="330.52" cy="45.00" r="3.5" fill="black"/>
+<circle cx="343.88" cy="46.54" r="3.5" fill="black"/>
+<circle cx="357.24" cy="48.08" r="3.5" fill="black"/>
+<circle cx="370.60" cy="145.57" r="3.5" fill="black"/>
+<circle cx="383.97" cy="47.67" r="3.5" fill="black"/>
+<circle cx="397.33" cy="60.71" r="3.5" fill="black"/>
+<circle cx="410.69" cy="48.08" r="3.5" fill="black"/>
+<circle cx="424.05" cy="52.86" r="3.5" fill="black"/>
+<circle cx="437.41" cy="133.00" r="3.5" fill="black"/>
+<circle cx="450.78" cy="52.86" r="3.5" fill="black"/>
+<circle cx="464.14" cy="66.33" r="3.5" fill="black"/>
+<circle cx="477.50" cy="111.00" r="3.5" fill="black"/>
+<circle cx="490.86" cy="53.00" r="3.5" fill="black"/>
+<circle cx="504.22" cy="50.24" r="3.5" fill="black"/>
+<circle cx="517.59" cy="45.00" r="3.5" fill="black"/>
+<circle cx="530.95" cy="296.43" r="3.5" fill="black"/>
+<circle cx="544.31" cy="72.69" r="3.5" fill="black"/>
+<circle cx="557.67" cy="61.92" r="3.5" fill="black"/>
+<circle cx="571.03" cy="52.86" r="3.5" fill="black"/>
+<circle cx="584.40" cy="60.71" r="3.5" fill="black"/>
+<circle cx="597.76" cy="57.57" r="3.5" fill="black"/>
+<circle cx="611.12" cy="74.33" r="3.5" fill="black"/>
+<circle cx="624.48" cy="48.67" r="3.5" fill="black"/>
+<circle cx="637.84" cy="45.00" r="3.5" fill="black"/>
+<circle cx="651.21" cy="45.00" r="3.5" fill="black"/>
+<circle cx="664.57" cy="48.08" r="3.5" fill="black"/>
+<circle cx="677.93" cy="52.33" r="3.5" fill="black"/>
+<circle cx="691.29" cy="47.00" r="3.5" fill="black"/>
+<circle cx="704.66" cy="56.00" r="3.5" fill="black"/>
+<circle cx="718.02" cy="46.54" r="3.5" fill="black"/>
+<circle cx="731.38" cy="50.24" r="3.5" fill="black"/>
+<circle cx="744.74" cy="63.33" r="3.5" fill="black"/>
+<circle cx="758.10" cy="65.95" r="3.5" fill="black"/>
+<circle cx="771.47" cy="107.33" r="3.5" fill="black"/>
+<circle cx="784.83" cy="66.54" r="3.5" fill="black"/>
+<circle cx="798.19" cy="49.62" r="3.5" fill="black"/>
+<circle cx="811.55" cy="57.00" r="3.5" fill="black"/>
+<circle cx="824.91" cy="68.57" r="3.5" fill="black"/>
+<circle cx="838.28" cy="55.48" r="3.5" fill="black"/>
+<circle cx="851.64" cy="78.00" r="3.5" fill="black"/>
+<circle cx="865.00" cy="54.23" r="3.5" fill="black"/>
+<line x1="90" y1="265.00" x2="865" y2="265.00" stroke="black" stroke-dasharray="3,5"/>
+</svg>

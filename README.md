@@ -108,7 +108,8 @@ Operational values are CLI/config data rather than buried inside the runtime pat
 `status` never constructs an `Organism` and opens SQLite read-only:
 
 ```bash
-python -m vll_organism status --db ./organism.db
+# Open a new terminal and enter this command
+watch python -m vll_organism status --db ./organism.db
 ```
 
 Important fields include the endogenous tick, durable chunk count, graph connectivity, dynamics
